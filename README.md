@@ -21,10 +21,12 @@ for Actionable Insights.``** *PLOS ONE* [Q1] [Under Review]
 - Applied natural language processing to build an LLM-based retrieval question-answering scheme in the context of Bangladeshi history.
 - Applied statistical machine learning to make a consumer behavior prediction-based model using the theory of planned behavior.
 
-**Graduate Teaching Assistant @ Northsouth University (_August 2023 - Present_)**
+**Graduate Teaching Assistant @ Northsouth University  
+(_August 2023 - Present_)**
 - Courses taken: Operating System Design(CSE323) & C programming(CSE115)
 
-**Undergraduate Teaching Assistant @ Northsouth University (_June 2022 - August 2023_)**
+**Undergraduate Teaching Assistant @ Northsouth University  
+(_June 2022 - August 2023_)**
 - Course taken: Operating System Design(CSE323)
 - Marked Assignments
 - Given consultation to students
