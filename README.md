@@ -6,7 +6,8 @@ I graduated with *manga cum laude* honors from North South University with a Bac
 #### Research Interest: Applied Machine Learning, Natural Language Processing, Computer Vision, Quantum Computing
 
 ## Education			        		
-- B.S., Computer Science and Engineering | North South Unversity, Bangladesh (_August 2023_)
+- B.S., Computer Science and Engineering,
+North South Unversity, Bangladesh (_August 2023_)
 - CGPA: 3.74/4.00 (**93.5% Marks**)
 - Honours: *magna cum laude* distinction
   
