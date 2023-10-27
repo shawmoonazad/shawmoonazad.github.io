@@ -1,5 +1,5 @@
 title: Md Shawmoon Azad
 logo: /assets/img/shawmoon.jpg
 #description: text below image
-show_downloads: false
+show_downloads: true
 theme: jekyll-theme-minimal
