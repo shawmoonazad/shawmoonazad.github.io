@@ -1,13 +1,13 @@
-# Researcher @ Machine Learning|Quantum Computing
+# Researcher @ NSU Opticslab
 
 ## About me 
 I graduated with *manga cum laude* honors from North South University with a Bachelor of Science in Computer Science and Engineering. At the same organization, I work as a Graduate Teaching Assistant as well. In addition, I work as a research assistant for [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/), where I actively work on projects related to applied machine learning and quantum computing, specifically in the areas of quantum key distribution and quantum machine learning.
 
-#### Research Interest: Applied Machine Learning, Natural Language Processing, Computer Vision, Quantum Computing
+## Research Interest 
+#### Applied Machine Learning, Natural Language Processing, Computer Vision, Quantum Computing
 
 ## Education			        		
-- B.S., Computer Science and Engineering,
-- North South Unversity, Bangladesh (_August 2023_)
+- B.S., Computer Science and Engineering | North South Unversity, Bangladesh | (_August 2023_)
 - CGPA: 3.74/4.00 (**93.5% Marks**)
 - Honours: *magna cum laude* distinction
   
@@ -33,8 +33,9 @@ for Actionable Insights.``** *PLOS ONE* [Q1] [Under Review]
 - Given consultation to students
   
 ## Research Projects
-### (_Undergraduate directed reseasrch_)
-### "EkattorQA: An Open-Source Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."  
+
+### Undergraduate-directed reseasrch
+### _"EkattorQA: An Open-Source Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."_    
 *Supervisor: Dr. Sifat Momen* [Google Scholar](https://scholar.google.com/citations?user=sGVZEaAAAAAJ&hl=en) 
 
 **Abstract**  
@@ -44,8 +45,8 @@ Recent years have seen significant progress in Large Language Models (LLMs) in t
 ![EkattorQA](/assets/img/ekattorblock.png)
 
 
-### (_Undergraduate capstone thesis_)
-### "Secure Image Transmission with Quantum Key distribution and Chaotic system."
+### Undergraduate capstone thesis
+### _"Secure Image Transmission with Quantum Key distribution and Chaotic system."_  
 *Supervisor: Dr. Mahdy Rahman Chowdhury* [Google Scholar](https://scholar.google.com.sg/citations?user=PxNOguMAAAAJ&hl=en)
 
 **Abstract**
@@ -55,8 +56,8 @@ generate critical synchronization parameters via a combination of QKD to achieve
 **Poster**
 ![qkd](/assets/img/qkdposter.png)
 
-### (_Macchine learning research_)
-### "Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."  
+### Machine learning research
+### _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_   
 *Supervisor: Dr. Sifat Momen* [Google Scholar](https://scholar.google.com/citations?user=sGVZEaAAAAAJ&hl=en)  
 
 **Abstract**  
@@ -66,8 +67,20 @@ In recent times, it has been observed that social media exerts a favorable influ
 ![ml1](/assets/img/445ml.jpg)
 
 ## Skils
-**Programming language:** Python, C/C++
-**Frameworks:** TensorFlow, Keras, PyTorch, langchain
-**Libraries:** Scikit-learn, OpenCV, Pandas, Matplotlib, Seaborn
-**Front-end:** HTML, CSS, JavaScript
-**DevOps:** GitHub, Git, LaTeX
+**Programming language:** Python, C/C++ 
+**Frameworks:** TensorFlow, Keras, PyTorch, langchain 
+**Libraries:** Scikit-learn, OpenCV, Pandas, Matplotlib, Seaborn 
+**Front-end:** HTML, CSS, JavaScript 
+**DevOps:** GitHub, Git, LaTeX 
+
+## Specialized Major Courses
+- CSE440 (Artificial Engineering) | Grade: A (GPA 4.00/4.00)
+- CSE445 (Machine Learning) | Grade: A- (GPA 3.70/4.00)
+- CSE465 (Pattern Recognition and Neural Network) | Grade: A (GPA 4.00/4.00)
+- CSE473 (Theory of computation) | Grade: A (GPA 4.00/4.00) 
+
+## AWARDS AND ACHIEVEMENTS
+- Graduated with *magna cum laude* Distinction.
+- Awarded 50% NSU merit-based Scholarship for achieving academic excellence. (Enhanced)
+- Awarded 25% NSU merit-based Scholarship for achieving academic excellence.
+- Talent-pool Scholarship in recognition of excellent results in Junior and Primary Board
