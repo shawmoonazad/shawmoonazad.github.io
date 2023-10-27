@@ -3,8 +3,7 @@
 ## About me 
 I graduated with *manga cum laude* honors from North South University with a Bachelor of Science in Computer Science and Engineering. At the same organization, I work as a Graduate Teaching Assistant as well. In addition, I work as a research assistant for [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/), where I actively work on projects related to applied machine learning and quantum computing, specifically in the areas of quantum key distribution and quantum machine learning.
 
-## Research Interest:
-#### Applied Machine Learning, Natural Language Processing, Computer Vision, Quantum Computing
+#### Research Interest: Applied Machine Learning, Natural Language Processing, Computer Vision, Quantum Computing
 
 ## Education			        		
 - B.S., Computer Science and Engineering,
@@ -23,11 +22,11 @@ for Actionable Insights.``** *PLOS ONE* [Q1] [Under Review]
 - Applied natural language processing to build an LLM-based retrieval question-answering scheme in the context of Bangladeshi history.
 - Applied statistical machine learning to make a consumer behavior prediction-based model using the theory of planned behavior.
 
-**Graduate Teaching Assistant @ Northsouth University  
+**Graduate Teaching Assistant @ North South University  
 (_August 2023 - Present_)**
 - Courses taken: Operating System Design(CSE323) & C programming(CSE115)
 
-**Undergraduate Teaching Assistant @ Northsouth University  
+**Undergraduate Teaching Assistant @ North South University  
 (_June 2022 - August 2023_)**
 - Course taken: Operating System Design(CSE323)
 - Marked Assignments
