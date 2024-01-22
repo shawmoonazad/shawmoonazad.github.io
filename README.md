@@ -14,6 +14,7 @@ I graduated with *manga cum laude* honors from North South University with a Bac
   
 ## Publication
 [1] **Azad MS**, Khan SS, Hossain R, Rahman R, Momen S (2023) *Predictive modeling of consumer purchase behavior on social media: Integrating theory of planned behavior and machine learning for actionable insights.* PLOS ONE 18(12): e0296336. https://doi.org/10.1371/journal.pone.0296336 [**Q1**] [**IF:3.75**] [**H-index:404**]
+[2] Rahman R, **Azad MS**, Hasan MR, Shubha SE, Mahdy MR. *Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement.* arXiv preprint arXiv:2311.18471. 2023 Nov 30.
 
 ## Work Experience
 **Research Assistant @ North South University (_October 2023 - Present_)**
