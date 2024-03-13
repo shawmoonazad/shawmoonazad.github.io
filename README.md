@@ -1,7 +1,7 @@
 # Researcher @ NSU Opticslab
 
 ## About me 
-I graduated with *manga cum laude* honors from North South University with a Bachelor of Science in Computer Science and Engineering. At the same organization, I work as a Graduate Teaching Assistant as well. In addition, I work as a research assistant for [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/), where I actively work on projects related to applied machine learning and quantum computing, specifically in the areas of quantum key distribution and quantum machine learning.
+I graduated with *manga cum laude* honors from North South University with a Bachelor of Science in Computer Science and Engineering. At the same organization, I work as a graduate teaching assistant. In addition, I work as a research assistant at NSU. I conduct research under [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/) and [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/), where I actively work on projects related to applied machine learning and quantum computing, specifically in the areas of quantum key distribution and quantum machine learning.
 
 ## Research Interest 
 #### Applied Machine Learning, Natural Language Processing, Computer Vision, Quantum Computing
