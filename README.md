@@ -84,4 +84,3 @@ In recent times, it has been observed that social media exerts a favorable influ
 - Graduated with *magna cum laude* Distinction.
 - Awarded 50% NSU merit-based Scholarship for achieving academic excellence. (Enhanced)
 - Awarded 25% NSU merit-based Scholarship for achieving academic excellence.
-- Talent-pool Scholarship in recognition of excellent results in Junior and Primary Board
