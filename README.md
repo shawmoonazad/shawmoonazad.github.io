@@ -1,5 +1,5 @@
 # Researcher @ Machine Learning & Quantum Computing
-
+[Google Scholar](https://scholar.google.com/citations?user=qiLaY-AAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/shawmoonazad/)
 
 ## About me 
 I graduated magna cum laude from North South University with a Bachelor of Science in Computer Science and Engineering. My academic journey has been complemented by two years of experience as a teaching assistant, and I am currently a [Research Assistant](https://sites.google.com/view/nsuopticslab/members?authuser=0) at NSU under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/) and [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/).
