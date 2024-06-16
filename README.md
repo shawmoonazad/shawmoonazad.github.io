@@ -1,7 +1,10 @@
 # Researcher @ Machine Learning & Quantum Computing
+[Google Scholar](https://scholar.google.com/citations?user=qiLaY-AAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/shawmoonazad/)
 
 ## About me 
-I graduated with *manga cum laude* honors from North South University with a Bachelor of Science in Computer Science and Engineering. I've worked as a teaching assistant for two years and now working as a [research assistant](https://sites.google.com/view/nsuopticslab/members?authuser=0) at NSU under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/) and [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/). Here, I actively pursue research related to applied machine learning in analyzing and modeling health and economics area. In quantum computing, I've been working in the areas of quantum key distribution and quantum machine learning. Apart from this, I'm also contributing to progressing research facilities in Bangladesh through Mahdy Research Academy as a Research Assistant and Coordinator. Here, I've actively taught research methodologies and domain-specific topics to 800+ students. 
+I graduated magna cum laude from North South University with a Bachelor of Science in Computer Science and Engineering. My academic journey has been complemented by two years of experience as a teaching assistant, and I am currently a[research assistant](https://sites.google.com/view/nsuopticslab/members?authuser=0) at NSU under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/) and[DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/).
+In my current role, I actively engage in research focused on applying machine learning to analyze and model data in health and economics. Additionally, I am involved in research in quantum computing, particularly in quantum key distribution and quantum machine learning.
+Beyond my work at NSU, I contribute to advancing research facilities in Bangladesh through my role as a Research Assistant and Coordinator at the Mahdy Research Academy. Here, I have taught research methodologies and domain-specific topics to over 800 students, helping to cultivate the next generation of researchers in Bangladesh.
 
 ## Research Interest 
 #### Applied Machine Learning, Natural Language Processing, Quantum Key Distribution, Quantum Machine Learning
@@ -16,7 +19,7 @@ I graduated with *manga cum laude* honors from North South University with a Bac
 [1] **Azad MS**, Khan SS, Hossain R, Rahman R, Momen S (2023) *Predictive modeling of consumer purchase behavior on social media: Integrating theory of planned behavior and machine learning for actionable insights.* PLOS ONE 18(12): e0296336. https://doi.org/10.1371/journal.pone.0296336 [**Q1**] [**IF:3.75**] [**H-index:404**]
 
 [2] Rahman R, **Azad MS**, Hasan MR, Shubha SE, Mahdy MR. *Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement.* 
-[**IET Qunatum Communication**] [**Q1**] [**Under Review**] Submitted: 2024, March 10. [arXiv preprint](arXiv:2311.18471.)
+[**IET Qunatum Communication**] [**Q1**] [**Under Review**] Submitted: 2024, March 10. [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471)
 
 ## Work Experience
 **Research Assistant @ North South University (_October 2023 - Present_)**
@@ -69,6 +72,8 @@ generate critical synchronization parameters via a combination of QKD to achieve
 
 **Poster**
 ![qkd](/assets/img/qkdposter.png)
+**Block diagram** 
+![qkd diagram](/assets/img/qkd_diagram.png)
 
 
 ## Skils
