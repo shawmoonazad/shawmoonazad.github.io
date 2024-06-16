@@ -78,7 +78,9 @@ In recent times, it has been observed that social media exerts a favorable influ
 - CSE440 (Artificial Engineering) | Grade: A (GPA 4.00/4.00)
 - CSE445 (Machine Learning) | Grade: A- (GPA 3.70/4.00)
 - CSE465 (Neural Network) | Grade: A (GPA 4.00/4.00)
-- CSE473 (Theory of Computation) | Grade: A (GPA 4.00/4.00) 
+- CSE473 (Theory of Computation) | Grade: A (GPA 4.00/4.00)
+- CSE498 (Directed Research - NLP & RAG) | Grade: A (GPA 4.00/4.00)
+- CSE499 (Senior Design - Quantum Computing) | Grade A: (4.00/4.00)  
 
 ## AWARDS AND ACHIEVEMENTS
 - Graduated with *magna cum laude* Distinction.
