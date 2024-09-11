@@ -58,35 +58,39 @@ promoting approaches), and explainable AI on Human Behavior and Health.
 **Summarized Abstract**  
 This study explores how social media influences consumer buying behavior and proposes a method combining the Theory of Planned Behavior with machine learning to predict purchasing tendencies. Focusing on key factors like attitude, social norms, and perceived behavioral control, the research utilizes eight machine learning models, with gradient boosting emerging as the most accurate. Additionally, Explainable AI (LIME) is used to clarify how the model generates predictions, confirming the high reliability of its results.
 
-**Paper**  
+**Paper:**  
 ![ml1](/assets/img/plos_paper.png)
 
 
 ### _"SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP."_    
 **Md Shawmoon Azad**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
 
-**Summarized Abstract**  
+**Summarized Abstract:**  
 This study examines the relationship between social factors and depression, using machine learning and NLP techniques to analyze depression assessment scales. Survey data from 520 Bangladeshi university students was used to evaluate various models. The support vector machine algorithm achieved the highest accuracy (99.14%) with the PHQ9 scale, while the stacking ensemble model performed best for social factors. BioBERT outshined other NLP models with 90.34% accuracy, and traditional machine learning models excelled in tabular data analysis. LIME was used to ensure the interpretability of the top models.
 
-**Research Methodology**  
+**Research Methodology:**  
 ![ml2](/assets/img/Depression_Methodology.png)
 
 
 ### Quantum computing research | 
 ### _"Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement."_
 Raiyan Rahman,**Md Shawmoon Azad**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
-**Summarized Abstract**  
+
+**Summarized Abstract:**  
 This study addresses security challenges from quantum computing by combining the E91 quantum key distribution protocol with logistic chaotic maps to create a secure image transmission scheme. The framework detects eavesdropping using entanglement tests and chaos encryption, ensuring key confidentiality. Simulations confirm improved encryption efficiency, making this approach a strong candidate for securing communications in fields like healthcare and defense against future quantum threats.
-**Block diagram** 
+
+**Research Methodology:** 
 ![qkd1](/assets/img/qkd_diagram.png)
 
 
 ### _"Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security."_
 Arman Sykot, **Md Shawmoon Azad**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
-**Summarized Abstract**  
+**Summarized Abstract:**  
 The study presents a cryptographic system that secures steganographic images by combining Quantum Key Distribution (QKD) with traditional encryption. The E91 QKD protocol generates a shared secret key, which is hashed using SHA for use in AES encryption. This system effectively encrypts steganographic images, showing high randomness and security, with resilience to differential attacks across different pixel densities. By merging quantum and classical cryptographic methods, this approach offers a robust solution against both quantum and classical threats, suitable for applications requiring stringent security.
-**Block diagram** 
+
+**Research Methodology:** 
 ![qkd2](/assets/img/QKD_Stega.png)
+
 
 
 ### Undergraduate-directed research | 
@@ -96,8 +100,8 @@ The study presents a cryptographic system that secures steganographic images by 
 **Abstract**  
 Recent advancements in large language models (LLMs) have greatly improved their performance in question-answering tasks. However, these models still struggle with issues like hallucinations, misinformation, and inconsistencies, especially when applied to domains with limited training data. This is particularly concerning for sensitive topics such as history, where accuracy and reliability are essential. Although fine-tuning LLMs on diverse datasets can enhance domain-specific performance, it is often expensive and resource-intensive. In response, we introduce EkattorQA, a publicly available conversational AI-based question-answering system specifically designed for the historical context of Bangladesh. EkattorQA combines the Stable Vicuna LLM with expert-verified historical data to produce precise and contextually relevant answers. We conducted a comprehensive evaluation of EkattorQA against other LLMs, including ChatGPT, Vicuna, and Koala, through human assessments of questions with varying levels of complexity. Responses were rated on a Likert scale from 1 to 5, and EkattorQA consistently demonstrated high accuracy across all difficulty levels. Our results show that EkattorQA delivers accurate, high-quality answers, and by using open-source LLMs and external data, it offers a scalable, cost-effective solution for domain-specific question-answering tasks. 
 
-**Methodology Block diagram**  
-![EkattorQA](/assets/img/ekattorblock.png)
+**Research Methodology:**  
+![EkattorQA](/assets/img/EkattorQA_methodology.png)
 
 
 ### Undergraduate capstone thesis | 
@@ -108,7 +112,7 @@ Recent advancements in large language models (LLMs) have greatly improved their 
 The rise of quantum computers with an increasing number of qubits will make secure data transmission vulnerable. Quantum computers have the potential to compromise the security of current encryption algorithms used for data transmission. This study investigates the integration of quantum communication systems, such as Quantum Key Distribution (QKD), with chaos-based encryption techniques to overcome this issue. Our experimental work includes the successful transmission of images over a range of chaotic parameters and an evaluation of the security and robustness of transmissions. We utilized the logistic map transmitter and receiver models to generate chaotic signals. Data is transmitted securely over a classical channel using the chaotic communication system. Additionally, a quantum channel is used to securely
 generate critical synchronization parameters via a combination of QKD to achieve an end-to-end encrypted optical communications link.  
 
-**Poster**
+**Poster:**
 ![qkd](/assets/img/qkdposter.png)
 
 
