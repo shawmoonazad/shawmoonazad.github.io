@@ -2,8 +2,14 @@
 [Google Scholar](https://scholar.google.com/citations?user=qiLaY-AAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/shawmoonazad/) | [CV](https://drive.google.com/file/d/1ukYbyeH7MrgNLBr44lKCyIObB7KMmCBf/view?usp=drive_link)
 
 ## About me 
-I am a magna cum laude graduate in Computer Science and Engineering from North South University, with a focus on applied machine learning and quantum computing. My research includes predictive modeling, mental health diagnostics using NLP, and quantum cryptography, with several publications in top-tier journals. My academic journey has been complemented by two years of experience as a Teaching Assistant at the ECE department, and I am currently a [Research Assistant](https://sites.google.com/view/nsuopticslab/members?authuser=0) at NSU under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/) and [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/).
-Beyond NSU, I am also a Research Assistant and Coordinator at the [Mahdy Research Academy](https://sites.google.com/view/onlinecoursebymdy/online-research-course-part-a?authuser=0), where I’ve contributed to strengthening Bangladesh’s research infrastructure. I have taught over 800 students, focusing on research methodologies and topics related to machine learning and quantum computing, helping to cultivate the next generation of researchers in our country.
+I am a *magna cum laude graduate* in Computer Science and Engineering from North South University(NSU), with a focus on applied machine learning and quantum computing. My research includes Applied machine learning in predictive modeling, mental health diagnostics using NLP, and hybrid quantum-classical cryptographic systems. 
+
+My academic journey has been complemented by two years of experience as a Teaching Assistant at the ECE department at NSU.
+
+I am currently a [Research Assistant](https://sites.google.com/view/nsuopticslab/members?authuser=0) at NSU under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/) and [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/). 
+I have published several in top-tier Q1-indexed journals.
+
+Beyond NSU, I am also a Research Instructor and Coordinator at the [Mahdy Research Academy](https://sites.google.com/view/onlinecoursebymdy/online-research-course-part-a?authuser=0), where I’ve contributed to strengthening Bangladesh’s research infrastructure. I have taught over 800 students, focusing on research methodologies and topics related to machine learning and quantum computing, helping to cultivate the next generation of researchers in our country.
 
 ## Research Interest 
 #### Applied Machine Learning, Natural Language Processing, Explainable AI, Quantum Cryptography, Quantum Machine Learning
@@ -15,20 +21,20 @@ Beyond NSU, I am also a Research Assistant and Coordinator at the [Mahdy Researc
 - Honours: *magna cum laude*
   
 ## Publication
-[1.] Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned
-Behavior and Machine Learning for Actionable Insights. Plos one 18.12 (2023): e0296336 [Q1-indexed] [https://doi.org/10.1371/journal.pone.0296336](https://doi.org/10.1371/journal.pone.0296336) 
-**Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
-
-[2.] SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.
-Array (2024) [under review] [Q1-indexed]
+[1.] SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.
+Array, 25, 100372. [https://doi.org/10.1016/j.array.2024.100372](https://doi.org/10.1016/j.array.2024.100372) [Q1-indexed] [Impact Factor: 2.7]
 **Md Shawmoon Azad**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
 
+[2.] Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned
+Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336 [Q1-indexed] [https://doi.org/10.1371/journal.pone.0296336](https://doi.org/10.1371/journal.pone.0296336) [Impact Factor: 3.7]
+**Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
+
 [3.] Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using
-entanglement. IET Quantum Communication (2024) [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471) [Q1-indexed]
+entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471) [Q1-indexed]
 Raiyan Rahman,**Md Shawmoon Azad**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
 
 [4.] Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to
-Enhance Steganographic Security. [Preprint](https://arxiv.org/abs/2408.06964) 
+Enhance Steganographic Security.*Alexandria Engineering Journal (2024)* [under review] [Preprint](https://arxiv.org/abs/2408.06964) 
 Arman Sykot, **Md Shawmoon Azad**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
 
 
@@ -52,15 +58,6 @@ promoting approaches), and explainable AI on Human Behavior and Health.
 ## Research works
 
 ### Machine learning research | 
-### _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_
-**Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
-
-**Summarized Abstract**  
-This study explores how social media influences consumer buying behavior and proposes a method combining the Theory of Planned Behavior with machine learning to predict purchasing tendencies. Focusing on key factors like attitude, social norms, and perceived behavioral control, the research utilizes eight machine learning models, with gradient boosting emerging as the most accurate. Additionally, Explainable AI (LIME) is used to clarify how the model generates predictions, confirming the high reliability of its results.
-
-**Paper:**  
-![ml1](/assets/img/plos_paper.png)
-
 
 ### _"SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP."_    
 **Md Shawmoon Azad**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
@@ -71,8 +68,18 @@ This study examines the relationship between social factors and depression, usin
 **Research Methodology:**  
 ![ml2](/assets/img/Depression_Methodology.png)
 
+### _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_
+**Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
+
+**Summarized Abstract**  
+This study explores how social media influences consumer buying behavior and proposes a method combining the Theory of Planned Behavior with machine learning to predict purchasing tendencies. Focusing on key factors like attitude, social norms, and perceived behavioral control, the research utilizes eight machine learning models, with gradient boosting emerging as the most accurate. Additionally, Explainable AI (LIME) is used to clarify how the model generates predictions, confirming the high reliability of its results.
+
+**Paper:**  
+![ml1](/assets/img/plos_paper.png)
+
 
 ### Quantum computing research | 
+
 ### _"Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement."_
 Raiyan Rahman,**Md Shawmoon Azad**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
 
@@ -93,7 +100,8 @@ The study presents a cryptographic system that secures steganographic images by 
 
 
 
-### Undergraduate-directed research | 
+### Undergraduate-directed research (Thesis) |
+
 ### _"EkattorQA: A Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."_    
 *Supervisor: Dr. Sifat Momen* [Google Scholar](https://scholar.google.com/citations?user=sGVZEaAAAAAJ&hl=en) 
 
@@ -104,7 +112,7 @@ Recent advancements in large language models (LLMs) have greatly improved their 
 ![EkattorQA](/assets/img/EkattorQA_methodology.png)
 
 
-### Undergraduate capstone thesis | 
+### Undergraduate capstone project | 
 ### _"Secure Image Transmission with Quantum Key distribution and Chaotic system."_  
 *Supervisor: Dr. Mahdy Rahman Chowdhury* [Google Scholar](https://scholar.google.com.sg/citations?user=PxNOguMAAAAJ&hl=en)
 
@@ -138,3 +146,4 @@ generate critical synchronization parameters via a combination of QKD to achieve
 - Graduated with *magna cum laude* Distinction.
 - Awarded 50% NSU merit-based Scholarship for achieving academic excellence. (Enhanced)
 - Awarded 25% NSU merit-based Scholarship for achieving academic excellence.
+- Worked on Two NSU CTRGC-funded projects.
