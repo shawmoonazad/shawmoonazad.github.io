@@ -1,108 +1,95 @@
-# Researcher @ Machine Learning & Quantum Computing
+# Researcher @ Quantum & AI
 [Google Scholar](https://scholar.google.com/citations?user=qiLaY-AAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/shawmoonazad/) | [CV](https://drive.google.com/file/d/1ukYbyeH7MrgNLBr44lKCyIObB7KMmCBf/view?usp=drive_link)
 
-## About me 
-I am a *magna cum laude graduate* in Computer Science and Engineering from North South University(NSU), with a focus on applied machine learning and quantum computing. My research includes Applied machine learning in predictive modeling, mental health diagnostics using NLP, and hybrid quantum-classical cryptographic systems. 
+## Bio 
+Hello, My Name is Md Shawmoon Azad. I am currently working as a research assistant at [Optics-Quantum and AI Lab](https://sites.google.com/view/nsuopticslab/members?authuser=0), North South University(NSU), under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/). 
+I graduated with *magna cum laude* in Computer Science and Engineering from NSU. My research work spans secure quantum protocols, hybrid quantum-classical frameworks, and AI-driven applications.
+Beyond NSU, I am also working as a Research Instructor and Coordinator at the [Mahdy Research Academy](https://sites.google.com/view/onlinecoursebymdy/online-research-course-part-a?authuser=0), an EdTech Research Platform (1st in Bangladesh). I have taught over 800 students, focusing on research methodologies and topics related to machine learning and quantum computing, helping to cultivate the next generation of researchers in our country.
+Moreover, I have also been a research assistant under [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/). I have published several in top-tier Q1-indexed journals focusing on Machine Learning and NLP applications in Mental Health and Human Behavior. 
+Furthermore, I have also worked as a Teaching Assistant at the ECE department at NSU for Two years. There, I have taught two courses: Operating System Design and C Programming Language.
 
-My academic journey has been complemented by two years of experience as a Teaching Assistant at the ECE department at NSU.
-
-I am currently a [Research Assistant](https://sites.google.com/view/nsuopticslab/members?authuser=0) at NSU under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/) and [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/). 
-I have published several in top-tier Q1-indexed journals.
-
-Beyond NSU, I am also a Research Instructor and Coordinator at the [Mahdy Research Academy](https://sites.google.com/view/onlinecoursebymdy/online-research-course-part-a?authuser=0), where I’ve contributed to strengthening Bangladesh’s research infrastructure. I have taught over 800 students, focusing on research methodologies and topics related to machine learning and quantum computing, helping to cultivate the next generation of researchers in our country.
+#### I am actively looking for a Ph.D. Position in Quantum Computing / AI-driven applications 
 
 ## Research Interest 
-#### Applied Machine Learning, Natural Language Processing, Explainable AI, Quantum Cryptography, Quantum Machine Learning
+My research interest broadly lies in two-fold: (I) Quantum computing and (II) Machine Learning. 
+
+In **Quantum Computing research**, I am particularly interested in the area of Quantum Communication & Cryptography, Hybrid Quantum-Classical Frameworks, Quantum Machine Learning, and Quantum Applications.
+
+In **AI-driven research**, I am interested in applying machine learning, NLP, explainable AI, and Human-Computer Interaction in predictive modeling and mental health diagnostics.
 
 ## Education			        		
-- B.Sc in Computer Science and Engineering
-- North South Unversity, Bangladesh (_June 2023_)
-- CGPA: 3.74/4.00 (**93.5%**)
-- Honours: *magna cum laude*
+I completed my Bachelor of Science in Computer Science and Engineering from North South University, Bangladesh, in June 2023 (Degree commencement in December 2024). 
+I was honored *magna cum laude* with CGPA: 3.74/4.00 (**93.5% marks**, Top 5%).
+
   
-## Publication
-[1.] SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.
-Array, 25, 100372. [https://doi.org/10.1016/j.array.2024.100372](https://doi.org/10.1016/j.array.2024.100372) [Q1-indexed] [Impact Factor: 2.7]
-**Md Shawmoon Azad**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
+## News and Publication
 
-[2.] Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned
-Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336 [Q1-indexed] [https://doi.org/10.1371/journal.pone.0296336](https://doi.org/10.1371/journal.pone.0296336) [Impact Factor: 3.7]
-**Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
+[2025/15/3] Currently working on "Enhancing Cloud Storage Security with Quantum Key Distribution and Post-Quantum Cryptography Using Custom Proxy Re-Encryption."
 
-[3.] Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using
-entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471) [Q1-indexed]
-Raiyan Rahman,**Md Shawmoon Azad**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
+[2025/10/3] Secured Multiparty Quantum Communication Protocol Utilizing W State for Imperfect Channels submitted to _Optica Quantum_
+Authors: Rayhan Kabir Kahan, MFS Titu, **[Md Shawmoon Azad]**, M.R.C. Mahdy.
 
-[4.] Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to
-Enhance Steganographic Security.*Alexandria Engineering Journal (2024)* [under review] [Preprint](https://arxiv.org/abs/2408.06964) 
-Arman Sykot, **Md Shawmoon Azad**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
+[2025/5/1] Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to
+Enhance Steganographic Security.*AAEJ, 121, 167-182.* **Q1-indexed, Impact Factor: 7.7**. [Paper Link](https://www.sciencedirect.com/science/article/pii/S1110016825002339)
+Authors: Arman Sykot, **[Md Shawmoon Azad]**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
 
+[2025/3/1] SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.
+Array, 25, 100372. **Q1-indexed, Impact Factor: 4.0**. [Paper Link](https://doi.org/10.1016/j.array.2024.100372)
+Authors: **[Md Shawmoon Azad]**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
 
+[2023/12/27] Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned
+Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336. **Q1-indexed, Impact Factor 3.75** [Paper Link](https://doi.org/10.1371/journal.pone.0296336) 
+Authors: **[Md Shawmoon Azad]**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
 
-## Work Experience
-**Research Assistant @ North South University (_October 2023 - Present_)**
-- Applied quantum computing to build a secure image transmission protocol scheme using quantum key distribution protocols.
-- Conducted research on applied machine learning, NLP (fine-tuning BERT-based models and generative llms with
-promoting approaches), and explainable AI on Human Behavior and Health.
+[2023/11/30] Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using
+entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471)
+Authors: Raiyan Rahman,**[Md Shawmoon Azad]**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
 
-**Graduate Teaching Assistant @ North South University  
-(_August 2023 - Present_)**
-- Courses taken: Operating System Design(CSE323) & C programming(CSE115)
-
-**Undergraduate Teaching Assistant @ North South University  
-(_June 2022 - August 2023_)**
-- Course taken: Operating System Design(CSE323)
-- Marked Assignments
-- Given consultation to students
   
-## Research works
-
-### Machine learning research | 
-
-### _"SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP."_    
-**Md Shawmoon Azad**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
-
-**Summarized Abstract:**  
-This study examines the relationship between social factors and depression, using machine learning and NLP techniques to analyze depression assessment scales. Survey data from 520 Bangladeshi university students was used to evaluate various models. The support vector machine algorithm achieved the highest accuracy (99.14%) with the PHQ9 scale, while the stacking ensemble model performed best for social factors. BioBERT outshined other NLP models with 90.34% accuracy, and traditional machine learning models excelled in tabular data analysis. LIME was used to ensure the interpretability of the top models.
-
-**Research Methodology:**  
-![ml2](/assets/img/Depression_Methodology.png)
-
-### _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_
-**Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
-
-**Summarized Abstract**  
-This study explores how social media influences consumer buying behavior and proposes a method combining the Theory of Planned Behavior with machine learning to predict purchasing tendencies. Focusing on key factors like attitude, social norms, and perceived behavioral control, the research utilizes eight machine learning models, with gradient boosting emerging as the most accurate. Additionally, Explainable AI (LIME) is used to clarify how the model generates predictions, confirming the high reliability of its results.
-
-**Paper:**  
-![ml1](/assets/img/plos_paper.png)
-
+## My Research Works in Brief
 
 ### Quantum computing research | 
 
-### _"Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement."_
-Raiyan Rahman,**Md Shawmoon Azad**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
+#### _"Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement."_
 
-**Summarized Abstract:**  
+**TL;DR:**  
 This study addresses security challenges from quantum computing by combining the E91 quantum key distribution protocol with logistic chaotic maps to create a secure image transmission scheme. The framework detects eavesdropping using entanglement tests and chaos encryption, ensuring key confidentiality. Simulations confirm improved encryption efficiency, making this approach a strong candidate for securing communications in fields like healthcare and defense against future quantum threats.
 
 **Research Methodology:** 
 ![qkd1](/assets/img/qkd_diagram.png)
 
 
-### _"Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security."_
-Arman Sykot, **Md Shawmoon Azad**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
-**Summarized Abstract:**  
+#### _"Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security."_
+
+**TL;DR**  
 The study presents a cryptographic system that secures steganographic images by combining Quantum Key Distribution (QKD) with traditional encryption. The E91 QKD protocol generates a shared secret key, which is hashed using SHA for use in AES encryption. This system effectively encrypts steganographic images, showing high randomness and security, with resilience to differential attacks across different pixel densities. By merging quantum and classical cryptographic methods, this approach offers a robust solution against both quantum and classical threats, suitable for applications requiring stringent security.
 
 **Research Methodology:** 
 ![qkd2](/assets/img/QKD_Stega.png)
 
 
+### Machine learning research | 
+
+#### _"SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP."_    
+
+**TL;DR:**  
+This study examines the relationship between social factors and depression, using machine learning and NLP techniques to analyze depression assessment scales. Survey data from 520 Bangladeshi university students was used to evaluate various models. The support vector machine algorithm achieved the highest accuracy (99.14%) with the PHQ9 scale, while the stacking ensemble model performed best for social factors. BioBERT outshined other NLP models with 90.34% accuracy, and traditional machine learning models excelled in tabular data analysis. LIME was used to ensure the interpretability of the top models.
+
+**Research Methodology:**  
+![ml2](/assets/img/Depression_Methodology.png)
+
+#### _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_
+
+**TL;DR**  
+This study explores how social media influences consumer buying behavior and proposes a method combining the Theory of Planned Behavior with machine learning to predict purchasing tendencies. Focusing on key factors like attitude, social norms, and perceived behavioral control, the research utilizes eight machine learning models, with gradient boosting emerging as the most accurate. Additionally, Explainable AI (LIME) is used to clarify how the model generates predictions, confirming the high reliability of its results.
+
+**Paper:**  
+![ml1](/assets/img/plos_paper.png)
+
 
 ### Undergraduate-directed research (Thesis) |
 
-### _"EkattorQA: A Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."_    
+#### _"EkattorQA: A Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."_    
 *Supervisor: Dr. Sifat Momen* [Google Scholar](https://scholar.google.com/citations?user=sGVZEaAAAAAJ&hl=en) 
 
 **Abstract**  
@@ -113,13 +100,8 @@ Recent advancements in large language models (LLMs) have greatly improved their 
 
 
 ### Undergraduate capstone project | 
-### _"Secure Image Transmission with Quantum Key distribution and Chaotic system."_  
+#### _"Secure Image Transmission with Quantum Key distribution and Chaotic system."_  
 *Supervisor: Dr. Mahdy Rahman Chowdhury* [Google Scholar](https://scholar.google.com.sg/citations?user=PxNOguMAAAAJ&hl=en)
-
-**Abstract**
-The rise of quantum computers with an increasing number of qubits will make secure data transmission vulnerable. Quantum computers have the potential to compromise the security of current encryption algorithms used for data transmission. This study investigates the integration of quantum communication systems, such as Quantum Key Distribution (QKD), with chaos-based encryption techniques to overcome this issue. Our experimental work includes the successful transmission of images over a range of chaotic parameters and an evaluation of the security and robustness of transmissions. We utilized the logistic map transmitter and receiver models to generate chaotic signals. Data is transmitted securely over a classical channel using the chaotic communication system. Additionally, a quantum channel is used to securely
-generate critical synchronization parameters via a combination of QKD to achieve an end-to-end encrypted optical communications link.  
-
 **Poster:**
 ![qkd](/assets/img/qkdposter.png)
 
@@ -140,10 +122,12 @@ generate critical synchronization parameters via a combination of QKD to achieve
 - CSE465 (Neural Network) | Grade: A (GPA 4.00/4.00)
 - CSE473 (Theory of Computation) | Grade: A (GPA 4.00/4.00)
 - CSE498 (Directed Research - NLP & RAG) | Grade: A (GPA 4.00/4.00)
-- CSE499 (Senior Design - Quantum Computing) | Grade A: (4.00/4.00)  
+- CSE499A (Senior Design - Quantum Computing) | Grade A: (4.00/4.00)
+- CSE499B (Senior Design - Quantum Computing) | Grade A: (4.00/4.00)   
 
 ## AWARDS AND ACHIEVEMENTS
-- Graduated with *magna cum laude* Distinction.
+- Awared *magna cum laude* Distinction.
+- Top 10 out of 104 teams, Innovation Challenge 13, NSU ACM
 - Awarded 50% NSU merit-based Scholarship for achieving academic excellence. (Enhanced)
 - Awarded 25% NSU merit-based Scholarship for achieving academic excellence.
-- Worked on Two NSU CTRGC-funded projects.
+- Worked on Four ($22500) NSU CTRGC-funded projects.
