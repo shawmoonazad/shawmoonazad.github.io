@@ -30,7 +30,7 @@ Currently working on "Enhancing Cloud Storage Security with Quantum Key Distribu
 **[2025/10/3]**
 Secured Multiparty Quantum Communication Protocol Utilizing W State for Imperfect Channels submitted to _Optica Quantum_
 
-[2025/5/1] 
+**[2025/5/1]**
 Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security. *AAEJ, 121, 167-182.* **Q1-indexed, Impact Factor: 7.7**. [Paper Link](https://www.sciencedirect.com/science/article/pii/S1110016825002339)
 
 **[2025/3/1]** 
