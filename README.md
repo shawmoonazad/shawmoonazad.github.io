@@ -37,7 +37,7 @@ Multi-Layered Security System: Integrating Quantum Key Distribution with Classic
 SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP. Array, 25, 100372. **Q1-indexed, Impact Factor: 4.0**. [Paper Link](https://doi.org/10.1016/j.array.2024.100372)
 
 **[2023/12/27]** 
-Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336. **Q1-indexed, Impact Factor 3.75** [Paper Link](https://doi.org/10.1371/journal.pone.0296336) 
+Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336. <br> **Q1-indexed, Impact Factor 3.75** [Paper Link](https://doi.org/10.1371/journal.pone.0296336) 
 
 **[2023/11/30]** 
 Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471)
