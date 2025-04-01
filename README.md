@@ -10,7 +10,7 @@ Furthermore, I have also worked as a Teaching Assistant at the ECE department at
 
 #### I am actively looking for a Ph.D. Position in Quantum Computing / AI-driven applications 
 
-## Research Interest 
+## My Research Interest 
 My research interest broadly lies in two-fold: (I) Quantum computing and (II) Machine Learning. 
 
 In **Quantum Computing research**, I am particularly interested in the area of Quantum Communication & Cryptography, Hybrid Quantum-Classical Frameworks, Quantum Machine Learning, and Quantum Applications.
@@ -25,30 +25,38 @@ I was honored *magna cum laude* with CGPA: 3.74/4.00 (**93.5% marks**, Top 5%).
 ## News and Publication
 
 [2025/15/3] 
+
 Currently working on "Enhancing Cloud Storage Security with Quantum Key Distribution and Post-Quantum Cryptography Using Custom Proxy Re-Encryption" and "LSC-XAI: A Hybrid Explainable AI Framework for Predicting and Mitigating Healthcare Worker Attrition" [Projects from Research Academy]
 
 [2025/10/3] 
+
 Secured Multiparty Quantum Communication Protocol Utilizing W State for Imperfect Channels submitted to _Optica Quantum_
 Authors: Rayhan Kabir Kahan, MFS Titu, **Md Shawmoon Azad**, M.R.C. Mahdy.
 
 [2025/5/1] 
-Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to
-Enhance Steganographic Security.*AAEJ, 121, 167-182.* **Q1-indexed, Impact Factor: 7.7**. [Paper Link](https://www.sciencedirect.com/science/article/pii/S1110016825002339)
+
+Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security.*AAEJ, 121, 167-182.* **Q1-indexed, Impact Factor: 7.7**. [Paper Link](https://www.sciencedirect.com/science/article/pii/S1110016825002339)
+
 Authors: Arman Sykot, **Md Shawmoon Azad**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
 
 [2025/3/1] 
-SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.
-Array, 25, 100372. **Q1-indexed, Impact Factor: 4.0**. [Paper Link](https://doi.org/10.1016/j.array.2024.100372)
+
+SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP. Array, 25, 100372. **Q1-indexed, Impact Factor: 4.0**. [Paper Link](https://doi.org/10.1016/j.array.2024.100372)
+
 Authors: **Md Shawmoon Azad**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
 
 [2023/12/27] 
-Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned
-Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336. **Q1-indexed, Impact Factor 3.75** [Paper Link](https://doi.org/10.1371/journal.pone.0296336) 
+
+Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336. 
+
+**Q1-indexed, Impact Factor 3.75** [Paper Link](https://doi.org/10.1371/journal.pone.0296336) 
+
 Authors: **Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
 
 [2023/11/30] 
-Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using
-entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471)
+
+Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471)
+
 Authors: Raiyan Rahman,**Md Shawmoon Azad**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
 
   
