@@ -24,33 +24,39 @@ I was honored *magna cum laude* with CGPA: 3.74/4.00 (**93.5% marks**, Top 5%).
   
 ## News and Publication
 
-[2025/15/3] Currently working on "Enhancing Cloud Storage Security with Quantum Key Distribution and Post-Quantum Cryptography Using Custom Proxy Re-Encryption."
+[2025/15/3] 
+Currently working on "Enhancing Cloud Storage Security with Quantum Key Distribution and Post-Quantum Cryptography Using Custom Proxy Re-Encryption" and "LSC-XAI: A Hybrid Explainable AI Framework for Predicting and Mitigating Healthcare Worker Attrition" [Projects from Research Academy]
 
-[2025/10/3] Secured Multiparty Quantum Communication Protocol Utilizing W State for Imperfect Channels submitted to _Optica Quantum_
-Authors: Rayhan Kabir Kahan, MFS Titu, **[Md Shawmoon Azad]**, M.R.C. Mahdy.
+[2025/10/3] 
+Secured Multiparty Quantum Communication Protocol Utilizing W State for Imperfect Channels submitted to _Optica Quantum_
+Authors: Rayhan Kabir Kahan, MFS Titu, **Md Shawmoon Azad**, M.R.C. Mahdy.
 
-[2025/5/1] Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to
+[2025/5/1] 
+Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to
 Enhance Steganographic Security.*AAEJ, 121, 167-182.* **Q1-indexed, Impact Factor: 7.7**. [Paper Link](https://www.sciencedirect.com/science/article/pii/S1110016825002339)
-Authors: Arman Sykot, **[Md Shawmoon Azad]**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
+Authors: Arman Sykot, **Md Shawmoon Azad**, Wahida Rahman Tanha, BM Monjur Morshed, Syed Emad Uddin Shubha, M.R.C. Mahdy.
 
-[2025/3/1] SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.
+[2025/3/1] 
+SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.
 Array, 25, 100372. **Q1-indexed, Impact Factor: 4.0**. [Paper Link](https://doi.org/10.1016/j.array.2024.100372)
-Authors: **[Md Shawmoon Azad]**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
+Authors: **Md Shawmoon Azad**, Shakirul Islam Leeon, Riasat Khan, Nabeel Mohammed, Sifat Momen.
 
-[2023/12/27] Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned
+[2023/12/27] 
+Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned
 Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336. **Q1-indexed, Impact Factor 3.75** [Paper Link](https://doi.org/10.1371/journal.pone.0296336) 
-Authors: **[Md Shawmoon Azad]**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
+Authors: **Md Shawmoon Azad**, Shadman Sakib Khan, Rezwan Hossain, Raiyan Rahman, Sifat Momen.
 
-[2023/11/30] Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using
+[2023/11/30] 
+Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using
 entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471)
-Authors: Raiyan Rahman,**[Md Shawmoon Azad]**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
+Authors: Raiyan Rahman,**Md Shawmoon Azad**, Mohammed Rakibul Hasan, Syed Emad Uddin Shubha, M.R.C.Mahdy.
 
   
 ## My Research Works in Brief
 
 ### Quantum computing research | 
 
-#### _"Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement."_
+#### [1] _"Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement."_
 
 **TL;DR:**  
 This study addresses security challenges from quantum computing by combining the E91 quantum key distribution protocol with logistic chaotic maps to create a secure image transmission scheme. The framework detects eavesdropping using entanglement tests and chaos encryption, ensuring key confidentiality. Simulations confirm improved encryption efficiency, making this approach a strong candidate for securing communications in fields like healthcare and defense against future quantum threats.
@@ -59,7 +65,7 @@ This study addresses security challenges from quantum computing by combining the
 ![qkd1](/assets/img/qkd_diagram.png)
 
 
-#### _"Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security."_
+#### [2] _"Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security."_
 
 **TL;DR**  
 The study presents a cryptographic system that secures steganographic images by combining Quantum Key Distribution (QKD) with traditional encryption. The E91 QKD protocol generates a shared secret key, which is hashed using SHA for use in AES encryption. This system effectively encrypts steganographic images, showing high randomness and security, with resilience to differential attacks across different pixel densities. By merging quantum and classical cryptographic methods, this approach offers a robust solution against both quantum and classical threats, suitable for applications requiring stringent security.
@@ -70,7 +76,7 @@ The study presents a cryptographic system that secures steganographic images by 
 
 ### Machine learning research | 
 
-#### _"SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP."_    
+#### [1] _"SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP."_    
 
 **TL;DR:**  
 This study examines the relationship between social factors and depression, using machine learning and NLP techniques to analyze depression assessment scales. Survey data from 520 Bangladeshi university students was used to evaluate various models. The support vector machine algorithm achieved the highest accuracy (99.14%) with the PHQ9 scale, while the stacking ensemble model performed best for social factors. BioBERT outshined other NLP models with 90.34% accuracy, and traditional machine learning models excelled in tabular data analysis. LIME was used to ensure the interpretability of the top models.
@@ -78,7 +84,7 @@ This study examines the relationship between social factors and depression, usin
 **Research Methodology:**  
 ![ml2](/assets/img/Depression_Methodology.png)
 
-#### _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_
+#### [2] _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_
 
 **TL;DR**  
 This study explores how social media influences consumer buying behavior and proposes a method combining the Theory of Planned Behavior with machine learning to predict purchasing tendencies. Focusing on key factors like attitude, social norms, and perceived behavioral control, the research utilizes eight machine learning models, with gradient boosting emerging as the most accurate. Additionally, Explainable AI (LIME) is used to clarify how the model generates predictions, confirming the high reliability of its results.
@@ -89,7 +95,7 @@ This study explores how social media influences consumer buying behavior and pro
 
 ### Undergraduate-directed research (Thesis) |
 
-#### _"EkattorQA: A Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."_    
+#### [1] _"EkattorQA: A Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."_    
 *Supervisor: Dr. Sifat Momen* [Google Scholar](https://scholar.google.com/citations?user=sGVZEaAAAAAJ&hl=en) 
 
 **Abstract**  
@@ -100,7 +106,7 @@ Recent advancements in large language models (LLMs) have greatly improved their 
 
 
 ### Undergraduate capstone project | 
-#### _"Secure Image Transmission with Quantum Key distribution and Chaotic system."_  
+#### [1] _"Secure Image Transmission with Quantum Key distribution and Chaotic system."_  
 *Supervisor: Dr. Mahdy Rahman Chowdhury* [Google Scholar](https://scholar.google.com.sg/citations?user=PxNOguMAAAAJ&hl=en)
 **Poster:**
 ![qkd](/assets/img/qkdposter.png)
