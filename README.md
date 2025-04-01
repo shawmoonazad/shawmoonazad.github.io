@@ -3,10 +3,10 @@
 
 ## Who Am I? 
 Hello, My Name is Md Shawmoon Azad. I am currently working as a **Research Assistant** at [Optics-Quantum and AI Lab](https://sites.google.com/view/nsuopticslab/members?authuser=0), North South University(NSU), under the supervision of [DR. MAHDY RAHMAN CHOWDHURY](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/). 
-<br>I graduated with *magna cum laude* in **Computer Science and Engineering** from NSU. My research work spans secure quantum protocols, hybrid quantum-classical frameworks, and AI-driven applications.
-<br>Additionaly, I have also been a research assistant under [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/). 
-<br>So far, I have published several top-tier Q1-indexed high-impact journal articles focusing on Quantum Computing, Machine Learning, and NLP.
-<br>Furthermore, I have worked as a **Teaching Assistant** at the ECE department at NSU for two years. There, I have taught two courses: Operating System Design and C Programming Language.
+<br>I graduated with *magna cum laude* in **Computer Science and Engineering** from NSU. 
+<br> Additionally, I have also been a research assistant under [DR. SIFAT MOMEN](http://ece.northsouth.edu/people/dr-sifat-momen/). 
+<br>So far, I have published several top-tier Q1-indexed high-impact journal articles focusing on secure quantum entanglement-based protocols, hybrid quantum-classical cryptographic frameworks, and AI-driven applications in Mental Health.
+<br>Furthermore, I have worked as a **Teaching Assistant** at the ECE department at NSU for two years. There, I have taught two courses: **Operating System Design** and C **Programming Language.**
 <br>Beyond NSU, I am also working as a Research Instructor and Coordinator at the [Mahdy Research Academy](https://sites.google.com/view/onlinecoursebymdy/online-research-course-part-a?authuser=0), an **EdTech Research Platform** (1st in Bangladesh). I have **taught over 800 students**, focusing on research methodologies and topics related to machine learning and quantum computing, helping to cultivate the next generation of researchers in our country.
 
 #### I am actively looking for a Ph.D. Position in Quantum Computing / AI-driven applications 
