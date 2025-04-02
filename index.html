@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Md Shawmoon Azad, a researcher in Quantum Computing &amp; AI." />
+  <title>Md Shawmoon Azad - Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* -------------------------------------------------------
+       NEW THEME COLORS & BASE STYLES
+    --------------------------------------------------------- */
+    :root {
+      --clr-dark: #343a40;         /* Dark header & footer */
+      --clr-light: #f8f9fa;        /* Light body background */
+      --clr-text: #212529;         /* Main text color */
+      --clr-blue: #007BFF;         /* Accent blue for links */
+      --transition: 0.3s ease;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Smooth scroll for in-page navigation */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: var(--clr-light);
+      color: var(--clr-text);
+      line-height: 1.6;
+    }
+
+    /* Global link styling using accent blue */
+    a {
+      text-decoration: none;
+      color: var(--clr-blue);
+      transition: color var(--transition);
+    }
+    a:hover {
+      color: #0056b3;
+    }
+
+    /* -------------------------------------------------------
+       NAVBAR
+    --------------------------------------------------------- */
+    nav.navbar {
+      background: linear-gradient(90deg, var(--clr-dark) 0%, #495057 100%);
+      padding: 0.75rem 1rem;
+    }
+    nav.navbar a.navbar-brand,
+    nav.navbar .nav-link {
+      color: var(--clr-blue) !important;
+    }
+    nav.navbar .nav-link:hover {
+      color: #0056b3 !important;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,123,255,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* -------------------------------------------------------
+       HERO / PROFILE SECTION
+    --------------------------------------------------------- */
+    .profile-section {
+      position: relative;
+      text-align: center;
+      padding: 5rem 1rem 7rem;
+      color: var(--clr-light);
+      background: linear-gradient(180deg, var(--clr-dark) 0%, #495057 100%);
+      overflow: hidden;
+    }
+    /* Decorative container for profile picture */
+    .profile-pic-container {
+      display: inline-block;
+      padding: 5px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, var(--clr-blue), #0056b3);
+      margin-bottom: 1rem;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border: 4px solid var(--clr-light);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--shadow);
+      transition: transform var(--transition);
+      display: block;
+    }
+    .profile-pic:hover {
+      transform: scale(1.06);
+    }
+    .profile-section h1 {
+      font-size: 2.75rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .profile-section h4 {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    .profile-section p a {
+      color: var(--clr-blue);
+    }
+    .profile-section p a:hover {
+      color: #0056b3;
+    }
+
+    /* -------------------------------------------------------
+       CONTENT SECTIONS
+    --------------------------------------------------------- */
+    .content-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+    }
+    .content-section h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 1px;
+    }
+    .content-section h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 50%;
+      height: 3px;
+      background: var(--clr-blue);
+      border-radius: 2px;
+    }
+    .content-section h3,
+    .content-section h4 {
+      margin-top: 1.5rem;
+      font-weight: 600;
+    }
+    .sub-heading {
+      margin-top: 1rem;
+      font-style: italic;
+      color: var(--clr-text);
+    }
+    .content-section p,
+    .content-section ul,
+    .content-section li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .content-section > * {
+      animation: fadeInUp 0.8s ease both;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+
+
+    /* -------------------------------------------------------
+       RESEARCH CARDS
+    --------------------------------------------------------- */
+    .research-card {
+      background-color: #fff;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+    .research-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 5px 15px var(--shadow);
+    }
+    .research-card img {
+      margin-top: 1rem;
+      max-width: 100%;
+      border-radius: 4px;
+      transition: transform var(--transition);
+    }
+    .research-card img:hover {
+      transform: scale(1.02);
+    }
+    /* Ensure clickable cards inherit text styles */
+    .research-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* -------------------------------------------------------
+       FOOTER
+    --------------------------------------------------------- */
+    footer {
+      background: var(--clr-dark);
+      color: var(--clr-light);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* -------------------------------------------------------
+       MEDIA QUERIES
+    --------------------------------------------------------- */
+    @media (min-width: 768px) {
+      .profile-pic {
+        width: 180px;
+        height: 180px;
+      }
+      .content-section {
+        padding: 4rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#home">Shawmoon Azad</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#who-am-i">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research-interest">Research Interest</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">News &amp; Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research-brief">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- ======== HERO / PROFILE SECTION ======== -->
+<section class="profile-section" id="home">
+  <div class="container">
+    <div class="card p-4 shadow-sm">
+      <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-4 text-center">
+          <img src="/assets/img/shawmoon.jpg" alt="Profile picture of Md Shawmoon Azad" class="profile-pic img-fluid rounded-circle">
+        </div>
+        <!-- Profile Details -->
+        <div class="col-md-8">
+          <h1>Md Shawmoon Azad</h1>
+          <h4>Researcher @ Quantum &amp; AI</h4>
+          <p>
+            <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ&amp;hl=en" target="_blank">Google Scholar</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/in/shawmoonazad/" target="_blank">LinkedIn</a>
+            &nbsp;|&nbsp;
+            <a href="https://drive.google.com/drive/folders/1WLlH715yk7RjT6xc2nxUaRwfVhJ94T3H?usp=sharing" target="_blank">CV</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======== WHO AM I? ======== -->
+<section class="content-section" id="who-am-i">
+  <div class="container">
+    <div class="card p-4 shadow-sm">
+      <h2>A bit about ⟨m|e⟩...</h2>
+      <p>
+        Hello, my name is <strong>Md Shawmoon Azad</strong>. I graduated in <strong>Computer Science and Engineering</strong> from North South University (NSU).
+      </p>
+      <p>
+        I am currently a <strong>Research Assistant</strong> at the 
+        <a href="https://sites.google.com/view/nsuopticslab/members?authuser=0" target="_blank">Optics-Quantum and AI Lab</a> 
+        at NSU, under the supervision of 
+        <a href="http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/" target="_blank">Dr. Mahdy Rahman Chowdhury</a>. Here, I do research on secure quantum protocols, hybrid quantum-classical cryptographic frameworks, and Quantum Neural Networks.
+        I have closely also worked with <a href="http://ece.northsouth.edu/people/dr-sifat-momen/" target="_blank">Dr. Sifat Momen</a> on Machine Learning and NLP-driven applications in mental health.</p>
+        
+<p>In both of my research domains, I have published multiple high-impact <strong> Q1-indexed Journal Articles </strong>.</p>
+   
+      <h5 class="sub-heading">
+        Actively seeking a Ph.D. position in Quantum Computing or AI-driven applications.
+      </h5>
+      <p>
+        <a href="mailto:shawmoon.cs@gmail.com" target="_blank">
+          Email: shawmoon [dot] cs [at] gmail [dot] com
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- MY RESEARCH INTEREST SECTION -->
+  <section class="content-section" id="research-interest">
+    <div class="container">
+      <div class="card p-4 shadow-sm">
+        <h2>My Research Interest</h2>
+        <p>
+          My research interests are twofold: <strong>Quantum Computing</strong> and <strong>Machine Learning</strong>.
+        </p>
+        <p>
+          In <strong>Quantum Computing</strong>, I focus on Quantum Communication &amp; Cryptography, Hybrid Quantum-Classical Frameworks, and Quantum Machine Learning.
+        </p>
+        <p>
+          In <strong>AI-driven research</strong>, I explore applications of machine learning, NLP, explainable AI, and Human-Computer Interaction for predictive modeling and mental health diagnostics.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- NEWS & PUBLICATIONS SECTION -->
+  <section class="content-section" id="publications">
+    <div class="container">
+      <div class="card p-4 shadow-sm">
+        <h2>News &amp; Publications</h2>
+        <p>
+          <strong>[2025/15/3]</strong><br>
+          Working on "Enhancing Cloud Storage Security with Quantum Key Distribution and Post-Quantum Cryptography Using Custom Proxy Re-Encryption" 
+          and "LSC-XAI: A Hybrid Explainable AI Framework for Predicting and Mitigating Healthcare Worker Attrition" [Projects from Research Academy]
+        </p>
+        <p>
+          <strong>[2025/10/3]</strong><br>
+          Secured Multiparty Quantum Communication Protocol Utilizing W State for Imperfect Channels submitted to <em>Optica Quantum</em>
+        </p>
+        <p>
+          <strong>[2025/5/1]</strong><br>
+          Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security. 
+          <em>AAEJ, 121, 167-182.</em> <strong>Q1-indexed, Impact Factor: 7.7</strong>. 
+          <a href="https://www.sciencedirect.com/science/article/pii/S1110016825002339" target="_blank">Paper Link</a>
+        </p>
+        <p>
+          <strong>[2025/3/1]</strong><br>
+          SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP. 
+          <em>Array, 25, 100372.</em> <strong>Q1-indexed, Impact Factor: 4.0</strong>. 
+          <a href="https://doi.org/10.1016/j.array.2024.100372" target="_blank">Paper Link</a>
+        </p>
+        <p>
+          <strong>[2023/12/27]</strong><br>
+          Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned Behavior and Machine Learning for Actionable Insights. 
+          <em>PloS One 18.12 (2023): e0296336.</em> <strong>Q1-indexed, Impact Factor: 3.75</strong>. 
+          <a href="https://doi.org/10.1371/journal.pone.0296336" target="_blank">Paper Link</a>
+        </p>
+        <p>
+          <strong>[2023/11/30]</strong><br>
+          Enhancing the security of image transmission in the Quantum era: A Chaos-Assisted QKD Approach using entanglement. 
+          <em>IET Quantum Communication (2024)</em> [under review] 
+          <a href="https://arxiv.org/pdf/2311.18471" target="_blank">Paper Link</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- EDUCATION SECTION -->
+  <section class="content-section" id="education">
+    <div class="container">
+      <div class="card p-4 shadow-sm">
+        <h2>Education</h2>
+        <p>
+          I earned my Bachelor of Science in <strong>Computer Science and Engineering</strong> from North South University, Bangladesh in June 2023 
+          (Degree commencement in December 2024), graduating <em>magna cum laude</em> with a CGPA of 3.74/4.00 
+          (<strong>93.5% marks</strong>, Top 5% in my class).
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- TEACHING SECTION -->
+  <section class="content-section" id="teaching">
+    <div class="container">
+      <div class="card p-4 shadow-sm">
+        <h2>My Teaching Experience</h2>
+        <p>
+          <p>In addition to my research work, I had the privilege of serving as a 
+<b>Teaching Assistant</b> for <b>two years</b> in the Electrical and Computer Engineering department at <b>North South University (NSU)</b>. During this time, I supported <b>over 400 students</b> across <b>25 lab sections</b> in <i>Programming Language I</i> and <i>Operating Systems Design</i> courses. I taught core topics in <b>C programming</b> and <b>operating systems</b>, helping students grasp complex technical material through hands-on guidance and structured learning.</p>
+
+<p>I also volunteered as a 
+<b>Course Assistant</b> for the <b>Short Data Science Course</b> at NSU, led by <b>Dr. Jennifer Widom</b>, which further deepened my engagement in <b>data-driven education</b>.</p>
+
+<p>After graduation, I closely worked with <b>Dr. Mahdy Rahman Chowdhury</b> to establish the 
+<a href="https://sites.google.com/view/onlinecoursebymdy/online-research-course-part-a?authuser=0" target="_blank"><b>Mahdy Research Academy</b></a>, a research-based EdTech platform dedicated to building a <b>sustainable research culture in Bangladesh</b>. At MRA, I taught <b>800+ students</b> in 
+<b>applied machine learning</b>, 
+<b>natural language processing</b>, 
+<b>explainable AI</b>, and 
+<b>quantum computing</b>. 
+I also conceptualized and led <b>23 collaborative research projects</b> in machine learning and quantum computing.</p>
+
+<p>I firmly believe that <b>science thrives when knowledge is both learned and shared</b>. These teaching experiences have helped me develop critical skills in 
+<b>leadership</b>, 
+<b>collaboration</b>, 
+<b>task management</b>, and 
+<b>communicating complex ideas in a simple, accessible way</b>—all of which are vital in a high-impact academic environment.</p>
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== RESEARCH WORKS IN BRIEF ======== -->
+  <section class="content-section" id="research-brief">
+    <h2>My Research Works in Brief</h2>
+
+    <!-- Quantum Computing Research -->
+    <h3>Quantum Computing Research</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Clickable Research Card for QKD Approach -->
+        <a href="https://arxiv.org/pdf/2311.18471" target="_blank" class="research-link">
+          <div class="research-card">
+            <h4>[1] Enhancing the security of image transmission in the Quantum era: A Chaos-Assisted QKD Approach using entanglement.</h4>
+            <p><strong>TL;DR:</strong><br>
+              <p><strong>Methodology:</strong>
+Combined the E91 quantum key distribution (QKD) protocol with logistic chaotic map encryption to develop a secure image transmission system. Quantum entanglement and CHSH inequality were used for eavesdropping detection, while chaotic maps added classical encryption strength.</p>
+
+
+<p><strong>Outcome:</strong>
+Simulation results showed strong encryption performance through metrics like keyspace/sensitivity, entropy, histogram uniformity, execution time, and differential attack resistance. The scheme proved efficient for real-time, secure image communication.</p>
+
+
+<p><strong>Impact:</strong>
+Provides a robust hybrid quantum-classical encryption framework addressing future threats posed by quantum computers, with potential applications in healthcare, defense, and finance for secure data communication.</p>
+
+
+            </p>
+            <p><strong>Research Methodology:</strong></p>
+            <img src="/assets/img/qkd_diagram.png" alt="Diagram of QKD approach">
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <!-- Clickable Research Card for Multi-Layered Security System -->
+        <a href="https://www.sciencedirect.com/science/article/pii/S1110016825002339" target="_blank" class="research-link">
+          <div class="research-card">
+            <h4>[2] Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security.</h4>
+            <p><strong>TL;DR:</strong><br>
+              <p><strong>Methodology:</strong>
+Developed a hybrid cryptographic system by integrating the E91 Quantum Key Distribution (QKD) protocol with SHA hashing and AES encryption to secure steganographic images. The quantum key ensures eavesdropping resistance, while SHA produces a high-entropy key for AES-based symmetric encryption. Steganography is used to hide critical data within images, adding a layer of obscurity.</p>
+
+<p><strong>Outcome:</strong>
+Experimental results on images (64×64 to 512×512 pixels) showed high entropy (avg. 7.9929), strong differential attack resistance (NPCR ≈ 99.69%, UACI ≈ 56.15%), and efficient performance (key generation in 5.78 s, encryption in 0.00149 s, decryption in 0.00175 s).</p>
+
+<p><strong>Impact:</strong>
+Provides a quantum-secure, fast, and reliable encryption framework for steganographic images, offering strong protection against both classical and future quantum cyber threats.</p>
+
+            </p>
+            <p><strong>Research Methodology:</strong></p>
+            <img src="/assets/img/QKD_Stega.png" alt="QKD and steganography diagram">
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Machine Learning Research -->
+    <h3 class="mt-5">Machine Learning Research</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Clickable Research Card for SAD -->
+        <a href="https://doi.org/10.1016/j.array.2024.100372" target="_blank" class="research-link">
+          <div class="research-card">
+            <h4>[1] SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP.</h4>
+            <p><strong>TL;DR:</strong><br>
+              <p><strong>Methodology:</strong>
+Analyzed depression among 520 Bangladeshi university students using eight depression assessment scales, traditional machine learning (ML) models, BERT-based NLP models, and generative large language models. Social factors such as relationships, parental pressure, academic satisfaction, and exposure to violence were incorporated. Explainable AI techniques (like LIME) were used to interpret model decisions.</p>
+
+<p><strong>Outcome:</strong>
+Support Vector Machines achieved 99.14% accuracy with the PHQ-9 scale. For social factor analysis, a stacking ensemble ML model reached 97.88% accuracy. Among NLP models, BioBERT performed best with 90.34% accuracy. Tree of Thought prompting with Claude Sonnet was the top performer among generative models, achieving 75.00% accuracy.</p>
+
+<p><strong>Impact:</strong>
+Demonstrates a highly effective and interpretable ML-driven framework for diagnosing depression, highlighting the role of social factors. This approach enhances early mental health assessment in academic settings, especially in resource-limited regions like Bangladesh.</p>
+
+            </p>
+            <p><strong>Research Methodology:</strong></p>
+            <img src="/assets/img/Depression_Methodology.png" alt="Methodology diagram for depression study">
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <!-- Clickable Research Card for Predictive Modeling -->
+        <a href="https://doi.org/10.1371/journal.pone.0296336" target="_blank" class="research-link">
+          <div class="research-card">
+            <h4>[2] Predictive Modeling of Consumer Purchase Behavior on Social Media.</h4>
+            <p><strong>TL;DR:</strong><br>
+              <p><strong>Methodology:</strong>
+Integrated the Theory of Planned Behavior (TPB)—comprising attitude, social norm, and perceived behavioral control—with eight machine learning algorithms (e.g., Gradient Boosting, SVM, Random Forest) to predict consumer online purchasing behavior. Explainable AI (LIME) was used to interpret model predictions.</p>
+
+<p><strong>Outcome:</strong>
+Gradient Boosting outperformed other models with 91% accuracy and a macro F1-score of 0.91 when all TPB factors were considered. LIME successfully interpreted predictions, showing high confidence in understanding behavioral influences.</p>
+
+<p><strong>Impact:</strong>
+Presents a novel, interpretable ML framework for analyzing online consumer behavior. Offers actionable insights for businesses to tailor marketing strategies based on psychological drivers, improving targeting and engagement through data-informed decisions.</p>
+
+            </p>
+            <p><strong>Paper:</strong></p>
+            <img src="/assets/img/plos_paper.png" alt="PloS One paper snapshot">
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Undergraduate-Directed Research -->
+    <h3 class="mt-5">Undergraduate-Directed Research (Thesis)</h3>
+    <div class="research-card">
+      <h4> [1]ItihashQA: A Conversational AI-Based Question Answering System for Bangladeshi History.</h4>
+      <p>
+        <em>Supervisor: Dr. Sifat Momen</em> &nbsp;
+        <a href="https://scholar.google.com/citations?user=sGVZEaAAAAAJ&amp;hl=en" target="_blank">Google Scholar</a>
+      </p>
+      <p><strong>TL;DR:</strong><br>
+        <p><strong>Methodology:</strong>
+Developed <em>ItihashQA</em>, a domain-specific conversational retrieval-based question-answering system focused on Bangladeshi history. It combines the open-source Stable Vicuna LLM with expert-verified historical datasets to ensure accurate, context-aware responses. The system was evaluated against models like ChatGPT, Vicuna, and Koala using human-annotated ratings on a Likert scale.</p>
+
+<p><strong>Outcome:</strong>
+ItihashQA consistently outperformed other models across all question complexity levels, achieving high ratings for accuracy and contextual relevance. The approach avoided costly fine-tuning by leveraging retrieval augmentation and domain-specific data.</p>
+
+<p><strong>Impact:</strong>
+Presents a scalable, open-source alternative for reliable historical QA tasks. ItihashQA addresses LLM limitations like hallucination and misinformation, especially in resource-limited domains, and holds potential for educational, archival, and research applications.</p>
+
+      </p>
+      <p><strong>Research Methodology:</strong></p>
+      <img src="/assets/img/EkattorQA_methodology.png" alt="EkattorQA methodology">
+    </div>
+
+    <!-- Undergraduate Capstone Project -->
+    <h3 class="mt-5">Undergraduate Capstone Project</h3>
+    <div class="research-card">
+      <h4>[1] Secure Image Transmission with Quantum Key Distribution and Chaotic Systems.</h4>
+      <p>
+        <em>Supervisor: Dr. Mahdy Rahman Chowdhury</em> &nbsp;
+        <a href="https://scholar.google.com.sg/citations?user=PxNOguMAAAAJ&amp;hl=en" target="_blank">Google Scholar</a>
+      </p>
+      <p><strong>Poster:</strong></p>
+      <img src="/assets/img/qkdposter.png" alt="Poster for QKD project">
+    </div>
+  </section>
+
+
+  <!-- ======== SKILLS ======== -->
+  <section class="content-section" id="skills">
+    <div class="container">
+      <div class="card p-4 shadow-sm">
+        <h2>Skills</h2>
+        <div class="row">
+          <div class="col-md-6 skill-category">
+            <h5>Programming</h5>
+            <p>Python, C/C++</p>
+          </div>
+          <div class="col-md-6 skill-category">
+            <h5>Frameworks</h5>
+            <p>TensorFlow, Keras, PyTorch, LangChain</p>
+          </div>
+          <div class="col-md-6 skill-category">
+            <h5>Libraries</h5>
+            <p>Scikit-learn, OpenCV, Pandas, Matplotlib</p>
+          </div>
+          <div class="col-md-6 skill-category">
+            <h5>Front-end</h5>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="col-md-6 skill-category">
+            <h5>DevOps</h5>
+            <p>Git, GitHub, LaTeX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SPECIALIZED COURSES ======== -->
+  <section class="content-section" id="specialized-courses">
+    <div class="container">
+      <div class="card p-4 shadow-sm">
+        <h2>Specialized Major Courses</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE323 (Operating System Design)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE311 (Database Management System)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE373 (Design Analysis of Algorithms)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE440 (Artificial Engineering)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE445 (Machine Learning)
+            <span class="badge bg-warning rounded-pill">A- (GPA 3.70/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE465 (Neural Network)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE473 (Theory of Computation)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE498 (Directed Research - NLP &amp; RAG)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE499A (Senior Design - Quantum Computing)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CSE499B (Senior Design - Quantum Computing)
+            <span class="badge bg-primary rounded-pill">A (GPA 4.00/4.00)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== AWARDS ======== -->
+  <section class="content-section" id="awards">
+    <div class="container">
+      <div class="card p-4 shadow-sm">
+        <h2>Awards &amp; Achievements</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Awarded <em>magna cum laude</em> Distinction.</li>
+          <li class="list-group-item">Top 10 out of 104 teams, Innovation Challenge 13, NSU ACM.</li>
+          <li class="list-group-item">Received 50% NSU merit-based Scholarship for academic excellence.</li>
+          <li class="list-group-item">Received 25% NSU merit-based Scholarship for academic excellence.</li>
+          <li class="list-group-item">Worked on four NSU CTRGC-funded projects ($22,500 total funding).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    <p>&copy; 2025 Md Shawmoon Azad. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
