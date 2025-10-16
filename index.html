@@ -188,6 +188,126 @@
       box-shadow: var(--shadow-md);
     }
 
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      padding: 8px;
+      background: transparent;
+      border: none;
+      z-index: 1001;
+    }
+
+    .mobile-menu-toggle span {
+      width: 28px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    /* Mobile Menu Overlay */
+    .mobile-menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+      opacity: 1;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 280px;
+      height: 100%;
+      background: var(--bg-secondary);
+      box-shadow: var(--shadow-xl);
+      z-index: 1000;
+      transition: right 0.3s ease;
+      overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
+
+    .mobile-menu-header {
+      padding: 24px 24px 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .mobile-menu-header .logo {
+      font-size: 20px;
+    }
+
+    .mobile-menu-items {
+      list-style: none;
+      padding: 16px 0;
+    }
+
+    .mobile-menu-items li {
+      margin: 0;
+    }
+
+    .mobile-menu-items .nav-link {
+      display: block;
+      padding: 16px 24px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: var(--transition-fast);
+      border-left: 3px solid transparent;
+    }
+
+    .mobile-menu-items .nav-link:hover,
+    .mobile-menu-items .nav-link.active {
+      background: var(--bg-tertiary);
+      border-left-color: var(--accent);
+      color: var(--primary);
+    }
+
+    .mobile-menu-items .nav-link::after {
+      display: none;
+    }
+
+    .mobile-menu-footer {
+      padding: 24px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .mobile-menu-footer .cv-btn {
+      width: 100%;
+      justify-content: center;
+    }
+
     /* Page Container & Transitions */
     .page-container {
       min-height: calc(100vh - 80px);
@@ -1371,6 +1491,15 @@
         display: none;
       }
 
+      .mobile-menu-toggle {
+        display: flex;
+      }
+
+      .mobile-menu-overlay,
+      .mobile-menu {
+        display: block;
+      }
+
       section {
         padding: 60px 0;
       }
@@ -1407,9 +1536,39 @@
             </a>
           </li>
         </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="#" class="logo" data-page="home">Shawmoon Azad</a>
+    </div>
+    <ul class="mobile-menu-items">
+      <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+      <li><a href="#" class="nav-link" data-page="research">Research & Publications</a></li>
+      <li><a href="#" class="nav-link" data-page="teaching">Teaching & Mentoring</a></li>
+      <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
+      <li><a href="#" class="nav-link" data-page="awards">Awards</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="./assets/cv/shawmoonCV.pdf" class="cv-btn">
+        <i class="fas fa-file-pdf"></i>
+        Download CV
+      </a>
+    </div>
+  </nav>
 
   <!-- Main Content Container -->
   <main id="app"></main>
@@ -1476,8 +1635,16 @@
         if (this.routes[page]) {
           this.currentPage = page;
           
-          // Update active nav link
-          document.querySelectorAll('.nav-link').forEach(link => {
+          // Update active nav link (desktop)
+          document.querySelectorAll('.nav-menu .nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.dataset.page === page) {
+              link.classList.add('active');
+            }
+          });
+
+          // Update active nav link (mobile)
+          document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
             link.classList.remove('active');
             if (link.dataset.page === page) {
               link.classList.add('active');
@@ -2472,6 +2639,54 @@
 
     backToTop.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu .nav-link');
+
+    function toggleMobileMenu() {
+      mobileMenuToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      mobileMenuOverlay.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    }
+
+    function closeMobileMenu() {
+      mobileMenuToggle.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+    // Handle mobile menu navigation
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const page = link.dataset.page;
+        
+        // Update active state in mobile menu
+        mobileMenuLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        
+        // Close mobile menu
+        closeMobileMenu();
+        
+        // Navigate to page
+        router.navigate(page);
+      });
+    });
+
+    // Handle logo click in mobile menu
+    document.querySelector('.mobile-menu .logo').addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMobileMenu();
+      router.navigate('home');
     });
   </script>
 </body>
