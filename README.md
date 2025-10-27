@@ -1,133 +1,211 @@
-# Researcher @ Quantum & AI
-[Google Scholar](https://scholar.google.com/citations?user=qiLaY-AAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/shawmoonazad/) | [CV](https://drive.google.com/drive/folders/1WLlH715yk7RjT6xc2nxUaRwfVhJ94T3H?usp=sharing)
+# Academic Portfolio - Md Shawmoon Azad
 
-## Who Am I? 
-Hello, My Name is Md Shawmoon Azad. I graduated with *magna cum laude* in **Computer Science and Engineering** from North South University (NSU). 
-<br> I am currently working as a **Research Assistant** at [Optics-Quantum and AI Lab](https://sites.google.com/view/nsuopticslab/members?authuser=0), NSU, under the supervision of [Dr. Mahdy Rahman Chowdhury](http://ece.northsouth.edu/people/mahdy-rahman-chowdhury/). Additionally, I have also been a research assistant under [Dr. Sifat Momen](http://ece.northsouth.edu/people/dr-sifat-momen/). So far, I have published several top-tier Q1-indexed high-impact journal articles focusing on secure quantum entanglement-based protocols, hybrid quantum-classical cryptographic frameworks, and AI-driven applications in Mental Health.
+A clean, compact, and professional academic portfolio website featuring a multi-page structure with consistent navigation.
 
-I have worked as a **Teaching Assistant** at the ECE department at NSU for two years. There, I have taught two courses: **Operating System Design** and C **Programming Language.** Beyond NSU, I am also working as a Research Instructor and Coordinator at the [Mahdy Research Academy](https://sites.google.com/view/onlinecoursebymdy/online-research-course-part-a?authuser=0), an **EdTech Research Platform** (1st in Bangladesh). I have **taught over 800 students**, focusing on research methodologies and topics related to machine learning and quantum computing, helping to cultivate the next generation of researchers in our country.
+## 📁 File Structure
 
-#### I am actively looking for a Ph.D. Position in Quantum Computing / AI-driven applications 
+```
+portfolio/
+│
+├── index.html          # Home page (Hero + News sections)
+├── research.html       # Research Interests
+├── publications.html   # Publications list
+├── teaching.html       # Teaching Experience
+├── timeline.html       # Academic Timeline + Awards
+├── contact.html        # Contact Information
+│
+└── assets/
+    ├── cv/
+    │   └── CV_Md_Shawmoon_Azad.pdf  # Your CV
+    └── img/
+        ├── shawmoon.jpg              # Your profile photo
+        ├── qc1.png                   # Publication image
+        ├── qc2.png                   # Publication image
+        ├── qc3.png                   # Publication image
+        ├── qc4.png                   # Publication image
+        ├── ml1.png                   # Publication image
+        ├── ml2.png                   # Publication image
+        └── ml3.png                   # Publication image
+```
 
-## My Research Interest 
-My research interest broadly lies in two-fold: (I) Quantum computing and (II) Machine Learning. 
+**Important:** Make sure to create the `assets/cv/` and `assets/img/` directories and place your files there.
 
-In **Quantum Computing research**, I am particularly interested in the area of Quantum Communication & Cryptography, Hybrid Quantum-Classical Frameworks, Quantum Machine Learning, and Quantum Applications.
+## ✨ Features
 
-In **AI-driven research**, I am interested in applying machine learning, NLP, explainable AI, and Human-Computer Interaction in predictive modeling and mental health diagnostics.
+### Compact Academic Design
+- **Tighter spacing** and reduced white space for a more traditional academic look
+- **Clean typography** using Crimson Text (serif) for headings and Inter (sans-serif) for body text
+- **Professional color palette** with navy blue (#1e3a5f) as the primary color
+- **Responsive layout** that works on all devices
 
-## Education			        		
-I completed my Bachelor of Science in Computer Science and Engineering from North South University, Bangladesh, in June 2023 (Degree commencement in December 2024). 
-I was honored *magna cum laude* with CGPA: 3.74/4.00 (**93.5% marks**, Top 5%).
+### Multi-Page Structure
+- **Consistent navigation** across all pages
+- **Active page highlighting** in the navigation menu
+- **Smooth transitions** between sections
+- **Shared footer** with social links
 
-  
-## News and Publication
+### Sections Included
+1. **Home (index.html)**: Hero section with bio + News & Updates
+2. **Research**: Research interests with 3 main areas
+3. **Publications**: Detailed publication cards with links
+4. **Teaching**: Teaching experience cards
+5. **Timeline**: Academic timeline + Awards & Honors
+6. **Contact**: Contact information grid
 
-**[2025/15/3]** 
-Currently working on "Enhancing Cloud Storage Security with Quantum Key Distribution and Post-Quantum Cryptography Using Custom Proxy Re-Encryption" 
-<br> and "LSC-XAI: A Hybrid Explainable AI Framework for Predicting and Mitigating Healthcare Worker Attrition" [Projects from Research Academy]
+## 🚀 Deployment on GitHub Pages
 
-**[2025/10/3]**
-Secured Multiparty Quantum Communication Protocol Utilizing W State for Imperfect Channels submitted to _Optica Quantum_
+### Step 1: Create a GitHub Repository
+1. Go to [GitHub](https://github.com) and sign in
+2. Click the "+" icon in the top right → "New repository"
+3. Name it: `username.github.io` (replace `username` with your GitHub username)
+4. Make it public
+5. Click "Create repository"
 
-**[2025/5/1]**
-Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security. *AAEJ, 121, 167-182.* 
-<br>**Q1-indexed, Impact Factor: 7.7**. [Paper Link](https://www.sciencedirect.com/science/article/pii/S1110016825002339)
+### Step 2: Upload Your Files
+You have two options:
 
-**[2025/3/1]** 
-SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP. Array, 25, 100372. 
-<br> **Q1-indexed, Impact Factor: 4.0**. [Paper Link](https://doi.org/10.1016/j.array.2024.100372)
+#### Option A: Upload via GitHub Web Interface
+1. In your new repository, click "Add file" → "Upload files"
+2. Drag and drop all 6 HTML files (index.html, research.html, etc.)
+3. Create the folder structure:
+   - Click "Add file" → "Create new file"
+   - Type `assets/cv/CV_Md_Shawmoon_Azad.pdf` (this creates the folders)
+   - Upload your CV file
+   - Repeat for images: `assets/img/` and upload all image files
+4. Click "Commit changes"
 
-**[2023/12/27]** 
-Predictive Modeling of Consumer Purchase Behavior on Social Media: Integrating Theory of Planned Behavior and Machine Learning for Actionable Insights. PloS one 18.12 (2023): e0296336. 
-<br> **Q1-indexed, Impact Factor 3.75** [Paper Link](https://doi.org/10.1371/journal.pone.0296336) 
+#### Option B: Use Git Command Line
+```bash
+# Navigate to your portfolio folder
+cd /path/to/your/portfolio
 
-**[2023/11/30]** 
-Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement. *IET Quantum Communication (2024)* [under review] [arXiv:2311.18471.](https://arxiv.org/pdf/2311.18471)
+# Create the assets directories
+mkdir -p assets/cv assets/img
 
+# Move your CV and images to the correct folders
+# (Make sure to have your CV and images ready)
 
-## My Research Works in Brief
+# Initialize git repository
+git init
 
-### Quantum computing research | 
+# Add all files
+git add .
 
-#### [1] _"Enhancing the security of image transmission in Quantum era: A Chaos-Assisted QKD Approach using entanglement."_
+# Commit files
+git commit -m "Initial portfolio commit"
 
-**TL;DR:**  
-This study addresses security challenges from quantum computing by combining the E91 quantum key distribution protocol with logistic chaotic maps to create a secure image transmission scheme. The framework detects eavesdropping using entanglement tests and chaos encryption, ensuring key confidentiality. Simulations confirm improved encryption efficiency, making this approach a strong candidate for securing communications in fields like healthcare and defense against future quantum threats.
+# Connect to GitHub repository
+git remote add origin https://github.com/username/username.github.io.git
 
-**Research Methodology:** 
-![qkd1](/assets/img/qkd_diagram.png)
+# Push to GitHub
+git branch -M main
+git push -u origin main
+```
 
+### Step 3: Enable GitHub Pages
+1. Go to your repository settings
+2. Scroll down to "Pages" section (in the left sidebar)
+3. Under "Source", select "main" branch
+4. Click "Save"
+5. Your site will be live at: `https://username.github.io`
 
-#### [2] _"Multi-Layered Security System: Integrating Quantum Key Distribution with Classical Cryptography to Enhance Steganographic Security."_
+## 📝 Customization
 
-**TL;DR**  
-The study presents a cryptographic system that secures steganographic images by combining Quantum Key Distribution (QKD) with traditional encryption. The E91 QKD protocol generates a shared secret key, which is hashed using SHA for use in AES encryption. This system effectively encrypts steganographic images, showing high randomness and security, with resilience to differential attacks across different pixel densities. By merging quantum and classical cryptographic methods, this approach offers a robust solution against both quantum and classical threats, suitable for applications requiring stringent security.
+### Update Your Information
+1. **Add your profile image:**
+   - Create the directory: `assets/img/`
+   - Place your profile photo as `shawmoon.jpg` (or update the path in index.html)
+   
+2. **Add your CV:**
+   - Create the directory: `assets/cv/`
+   - Place your CV PDF as `CV_Md_Shawmoon_Azad.pdf` (or update the CV links in all HTML files)
 
-**Research Methodology:** 
-![qkd2](/assets/img/QKD_Stega.png)
+3. **Add publication images:**
+   - Place your publication images in `assets/img/` folder
+   - Images used: `qc1.png`, `qc2.png`, `qc3.png`, `qc4.png`, `ml1.png`, `ml2.png`, `ml3.png`
+   - Update the image paths in `publications.html` if you use different names
 
+### Modify Colors
+To change the color scheme, edit the `:root` CSS variables at the top of each HTML file:
 
-### Machine learning research | 
+```css
+:root {
+  --primary-blue: #1e3a5f;    /* Main color */
+  --accent-blue: #2e5090;     /* Hover/active color */
+  --gold-accent: #b8860b;     /* Accent color */
+}
+```
 
-#### [1] _"SAD: Self-assessment of depression for Bangladeshi university students using machine learning and NLP."_    
+### Update Links
+Make sure to update all external links:
+- Google Scholar profile
+- ORCID
+- GitHub profile
+- LinkedIn profile
+- Email address
+- Phone number
+- DOI links for publications
 
-**TL;DR:**  
-This study examines the relationship between social factors and depression, using machine learning and NLP techniques to analyze depression assessment scales. Survey data from 520 Bangladeshi university students was used to evaluate various models. The support vector machine algorithm achieved the highest accuracy (99.14%) with the PHQ9 scale, while the stacking ensemble model performed best for social factors. BioBERT outshined other NLP models with 90.34% accuracy, and traditional machine learning models excelled in tabular data analysis. LIME was used to ensure the interpretability of the top models.
+## 🔧 Maintenance
 
-**Research Methodology:**  
-![ml2](/assets/img/Depression_Methodology.png)
+### Adding New Publications
+1. Open `publications.html`
+2. Copy an existing `publication-card` div
+3. Update the content with new publication details
+4. Save and push to GitHub
 
-#### [2] _"Predictive modeling of consumer purchase behavior on social media: integrating theory of planned behavior and machine learning for actionable insights."_
+### Adding News Items
+1. Open `index.html`
+2. Find the `<div class="news-container">` section
+3. Copy an existing `news-item` div
+4. Add your new news item at the top
+5. Save and push to GitHub
 
-**TL;DR**  
-This study explores how social media influences consumer buying behavior and proposes a method combining the Theory of Planned Behavior with machine learning to predict purchasing tendencies. Focusing on key factors like attitude, social norms, and perceived behavioral control, the research utilizes eight machine learning models, with gradient boosting emerging as the most accurate. Additionally, Explainable AI (LIME) is used to clarify how the model generates predictions, confirming the high reliability of its results.
+## 📱 Mobile Responsiveness
 
-**Paper:**  
-![ml1](/assets/img/plos_paper.png)
+The portfolio is fully responsive and will automatically adjust for:
+- Desktop screens (1100px+ width)
+- Tablets (768px - 1100px)
+- Mobile phones (< 768px)
 
+## 🎨 Design Principles Applied
 
-### Undergraduate-directed research (Thesis) |
+1. **Academic Standard**: Clean, professional look suitable for academic portfolios
+2. **Compact Layout**: Reduced padding and margins for efficient space usage
+3. **Readable Typography**: Proper font sizes and line heights for readability
+4. **Consistent Branding**: Same header/footer across all pages
+5. **Accessibility**: Proper heading hierarchy and semantic HTML
 
-#### [1] _"EkattorQA: A Conversational AI-Based Question Answering System applied in the context of Bangladeshi History."_    
-*Supervisor: Dr. Sifat Momen* [Google Scholar](https://scholar.google.com/citations?user=sGVZEaAAAAAJ&hl=en) 
+## 📄 Browser Compatibility
 
-**Abstract**  
-Recent advancements in large language models (LLMs) have greatly improved their performance in question-answering tasks. However, these models still struggle with issues like hallucinations, misinformation, and inconsistencies, especially when applied to domains with limited training data. This is particularly concerning for sensitive topics such as history, where accuracy and reliability are essential. Although fine-tuning LLMs on diverse datasets can enhance domain-specific performance, it is often expensive and resource-intensive. In response, we introduce EkattorQA, a publicly available conversational AI-based question-answering system specifically designed for the historical context of Bangladesh. EkattorQA combines the Stable Vicuna LLM with expert-verified historical data to produce precise and contextually relevant answers. We conducted a comprehensive evaluation of EkattorQA against other LLMs, including ChatGPT, Vicuna, and Koala, through human assessments of questions with varying levels of complexity. Responses were rated on a Likert scale from 1 to 5, and EkattorQA consistently demonstrated high accuracy across all difficulty levels. Our results show that EkattorQA delivers accurate, high-quality answers, and by using open-source LLMs and external data, it offers a scalable, cost-effective solution for domain-specific question-answering tasks. 
+Tested and works on:
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers
 
-**Research Methodology:**  
-![EkattorQA](/assets/img/EkattorQA_methodology.png)
+## 🆘 Troubleshooting
 
+### Site not loading?
+- Wait 5-10 minutes after first deployment
+- Check that your repository is named correctly: `username.github.io`
+- Ensure GitHub Pages is enabled in settings
 
-### Undergraduate capstone project | 
-#### [1] _"Secure Image Transmission with Quantum Key distribution and Chaotic system."_  
-*Supervisor: Dr. Mahdy Rahman Chowdhury* [Google Scholar](https://scholar.google.com.sg/citations?user=PxNOguMAAAAJ&hl=en)
-**Poster:**
-![qkd](/assets/img/qkdposter.png)
+### Navigation not working?
+- Make sure all HTML files are in the root directory
+- Check that file names match exactly (case-sensitive)
 
+### Images not showing?
+- Verify image URLs are correct
+- Upload images to your repository and use relative paths
 
-## Skils
-**Programming language:** Python, C/C++ 
-**Frameworks:** TensorFlow, Keras, PyTorch, langchain 
-**Libraries:** Scikit-learn, OpenCV, Pandas, Matplotlib, Seaborn 
-**Front-end:** HTML, CSS, JavaScript 
-**DevOps:** GitHub, Git, LaTeX 
+## 📧 Support
 
-## Specialized Major Courses
-- CSE323 (Operating System Design) | Grade: A (GPA 4.00/4.00)
-- CSE311 (Database Management System) | Grade: A (GPA 4.00/4.00)
-- CSE373 (Design Analysis of Algorithms) | Grade: A (GPA 4.00/4.00)
-- CSE440 (Artificial Engineering) | Grade: A (GPA 4.00/4.00)
-- CSE445 (Machine Learning) | Grade: A- (GPA 3.70/4.00)
-- CSE465 (Neural Network) | Grade: A (GPA 4.00/4.00)
-- CSE473 (Theory of Computation) | Grade: A (GPA 4.00/4.00)
-- CSE498 (Directed Research - NLP & RAG) | Grade: A (GPA 4.00/4.00)
-- CSE499A (Senior Design - Quantum Computing) | Grade A: (4.00/4.00)
-- CSE499B (Senior Design - Quantum Computing) | Grade A: (4.00/4.00)   
+If you need help with customization or deployment, please refer to:
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [GitHub Guides](https://guides.github.com/)
 
-## AWARDS AND ACHIEVEMENTS
-- Awared *magna cum laude* Distinction.
-- Top 10 out of 104 teams, Innovation Challenge 13, NSU ACM
-- Awarded 50% NSU merit-based Scholarship for achieving academic excellence. (Enhanced)
-- Awarded 25% NSU merit-based Scholarship for achieving academic excellence.
-- Worked on Four ($22500) NSU CTRGC-funded projects.
+---
+
+**Last Updated**: October 2025  
+**Version**: 1.0

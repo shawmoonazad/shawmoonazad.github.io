@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Md Shawmoon Azad - PhD Researcher in Post-Quantum Cryptography at Cleveland State University">
   
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Md Shawmoon Azad | Academic Portfolio">
+  <meta property="og:description" content="PhD Researcher specializing in Quantum Key Distribution, Post-Quantum Cryptography, and Explainable AI Systems">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shawmoonazad.github.io">
+  
   <title>Md Shawmoon Azad - Academic Portfolio</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
   
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,410 +30,188 @@
     }
 
     :root {
-      /* Enhanced Minimalist Palette */
-      --primary: #0f172a;
-      --secondary: #475569;
-      --accent: #b8936d;
-      --accent-dark: #8b6f47;
-      --accent-light: #d4bfa0;
+      /* Compact Academic color palette */
+      --primary-blue: #1e3a5f;
+      --accent-blue: #2e5090;
+      --light-blue: #4a7ba7;
+      --gold-accent: #b8860b;
       
-      --bg-primary: #fefefe;
-      --bg-secondary: #ffffff;
-      --bg-tertiary: #f8f9fa;
-      --bg-accent: #faf8f5;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-tertiary: #f0f2f5;
       
-      --text-primary: #0f172a;
-      --text-secondary: #64748b;
-      --text-light: #94a3b8;
+      --text-primary: #2c3e50;
+      --text-secondary: #5a6c7d;
+      --text-light: #718096;
       
-      --border: #e2e8f0;
-      --border-light: #f1f5f9;
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
       
-      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04);
-      --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08);
-      --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.12);
-      --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.16);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.08);
       
-      --max-width: 1200px;
-      --serif: 'Playfair Display', Georgia, serif;
+      --max-width: 1100px;
+      --serif: 'Crimson Text', Georgia, serif;
       --sans: 'Inter', -apple-system, sans-serif;
       --mono: 'JetBrains Mono', monospace;
-      
-      --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      --transition-fast: all 0.2s ease;
     }
 
     body {
       font-family: var(--sans);
       color: var(--text-primary);
       background: var(--bg-primary);
-      line-height: 1.7;
-      font-size: 16px;
+      line-height: 1.5;
+      font-size: 15px;
       -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-    
-    /* Global mobile link support */
-    a, button {
-      -webkit-tap-highlight-color: rgba(184, 147, 109, 0.2);
-      touch-action: manipulation;
     }
 
+    /* Typography - Compact */
     h1, h2, h3, h4, h5, h6 {
       font-family: var(--serif);
-      font-weight: 600;
-      line-height: 1.3;
-      color: var(--primary);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary-blue);
     }
 
-    /* Enhanced Navigation */
+    /* Navigation - Compact */
     header {
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-light);
+      background: var(--bg-primary);
+      border-bottom: 2px solid var(--primary-blue);
+      box-shadow: var(--shadow-sm);
       position: sticky;
       top: 0;
-      z-index: 1000;
-      transition: var(--transition);
-    }
-
-    header.scrolled {
-      box-shadow: var(--shadow-md);
-      background: rgba(255, 255, 255, 0.95);
+      z-index: 100;
     }
 
     .nav-container {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 0 32px;
+      padding: 0 20px;
     }
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 0;
+      padding: 12px 0;
     }
 
     .logo {
       font-family: var(--serif);
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
-      color: var(--primary);
+      color: var(--primary-blue);
       text-decoration: none;
-      letter-spacing: -0.5px;
-      transition: var(--transition);
-      position: relative;
     }
 
-    .logo::after {
+    .nav-menu {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
       content: '';
       position: absolute;
       bottom: -4px;
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-light));
-      transition: var(--transition);
-    }
-
-    .logo:hover::after {
-      width: 100%;
-    }
-
-    .nav-menu {
-      display: flex;
-      gap: 48px;
-      align-items: center;
-      list-style: none;
-    }
-
-    .nav-link {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      position: relative;
-      transition: var(--transition);
-      letter-spacing: 0.3px;
-    }
-
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: -6px;
-      left: 50%;
-      transform: translateX(-50%) scaleX(0);
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-light));
-      transition: transform 0.3s ease;
+      background: var(--gold-accent);
+      transition: width 0.3s ease;
     }
 
     .nav-link:hover,
     .nav-link.active {
-      color: var(--primary);
+      color: var(--accent-blue);
     }
 
+    .nav-link:hover::after,
     .nav-link.active::after {
-      transform: translateX(-50%) scaleX(1);
+      width: 100%;
     }
 
-    .cv-btn {
-      padding: 11px 28px;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    .cv-download {
+      padding: 8px 16px;
+      background: var(--primary-blue);
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      transition: var(--transition);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      box-shadow: var(--shadow-sm);
+      gap: 6px;
     }
 
-    .cv-btn:hover {
-      transform: translateY(-2px);
+    .cv-download:hover {
+      background: var(--accent-blue);
+      transform: translateY(-1px);
       box-shadow: var(--shadow-md);
     }
 
-    /* Mobile Menu Toggle */
-    .mobile-menu-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 6px;
-      cursor: pointer;
-      padding: 8px;
-      background: transparent;
-      border: none;
-      z-index: 1001;
-    }
-
-    .mobile-menu-toggle span {
-      width: 28px;
-      height: 3px;
-      background: var(--primary);
-      border-radius: 2px;
-      transition: var(--transition);
-    }
-
-    .mobile-menu-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(8px, 8px);
-    }
-
-    .mobile-menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .mobile-menu-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(8px, -8px);
-    }
-
-    /* Mobile Menu Overlay */
-    .mobile-menu-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(4px);
-      z-index: 999;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .mobile-menu-overlay.active {
-      opacity: 1;
-    }
-
-    /* Mobile Menu */
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 280px;
-      height: 100%;
-      background: var(--bg-secondary);
-      box-shadow: var(--shadow-xl);
-      z-index: 1000;
-      transition: right 0.3s ease;
-      overflow-y: auto;
-    }
-
-    .mobile-menu.active {
-      right: 0;
-    }
-
-    .mobile-menu-header {
-      padding: 24px 24px 16px;
-      border-bottom: 1px solid var(--border-light);
-    }
-
-    .mobile-menu-header .logo {
-      font-size: 20px;
-    }
-
-    .mobile-menu-items {
-      list-style: none;
-      padding: 16px 0;
-    }
-
-    .mobile-menu-items li {
-      margin: 0;
-    }
-
-    .mobile-menu-items .nav-link {
-      display: block;
-      padding: 16px 24px;
-      color: var(--text-primary);
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      transition: var(--transition-fast);
-      border-left: 3px solid transparent;
-    }
-
-    .mobile-menu-items .nav-link:hover,
-    .mobile-menu-items .nav-link.active {
-      background: var(--bg-tertiary);
-      border-left-color: var(--accent);
-      color: var(--primary);
-    }
-
-    .mobile-menu-items .nav-link::after {
-      display: none;
-    }
-
-    .mobile-menu-footer {
-      padding: 24px;
-      border-top: 1px solid var(--border-light);
-    }
-
-    .mobile-menu-footer .cv-btn {
-      width: 100%;
-      justify-content: center;
-    }
-
-    /* Page Container & Transitions */
-    .page-container {
-      min-height: calc(100vh - 80px);
-      opacity: 0;
-      animation: fadeInUp 0.6s ease forwards;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .page-transition {
-      animation: fadeOut 0.3s ease forwards;
-    }
-
-    @keyframes fadeOut {
-      from {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      to {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-    }
-
-    /* Enhanced Hero Section */
+    /* Hero Section - Compact */
     .hero {
-      padding: 120px 0 100px;
-      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-accent) 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -10%;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(184, 147, 109, 0.08) 0%, transparent 70%);
-      border-radius: 50%;
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+      padding: 50px 0;
+      border-bottom: 1px solid var(--border-light);
     }
 
     .hero-container {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 0 32px;
+      padding: 0 20px;
       display: grid;
-      grid-template-columns: 1fr 320px;
-      gap: 80px;
-      align-items: start;
-      position: relative;
-      z-index: 1;
+      grid-template-columns: 1fr 280px;
+      gap: 40px;
+      align-items: center;
     }
 
     .hero-content h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
-      font-weight: 700;
-      letter-spacing: -1.5px;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      font-size: 38px;
+      margin-bottom: 10px;
+      color: var(--primary-blue);
     }
 
     .hero-title {
-      font-family: var(--sans);
+      font-family: var(--serif);
       font-weight: 400;
-      font-size: 19px;
+      font-size: 20px;
       color: var(--text-secondary);
-      margin-bottom: 32px;
-      letter-spacing: 0.5px;
+      margin-bottom: 16px;
     }
 
     .hero-affiliation {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       color: var(--text-secondary);
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       font-size: 16px;
-      padding: 14px 24px;
-      background: var(--bg-secondary);
-      border-radius: 8px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border-light);
     }
 
     .hero-affiliation i {
-      color: var(--accent);
-      font-size: 18px;
+      color: var(--gold-accent);
     }
 
     .hero-description {
-      font-size: 17px;
-      line-height: 1.9;
-      color: var(--text-secondary);
-      margin-bottom: 40px;
-      max-width: 680px;
-    }
-
-    .hero-description strong {
-      color: var(--primary);
-      font-weight: 600;
+      font-family: var(--serif);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text-primary);
+      margin-bottom: 20px;
     }
 
     .hero-links {
@@ -439,1074 +223,271 @@
     .hero-link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-medium);
+      border-radius: 4px;
       color: var(--text-primary);
       text-decoration: none;
-      font-size: 14px;
-      transition: var(--transition);
-      font-weight: 500;
-      box-shadow: var(--shadow-sm);
-      /* Mobile touch support */
-      -webkit-tap-highlight-color: rgba(184, 147, 109, 0.2);
-      touch-action: manipulation;
-      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.3s ease;
     }
 
     .hero-link:hover {
-      background: var(--primary);
+      background: var(--primary-blue);
       color: white;
-      border-color: var(--primary);
-      transform: translateY(-3px);
+      border-color: var(--primary-blue);
+      transform: translateY(-1px);
       box-shadow: var(--shadow-md);
     }
 
     .profile-section {
-      position: sticky;
-      top: 140px;
+      text-align: center;
     }
-
-    .profile-image-wrapper {
-      position: relative;
-      margin-bottom: 28px;
-    }
-
-    /* .profile-image-wrapper::before {
-      content: '';
-      position: absolute;
-      top: -12px;
-      left: -12px;
-      right: -12px;
-      bottom: -12px;
-      background: linear-gradient(135deg, var(--accent-light), var(--accent));
-      border-radius: 12px;
-      z-index: -1;
-    } */
 
     .profile-image {
-      width: 100%;
-      height: 100%;
-      aspect-ratio: 1;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
       object-fit: cover;
-      border-radius: 12px;
-      box-shadow: var(--shadow-xl);
-      filter: grayscale(15%);
-      transition: var(--transition);
-    }
-
-    .profile-image:hover {
-      filter: grayscale(0%);
-      transform: scale(1.02);
+      border: 3px solid var(--primary-blue);
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-lg);
     }
 
     .profile-stats {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 10px;
+      text-align: center;
     }
 
     .stat-item {
-      padding: 24px 18px;
-      background: var(--bg-secondary);
-      border-radius: 10px;
-      text-align: center;
-      transition: var(--transition);
+      padding: 12px;
+      background: var(--bg-primary);
+      border-radius: 6px;
       border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .stat-item:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-4px);
     }
 
     .stat-value {
       font-family: var(--serif);
-      font-size: 36px;
+      font-size: 24px;
       font-weight: 700;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--primary-blue);
       display: block;
-      margin-bottom: 6px;
     }
 
     .stat-label {
       font-size: 11px;
       color: var(--text-secondary);
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
     }
 
-    /* Section Styling */
+    /* Section Styling - Compact */
     section {
-      padding: 100px 0;
+      padding: 50px 0;
     }
 
     .section-container {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 0 32px;
+      padding: 0 20px;
     }
 
     .section-header {
-      margin-bottom: 64px;
+      margin-bottom: 32px;
       text-align: center;
-    }
-
-    .section-label {
-      display: inline-block;
-      padding: 6px 16px;
-      background: linear-gradient(135deg, var(--accent-light), var(--accent));
-      color: white;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 20px;
     }
 
     .section-title {
       font-family: var(--serif);
-      font-size: 48px;
-      color: var(--primary);
-      margin-bottom: 16px;
-      font-weight: 700;
-      letter-spacing: -1px;
+      font-size: 30px;
+      color: var(--primary-blue);
+      margin-bottom: 8px;
     }
 
     .section-subtitle {
-      font-size: 18px;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
       color: var(--text-secondary);
-      font-weight: 400;
-      max-width: 600px;
-      margin: 0 auto;
     }
 
-    /* Enhanced News Section */
-    .news-timeline {
-      position: relative;
-      padding-left: 50px;
+    /* News Section - Compact */
+    .news-container {
       max-width: 900px;
       margin: 0 auto;
     }
 
-    .news-timeline::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: linear-gradient(to bottom, var(--accent), transparent);
-      border-radius: 2px;
-    }
-
     .news-item {
-      position: relative;
-      margin-bottom: 52px;
-      padding: 28px 36px;
-      background: var(--bg-secondary);
-      border-radius: 12px;
-      border: 1px solid var(--border-light);
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border-light);
+      transition: all 0.3s ease;
     }
 
-    .news-item::before {
-      content: '';
-      position: absolute;
-      left: -54px;
-      top: 36px;
-      width: 12px;
-      height: 12px;
-      background: var(--accent);
-      border-radius: 50%;
-      border: 3px solid var(--bg-primary);
-      box-shadow: 0 0 0 4px rgba(184, 147, 109, 0.1);
+    .news-item:last-child {
+      border-bottom: none;
     }
 
     .news-item:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-lg);
-      transform: translateX(8px);
+      background: var(--bg-primary);
+      margin: 0 -16px;
+      padding: 18px 16px;
+      border-radius: 6px;
+      box-shadow: var(--shadow-sm);
     }
 
     .news-date {
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 12px;
-      letter-spacing: 1px;
+      flex-shrink: 0;
+      width: 70px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 4px;
+    }
+
+    .news-date .month {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .news-date .day {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      line-height: 1;
+      margin: 2px 0;
+    }
+
+    .news-date .year {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .news-content {
+      flex: 1;
     }
 
     .news-title {
       font-family: var(--serif);
-      font-size: 22px;
-      color: var(--primary);
-      margin-bottom: 12px;
-      line-height: 1.4;
-      font-weight: 600;
+      font-size: 18px;
+      color: var(--primary-blue);
+      margin-bottom: 6px;
+      line-height: 1.3;
     }
 
     .news-description {
-      font-size: 15px;
+      font-size: 14px;
       color: var(--text-secondary);
-      line-height: 1.8;
-      margin-bottom: 14px;
+      line-height: 1.5;
+      margin-bottom: 8px;
     }
 
     .news-tag {
       display: inline-block;
-      padding: 6px 14px;
-      border-radius: 6px;
+      padding: 3px 10px;
+      border-radius: 3px;
       font-size: 11px;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      background: var(--bg-tertiary);
-      color: var(--text-secondary);
-      border: 1px solid var(--border-light);
-    }
-
-    /* Timeline Section */
-    .timeline {
-      position: relative;
-      padding-left: 50px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: linear-gradient(to bottom, var(--accent), transparent);
-      border-radius: 2px;
-    }
-
-    .timeline-item {
-      position: relative;
-      margin-bottom: 52px;
-      padding: 32px 36px;
-      background: var(--bg-secondary);
-      border-radius: 12px;
-      border: 1px solid var(--border-light);
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -54px;
-      top: 40px;
-      width: 16px;
-      height: 16px;
-      background: var(--accent);
-      border-radius: 50%;
-      border: 4px solid var(--bg-primary);
-      box-shadow: 0 0 0 4px rgba(184, 147, 109, 0.15);
-    }
-
-    .timeline-item:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-lg);
-      transform: translateX(8px);
-    }
-
-    .timeline-date {
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 12px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .timeline-title {
-      font-family: var(--serif);
-      font-size: 26px;
-      color: var(--primary);
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    .timeline-institution {
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 14px;
-      font-size: 17px;
-    }
-
-    .timeline-description {
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.8;
-    }
-
-    /* Combined Research & Publications Page */
-    .research-publications-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 48px;
-      gap: 32px;
-    }
-
-    .tabs-container {
-      display: flex;
-      gap: 8px;
-      background: var(--bg-tertiary);
-      padding: 6px;
-      border-radius: 10px;
-      border: 1px solid var(--border-light);
-    }
-
-    .tab-btn {
-      padding: 12px 28px;
-      background: transparent;
-      border: none;
-      border-radius: 8px;
-      color: var(--text-secondary);
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: var(--transition);
-      font-family: var(--sans);
       letter-spacing: 0.3px;
-      /* Mobile touch support */
-      -webkit-tap-highlight-color: rgba(184, 147, 109, 0.2);
-      touch-action: manipulation;
     }
 
-    .tab-btn:hover {
-      color: var(--primary);
+    .news-tag.quantum {
+      background: #e0e7ff;
+      color: #3730a3;
     }
 
-    .tab-btn.active {
-      background: var(--bg-secondary);
-      color: var(--primary);
-      box-shadow: var(--shadow-sm);
+    .news-tag.ai {
+      background: #fce7f3;
+      color: #a21caf;
     }
 
-    .search-filter-container {
-      display: flex;
-      gap: 12px;
-      align-items: center;
+    .news-tag.milestone {
+      background: #fef3c7;
+      color: #92400e;
     }
 
-    .search-box {
-      position: relative;
+    .view-all-news {
+      text-align: center;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
     }
 
-    .search-box input {
-      padding: 12px 44px 12px 20px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      font-family: var(--sans);
-      font-size: 14px;
-      width: 320px;
-      transition: var(--transition);
-      background: var(--bg-secondary);
-    }
-
-    .search-box input:focus {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: 0 0 0 4px rgba(184, 147, 109, 0.1);
-    }
-
-    .search-box i {
-      position: absolute;
-      right: 18px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--text-light);
-    }
-
-    .filter-dropdown {
-      position: relative;
-    }
-
-    .filter-btn {
-      padding: 12px 24px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      color: var(--text-primary);
-      font-size: 14px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: var(--transition);
-      font-family: var(--sans);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .filter-btn:hover {
-      border-color: var(--accent);
-      box-shadow: var(--shadow-sm);
-    }
-
-    /* Research Interest Cards */
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 32px;
-      margin-top: 48px;
-    }
-
-    .research-card {
-      padding: 40px 36px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-light);
-      border-radius: 16px;
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .research-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-light));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: var(--transition);
-    }
-
-    .research-card:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-8px);
-    }
-
-    .research-card:hover::before {
-      transform: scaleX(1);
-    }
-
-    .research-icon {
-      width: 64px;
-      height: 64px;
-      background: linear-gradient(135deg, var(--accent-light), var(--accent));
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 28px;
-      margin-bottom: 28px;
-      box-shadow: 0 8px 16px rgba(184, 147, 109, 0.2);
-    }
-
-    .research-card h3 {
-      font-size: 26px;
-      margin-bottom: 16px;
-      color: var(--primary);
-      font-weight: 700;
-    }
-
-    .research-card p {
-      color: var(--text-secondary);
-      line-height: 1.8;
-      margin-bottom: 24px;
-      font-size: 15px;
-    }
-
-    .research-keywords {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .keyword-tag {
-      padding: 8px 16px;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      font-size: 12px;
-      color: var(--text-secondary);
-      font-family: var(--mono);
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      border: 1px solid var(--border-light);
-      transition: var(--transition-fast);
-    }
-
-    .keyword-tag:hover {
-      background: var(--accent-light);
-      color: white;
-      border-color: var(--accent);
-    }
-
-    /* Publications List */
-    .publications-list {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      margin-top: 48px;
-    }
-
-    .publication-card {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-light);
-      border-radius: 16px;
-      transition: var(--transition);
-      align-items: start;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .publication-card:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-4px);
-    }
-
-    .publication-image {
-      flex: 0 0 240px;
-      aspect-ratio: 16 / 10;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--border-light);
-      background: var(--bg-tertiary);
-      box-shadow: var(--shadow-md);
-    }
-
-    .publication-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: var(--transition);
-      filter: grayscale(20%);
-    }
-
-    .publication-card:hover .publication-image img {
-      transform: scale(1.08);
-      filter: grayscale(0%);
-    }
-
-    .publication-details {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .publication-type {
-      display: inline-block;
-      padding: 4px 12px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      border-radius: 6px;
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      margin-bottom: 10px;
-    }
-
-    .publication-title {
-      font-family: var(--serif);
-      font-size: 19px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 8px;
-    }
-
-    .publication-title a {
-      color: var(--primary);
-      text-decoration: none;
-      transition: var(--transition);
-      /* Mobile touch support */
-      -webkit-tap-highlight-color: rgba(184, 147, 109, 0.2);
-      touch-action: manipulation;
-      cursor: pointer;
-    }
-
-    .publication-title a:hover {
-      color: var(--accent);
-    }
-
-    .publication-authors {
-      font-size: 13px;
-      color: var(--text-secondary);
-      margin-bottom: 6px;
-    }
-
-    .publication-authors .highlight {
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    .publication-venue {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 14px;
-      color: var(--text-primary);
-      margin-bottom: 10px;
-    }
-
-    .publication-summary {
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-
-    .publication-meta {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 12px;
-      flex-wrap: wrap;
-    }
-
-    .meta-badge {
-      padding: 4px 10px;
-      background: var(--bg-tertiary);
-      border-radius: 6px;
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--text-secondary);
-      letter-spacing: 0.8px;
-      border: 1px solid var(--border-light);
-    }
-
-    .publication-links {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .pub-link {
+    .view-all-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 16px;
-      background: transparent;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--text-primary);
+      color: var(--primary-blue);
       text-decoration: none;
-      font-size: 12px;
       font-weight: 600;
-      transition: var(--transition);
-      /* Mobile touch support */
-      -webkit-tap-highlight-color: rgba(184, 147, 109, 0.2);
-      touch-action: manipulation;
-      cursor: pointer;
-    }
-
-    .pub-link:hover {
-      background: var(--primary);
-      color: white;
-      border-color: var(--primary);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
-    }
-
-    /* Teaching Page */
-    .teaching-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 32px;
-    }
-
-    .teaching-card {
-      padding: 36px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-light);
-      border-radius: 16px;
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .teaching-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(180deg, var(--accent), var(--accent-light));
-      transform: scaleY(0);
-      transform-origin: top;
-      transition: var(--transition);
-    }
-
-    .teaching-card:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-8px);
-    }
-
-    .teaching-card:hover::before {
-      transform: scaleY(1);
-    }
-
-    .course-code {
-      font-family: var(--mono);
       font-size: 14px;
-      color: var(--accent);
-      font-weight: 700;
-      margin-bottom: 14px;
-      letter-spacing: 1px;
+      transition: all 0.3s ease;
     }
 
-    .course-name {
-      font-family: var(--serif);
-      font-size: 24px;
-      color: var(--primary);
-      margin-bottom: 18px;
-      font-weight: 700;
-    }
-
-    .course-details {
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.8;
-      margin-bottom: 24px;
-    }
-
-    .student-count {
-      padding-top: 18px;
-      border-top: 1px solid var(--border-light);
-      font-size: 14px;
-      color: var(--text-secondary);
-      display: flex;
-      align-items: center;
+    .view-all-link:hover {
+      color: var(--accent-blue);
       gap: 10px;
-      font-weight: 600;
     }
 
-    .student-count i {
-      color: var(--accent);
-    }
-
-    /* Awards Page */
-    .awards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 28px;
-    }
-
-    .award-card {
-      display: flex;
-      align-items: start;
-      gap: 24px;
-      padding: 32px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-light);
-      border-radius: 16px;
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .award-card:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-6px);
-    }
-
-    .award-icon {
-      flex-shrink: 0;
-      width: 56px;
-      height: 56px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-      color: white;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      box-shadow: 0 8px 16px rgba(184, 147, 109, 0.3);
-    }
-
-    .award-content {
-      flex: 1;
-    }
-
-    .award-title {
-      font-weight: 700;
-      font-size: 18px;
-      color: var(--primary);
-      margin-bottom: 8px;
-    }
-
-    .award-year {
-      font-size: 14px;
-      color: var(--text-secondary);
-      font-weight: 500;
-    }
-
-    /* Blog Page */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 32px;
-      margin-top: 48px;
-    }
-
-    .blog-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-light);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .blog-card:hover {
-      border-color: var(--accent-light);
-      box-shadow: var(--shadow-xl);
-      transform: translateY(-8px);
-    }
-
-    .blog-image {
-      width: 100%;
-      height: 240px;
-      overflow: hidden;
-      background: var(--bg-tertiary);
-      position: relative;
-    }
-
-    .blog-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: var(--transition);
-      filter: grayscale(20%);
-    }
-
-    .blog-card:hover .blog-image img {
-      transform: scale(1.1);
-      filter: grayscale(0%);
-    }
-
-    .blog-tag-overlay {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      padding: 6px 14px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .blog-content {
-      padding: 32px;
-    }
-
-    .blog-meta {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 16px;
-      color: var(--text-light);
-      font-size: 13px;
-    }
-
-    .blog-meta i {
-      color: var(--accent);
-    }
-
-    .blog-title {
-      font-family: var(--serif);
-      font-size: 22px;
-      color: var(--primary);
-      margin-bottom: 12px;
-      line-height: 1.4;
-      font-weight: 700;
-    }
-
-    .blog-title a {
-      color: var(--primary);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .blog-title a:hover {
-      color: var(--accent);
-    }
-
-    .blog-excerpt {
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .blog-read-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
-      transition: var(--transition);
-    }
-
-    .blog-read-more:hover {
-      gap: 12px;
-      color: var(--accent-dark);
-    }
-
-    /* Footer */
+    /* Footer - Compact */
     footer {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      background: var(--primary-blue);
       color: white;
-      padding: 56px 0;
-      margin-top: 100px;
+      padding: 28px 0;
+      text-align: center;
     }
 
     .footer-content {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 0 32px;
-      text-align: center;
+      padding: 0 20px;
     }
 
     .footer-links {
       display: flex;
       justify-content: center;
-      gap: 36px;
-      margin-bottom: 28px;
-      flex-wrap: wrap;
+      gap: 24px;
+      margin-bottom: 16px;
     }
 
     .footer-link {
       color: white;
       text-decoration: none;
-      opacity: 0.85;
-      transition: var(--transition);
-      font-size: 15px;
-      font-weight: 500;
+      opacity: 0.9;
+      font-size: 14px;
+      transition: opacity 0.3s ease;
     }
 
     .footer-link:hover {
       opacity: 1;
-      transform: translateY(-2px);
+      text-decoration: underline;
     }
 
     .footer-text {
       font-size: 13px;
-      opacity: 0.7;
-      letter-spacing: 0.5px;
-    }
-
-    /* Back to top button */
-    .back-to-top {
-      position: fixed;
-      bottom: 36px;
-      right: 36px;
-      width: 52px;
-      height: 52px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-      color: white;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      visibility: hidden;
-      transition: var(--transition);
-      box-shadow: var(--shadow-lg);
-      z-index: 999;
-      font-size: 18px;
-    }
-
-    .back-to-top.visible {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .back-to-top:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-xl);
-    }
-
-    /* Scroll animations */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
+      opacity: 0.8;
     }
 
     /* Responsive */
     @media (max-width: 968px) {
       .hero-container {
         grid-template-columns: 1fr;
-        gap: 48px;
-      }
-
-      .profile-section {
-        position: static;
-        max-width: 320px;
-        margin: 0 auto;
-      }
-
-      .publication-card {
-        flex-direction: column;
-        padding: 16px;
-        gap: 16px;
-      }
-
-      .publication-image {
-        width: 100%;
-        flex: none;
+        text-align: center;
       }
 
       .nav-menu {
-        gap: 24px;
-      }
-
-      .section-title {
-        font-size: 36px;
-      }
-
-      .hero-content h1 {
-        font-size: 42px;
-      }
-
-      .research-publications-header {
-        flex-direction: column;
-      }
-
-      .search-box input {
-        width: 100%;
+        gap: 16px;
       }
     }
 
@@ -1515,125 +496,228 @@
         display: none;
       }
 
-      .mobile-menu-toggle {
-        display: flex;
+      .hero h1 {
+        font-size: 32px;
       }
 
-      .mobile-menu-overlay,
-      .mobile-menu {
-        display: block;
-      }
-
-      section {
-        padding: 60px 0;
-      }
-
-      .tabs-container {
-        width: 100%;
-      }
-
-      .tab-btn {
-        flex: 1;
-        padding: 10px 16px;
-        font-size: 13px;
-      }
-      
-      .publication-card {
-        flex-direction: column;
-        padding: 14px;
-        gap: 12px;
-      }
-      
-      .publication-image {
-        width: 100%;
-        flex: none;
-      }
-      
-      .publication-title {
-        font-size: 17px;
-      }
-      
-      .publication-authors,
-      .publication-venue,
-      .publication-summary {
-        font-size: 12px;
-      }
-      
-      /* Ensure hero links are clickable on mobile */
-      .hero-link {
-        pointer-events: auto;
-        cursor: pointer;
-        -webkit-tap-highlight-color: rgba(184, 147, 109, 0.2);
-      }
-      
-      /* Make all links touchable on mobile */
-      a {
-        -webkit-tap-highlight-color: rgba(184, 147, 109, 0.2);
+      .section-title {
+        font-size: 26px;
       }
     }
   </style>
 </head>
 <body>
   <!-- Navigation -->
-  <header id="header">
+  <header>
     <div class="nav-container">
       <nav>
-        <a href="#" class="logo" data-page="home">Shawmoon Azad</a>
+        <a href="index.html" class="logo">Md Shawmoon Azad</a>
         
         <ul class="nav-menu">
-          <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
-          <li><a href="#" class="nav-link" data-page="research">Research & Publications</a></li>
-          <li><a href="#" class="nav-link" data-page="teaching">Teaching & Mentoring</a></li>
-          <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
-          <li><a href="#" class="nav-link" data-page="awards">Awards</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
           <li>
-            <a href="./assets/cv/shawmoonCV.pdf" class="cv-btn">
+            <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
               <i class="fas fa-file-pdf"></i>
               CV
             </a>
           </li>
         </ul>
-
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </nav>
     </div>
   </header>
 
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-
-  <!-- Mobile Menu -->
-  <nav class="mobile-menu" id="mobileMenu">
-    <div class="mobile-menu-header">
-      <a href="#" class="logo" data-page="home">Shawmoon Azad</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Md Shawmoon Azad</h1>
+        <div class="hero-title">Graduate Research Assistant</div>
+        
+        <div class="hero-affiliation">
+          <i class="fas fa-university"></i>
+          Intelligent Secure Cyber-Systems and Applications Research Lab (ISCAR-Lab), Cleveland State University
+        </div>
+        
+        <p class="hero-description">
+          Hi! I'm <strong>Md Shawmoon Azad</strong>, a researcher exploring the intersection of <strong>Quantum Security × AI</strong>. 
+          I'm currently pursuing my Ph.D. in Computer Science at Cleveland State University under the supervision of <strong>Dr. Sathish A. P. Kumar</strong>, 
+          where I work on <strong>Hybrid Post-Quantum TLS frameworks</strong> for quantum-safe cloud communication.<br><br>
+          Previously, I was a Research Assistant at the Optics-Quantum & AI Lab of North South University, supervised by <strong>Dr. Mahdy Rahman Chowdhury</strong> and I have also closely worked with <strong>Dr. Sifat Momen</strong>.<br><br> 
+          <strong>Research Interests:</strong> (I) NIST-Aligned Hybrid Quantum–Classical Cryptography, 
+          (II) Post-Quantum Communication Protocols, 
+          (III) Efficient Quantum Machine Learning (QML) for Constrained Hardware, 
+          (IV) Translational Quantum × AI Applications.<br><br>
+          Email me for collaborations or research discussions!
+        </p>
+     
+        <div class="hero-links">
+          <a href="mailto:m.azad@vikes.csuohio.edu" class="hero-link">
+            <i class="fas fa-envelope"></i>
+            CSU Email
+          </a>
+          <a href="mailto:shawmoon.cs@gmail.com" class="hero-link">
+            <i class="fas fa-envelope"></i>
+            Gmail
+          </a>
+          <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ" target="_blank" class="hero-link">
+            <i class="ai ai-google-scholar"></i>
+            Scholar
+          </a>
+          <a href="https://orcid.org/0009-0005-1318-072X" target="_blank" class="hero-link">
+            <i class="ai ai-orcid"></i>
+            ORCID
+          </a>
+          <a href="https://github.com/shawmoonazad" target="_blank" class="hero-link">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/shawmoonazad" target="_blank" class="hero-link">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      
+      <div class="profile-section">
+        <img src="./assets/img/shawmoon.jpg" alt="Md Shawmoon Azad" class="profile-image">
+        
+        <div class="profile-stats">
+          <div class="stat-item">
+            <span class="stat-value">5+</span>
+            <span class="stat-label">Q1 Papers Published</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">14.9</span>
+            <span class="stat-label">Cumul. IF</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">~10</span>
+            <span class="stat-label">Students Mentored</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">~50</span>
+            <span class="stat-label">Citations</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul class="mobile-menu-items">
-      <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
-      <li><a href="#" class="nav-link" data-page="research">Research & Publications</a></li>
-      <li><a href="#" class="nav-link" data-page="teaching">Teaching & Mentoring</a></li>
-      <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
-      <li><a href="#" class="nav-link" data-page="awards">Awards</a></li>
-    </ul>
-    <div class="mobile-menu-footer">
-      <a href="./assets/cv/shawmoonCV.pdf" class="cv-btn">
-        <i class="fas fa-file-pdf"></i>
-        Download CV
-      </a>
+  </section>
+
+  <!-- News & Updates Section -->
+  <section id="news" style="background: var(--bg-secondary);">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">News & Updates</h2>
+        <p class="section-subtitle">Recent Achievements and Publications</p>
+      </div>
+      
+      <div class="news-container">
+        <div class="news-item">
+          <div class="news-date">
+            <span class="month">Sept</span>
+            <span class="day">09</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Published paper on Chaos-Assisted Quantum Key distribution research</h3>
+            <p class="news-description">
+              Our article on quantum-secure image transmission via chaos-assisted QKD (entanglement-based) is published in 
+              <em>IET Quantum Communication</em>. Thanks to collaborators!
+            </p>
+            <span class="news-tag quantum">Quantum Computing</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">
+            <span class="month">AUG</span>
+            <span class="day">22</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">My supervised QSAC Paper got Published</h3>
+            <p class="news-description">
+              "QSAC: Quantum-assisted Secure Audio Communication"—combining entanglement, audio steganography, and classical encryption—published in <em>Engineering Science & Technology</em>. Thanks to my student and co-authors!
+            </p>
+            <span class="news-tag quantum">Quantum Computing</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">
+            <span class="month">Aug</span>
+            <span class="day">14</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Started PhD at Cleveland State University (ISCAR Lab)</h3>
+            <p class="news-description">
+              I am joining Cleveland State University as a Fully Funded PhD student to advance hybrid quantum-classical security and quantum-safe cloud TLS.
+            </p>
+            <span class="news-tag milestone">Milestone</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">
+            <span class="month">JUL</span>
+            <span class="day">09</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Published paper on Multilayered QKD-Integrated Steganography research</h3>
+            <p class="news-description">
+              Our multi-layered security framework integrating QKD with classical crypto and DL-based steganography appears in 
+              <em>Alexandria Engineering Journal</em>.
+            </p>
+            <span class="news-tag quantum">Quantum computing</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">
+            <span class="month">AUG</span>
+            <span class="day">16</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Research on Self-Assessment Depression got Published</h3>
+            <p class="news-description">
+              Our ML + NLP study for culturally contextualized depression self-assessment among Bangladeshi university students is 
+              published in <em>ARRAY</em>.
+            </p>
+            <span class="news-tag ai">AI/Healthcare</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">
+            <span class="month">DEC</span>
+            <span class="day">27</span>
+            <span class="year">2023</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Published research on Consumer Behavior Modeling</h3>
+            <p class="news-description">
+              Our TPB + ML work on predicting consumer purchase behavior is published in <em>PLOS ONE</em>.
+            </p>
+            <span class="news-tag ai">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="view-all-news">
+          <a href="publications.html" class="view-all-link">
+            View All Publications <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </nav>
-
-  <!-- Main Content Container -->
-  <main id="app"></main>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -1653,1095 +737,20 @@
         </a>
       </div>
       <p class="footer-text">
-        © 2025 Webpage created and managed by Md Shawmoon Azad. All rights reserved.
+        © 2025 Md Shawmoon Azad. All rights reserved. | Last updated: October 2025
       </p>
     </div>
   </footer>
 
   <script>
-    // SPA Router
-    class Router {
-      constructor() {
-        this.routes = {
-          home: this.renderHome,
-          research: this.renderResearch,
-          teaching: this.renderTeaching,
-          blog: this.renderBlog,
-          awards: this.renderAwards
-        };
-        this.currentPage = 'home';
-        this.currentTab = 'interests'; // For research page tabs
-        this.init();
-      }
-
-      init() {
-        // Handle navigation clicks
-        document.querySelectorAll('[data-page]').forEach(link => {
-          link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const page = e.target.closest('[data-page]').dataset.page;
-            this.navigate(page);
-          });
-        });
-
-        // Initial render
-        this.navigate('home', false);
-      }
-
-      navigate(page, animate = true) {
-        if (this.routes[page]) {
-          this.currentPage = page;
-          
-          // Update active nav link (desktop)
-          document.querySelectorAll('.nav-menu .nav-link').forEach(link => {
-            link.classList.remove('active');
-            if (link.dataset.page === page) {
-              link.classList.add('active');
-            }
-          });
-
-          // Update active nav link (mobile)
-          document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
-            link.classList.remove('active');
-            if (link.dataset.page === page) {
-              link.classList.add('active');
-            }
-          });
-
-          // Render page with transition
-          const app = document.getElementById('app');
-          
-          if (animate) {
-            app.classList.add('page-transition');
-            setTimeout(() => {
-              this.routes[page].call(this);
-              app.classList.remove('page-transition');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-              this.initScrollAnimations();
-            }, 300);
-          } else {
-            this.routes[page].call(this);
-            this.initScrollAnimations();
-          }
-        }
-      }
-
-      renderHome() {
-        const app = document.getElementById('app');
-        app.innerHTML = `
-          <div class="page-container">
-            <!-- Hero Section -->
-            <section class="hero">
-              <div class="hero-container">
-                <div class="hero-content fade-in">
-                  <h1>Md Shawmoon Azad</h1>
-                  <div class="hero-title">Graduate Reseach Assistant</div>
-                  
-                  <div class="hero-affiliation">
-                    <i class="fas fa-university"></i>
-                    Intelligent Secure Cyber-Systems and Applications Research Lab (ISCAR-Lab), Cleveland State University
-                  </div>
-                  
-                      <p class="hero-description">
-                        Hi! I’m <strong>Md Shawmoon Azad</strong>, a researcher exploring the intersection of <strong>Quantum Security x AI</strong>. 
-                        I’m currently pursuing my Ph.D. in Computer Science at Cleveland State University under the supervision of <strong>Dr. Sathish A. P. Kumar</strong>, 
-                        where I work on <strong>Hybrid Post-Quantum TLS frameworks</strong> for quantum-safe cloud communication. <br>
-                        Previously, I was a Research Assistant at the Optics-Quantum & AI Lab of North South University, supervised by <strong>Dr. Mahdy Rahman Chowdhury</strong> and I have also closely worked with <strong>Dr. Sifat Momen</strong>.<br> 
-                        <strong>Research Interests:</strong> (I) NIST-Aligned Hybrid Quantum–Classical Cryptography, 
-                        (II) Post-Quantum Communication Protocols, 
-                        (III) Efficient Quantum Machine Learning (QML) for Constrained Hardware, 
-                        (IV) Translational Quantum × AI Applications.
-                        Email me for collaborations or research discussions!
-                        <strong> Email: <\strong> m.azad@vikes.csuohio.edu or shawmoon.cs@gmail.com
-                      </p>
-
-               
-                  <div class="hero-links">
-                    <a href="mailto:m.azad@vikes.csuohio.edu" class="hero-link">
-                      <i class="fas fa-envelope"></i>
-                      Email
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ" target="_blank" class="hero-link">
-                      <i class="ai ai-google-scholar"></i>
-                      Scholar
-                    </a>
-                    <a href="https://orcid.org/0009-0005-1318-072X" target="_blank" class="hero-link">
-                      <i class="ai ai-orcid"></i>
-                      ORCID
-                    </a>
-                    <a href="https://github.com/shawmoonazad" target="_blank" class="hero-link">
-                      <i class="fab fa-github"></i>
-                      GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/shawmoonazad" target="_blank" class="hero-link">
-                      <i class="fab fa-linkedin"></i>
-                      LinkedIn
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="profile-section fade-in">
-                  <div class="profile-image-wrapper">
-                    <img src="./assets/img/shawmoon.jpg" alt="Md Shawmoon Azad" class="profile-image">
-                  </div>
-                  
-                  <div class="profile-stats">
-                    <div class="stat-item">
-                      <span class="stat-value">5+</span>
-                      <span class="stat-label">Q1 Papers</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-value">14.9</span>
-                      <span class="stat-label">Cumul. IF</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-value">1200+</span>
-                      <span class="stat-label">Students</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-value">~40</span>
-                      <span class="stat-label">Citations</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- News Section -->
-            <section style="background: var(--bg-accent);">
-              <div class="section-container">
-                <div class="section-header fade-in">
-                  <span class="section-label">Latest Updates</span>
-                  <h2 class="section-title">Recent Achievements</h2>
-                  <p class="section-subtitle">Latest publications and milestones in my research journey</p>
-                </div>
-                
-                <div class="news-timeline">
-                  <div class="news-item fade-in">
-                    <div class="news-date">SEPT 09, 2025</div>
-                    <h3 class="news-title">Published Paper on Chaos-Assisted Quantum Key Distribution</h3>
-                    <p class="news-description">
-                      Our article on quantum-secure image transmission via chaos-assisted QKD (entanglement-based) is accepted in 
-                      <em>IET Quantum Communication</em>. Thanks to collaborators!
-                    </p>
-                    <span class="news-tag">Quantum Computing</span>
-                  </div>
-
-                  <div class="news-item fade-in">
-                    <div class="news-date">AUG 22, 2025</div>
-                    <h3 class="news-title">QSAC Paper Published in Engineering Journal</h3>
-                    <p class="news-description">
-                      "QSAC: Quantum-assisted Secure Audio Communication"—combining entanglement, audio steganography, and classical encryption—published in <em>Engineering Science & Technology</em>.
-                    </p>
-                    <span class="news-tag">Quantum Computing</span>
-                  </div>
-
-                  <div class="news-item fade-in">
-                    <div class="news-date">AUG 14, 2025</div>
-                    <h3 class="news-title">Started PhD at Cleveland State University</h3>
-                    <p class="news-description">
-                      I am joining Cleveland State University as a Fully Funded PhD student to advance hybrid quantum-classical security and quantum-safe cloud TLS.
-                    </p>
-                    <span class="news-tag">Milestone</span>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Timeline Section -->
-              <section style="background: var(--bg-secondary);">
-                <div class="section-container">
-                  <div class="section-header fade-in">
-                    <span class="section-label">Career Path</span>
-                    <h2 class="section-title">Academic Journey</h2>
-                    <p class="section-subtitle">Education and professional experience milestones</p>
-                  </div>
-
-                  <div class="timeline">
-
-                    <!-- PhD -->
-                    <div class="timeline-item fade-in">
-                      <div class="timeline-date">AUG 2025 – PRESENT</div>
-                      <h3 class="timeline-title">Ph.D. in Computer Science</h3>
-                      <div class="timeline-institution">Cleveland State University (CSU), USA</div>
-                      <p class="timeline-description">
-                        Graduate Research Assistant, <strong>Intelligent Secure Cyber-Systems and Applications (ISCAR) Lab</strong><br>
-                        Advisor: <strong>Dr. Sathish A. P. Kumar</strong><br>
-                        Research: <em>Hybrid Post-Quantum TLS/IPsec Frameworks for Quantum-Safe Cloud Communication</em>
-                      </p>
-                    </div>
-
-                    <!-- Quantum Research Assistant -->
-                    <div class="timeline-item fade-in">
-                      <div class="timeline-date">OCT 2023 – JUL 2025</div>
-                      <h3 class="timeline-title">Quantum Research Assistant</h3>
-                      <div class="timeline-institution">NSU Optics-Quantum & AI Lab, North South University</div>
-                      <p class="timeline-description">
-                        Supervisors: <strong>Dr. Mahdy Rahman Chowdhury</strong><br>
-                        Research: Developed hybrid Quantum–Classical security protocols using QKD (BB84, B92, E91, W-state).<br>
-
-                      </p>
-                    </div>
-
-                    <!-- AI Research Assistant -->
-                    <div class="timeline-item fade-in">
-                      <div class="timeline-date">JAN 2024 – JAN 2025</div>
-                      <h3 class="timeline-title">AI Research Assistant</h3>
-                      <div class="timeline-institution">Department of Electrical & Computer Engineering, North South University</div>
-                      <p class="timeline-description">
-                        Supervisor: <strong>Dr. Sifat Momen</strong><br>
-                        Research: Built Explainable AI frameworks for healthcare and behavioral analytics.<br>
-                      </p>
-                    </div>
-
-                    <!-- Research Instructor -->
-                    <div class="timeline-item fade-in">
-                      <div class="timeline-date">JAN 2024 – PRESENT</div>
-                      <h3 class="timeline-title">Quantum & AI Research Instructor</h3>
-                      <div class="timeline-institution">Mahdy Research Academy (MRA)</div>
-                      <p class="timeline-description">
-                        Trained <strong>800+ students</strong> through workshops on ML, NLP, and Quantum Cryptography.<br>
-                        Supervised <strong>20+ student-led projects</strong> across Quantum Security and Applied AI.
-                      </p>
-                    </div>
-
-                    <!-- Teaching Assistant -->
-                    <div class="timeline-item fade-in">
-                      <div class="timeline-date">JUN 2022 – JUN 2024</div>
-                      <h3 class="timeline-title">Teaching Assistant</h3>
-                      <div class="timeline-institution">Department of Electrical & Computer Engineering, NSU</div>
-                      <p class="timeline-description">
-                        Courses: <em>Operating Systems (CSE323)</em> and <em>Programming Language I (CSE115)</em>.<br>
-                        Mentored <strong>400+ students across 25 sections</strong>, developed review materials and tutorial sessions.
-                      </p>
-                    </div>
-
-                    <!-- Undergraduate -->
-                    <div class="timeline-item fade-in">
-                      <div class="timeline-date">JAN 2019 – JUN 2023</div>
-                      <h3 class="timeline-title">B.Sc. in Computer Science & Engineering</h3>
-                      <div class="timeline-institution">North South University, Bangladesh</div>
-                      <p class="timeline-description">
-                        Distinction: <strong>Magna Cum Laude</strong> (Top 5%) <br> 
-                        CGPA: 3.74 / 4.00 (≈ 93.5% marks)<br>
-                        Thesis: <em>ItihasQA – RAG-based Conversational AI for Bangladeshi History</em><br>
-                      </p>
-                    </div>
-
-                  </div>
-                </div>
-              </section>
-
-        `;
-      }
-
-      renderResearch() {
-        const app = document.getElementById('app');
-        app.innerHTML = `
-          <div class="page-container">
-            <section style="padding-top: 100px; background: var(--bg-accent);">
-              <div class="section-container">
-                <div class="section-header fade-in">
-                  <span class="section-label">My Work</span>
-                  <h2 class="section-title">Research & Publications</h2>
-                  <p class="section-subtitle">Exploring quantum and AI Research in Cybersecurity and Healthcare</p>
-                </div>
-                
-                <div class="research-publications-header fade-in">
-                  <div class="tabs-container">
-                    <button class="tab-btn active" data-tab="interests">Research Interests</button>
-                    <button class="tab-btn" data-tab="publications">Publications</button>
-                  </div>
-                  
-                  <div class="search-filter-container" id="searchFilterContainer" style="display: none;">
-                    <div class="search-box">
-                      <input type="text" id="pubSearch" placeholder="Search publications...">
-                      <i class="fas fa-search"></i>
-                    </div>
-                    <div class="filter-dropdown">
-                      <button class="filter-btn" id="filterBtn">
-                        <i class="fas fa-filter"></i>
-                        All Categories
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-<!-- Research Interests Tab -->
-<div id="interestsTab" class="tab-content">
-  <div class="research-grid">
+    // Active navigation highlighting
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
-    <!-- Hybrid Quantum–Classical Cryptography -->
-    <div class="research-card fade-in">
-      <div class="research-icon">
-        <i class="fas fa-infinity"></i>
-      </div>
-      <h3>Hybrid Quantum–Classical Cryptography</h3>
-      <p>
-        Designing <strong>hybrid cryptographic frameworks</strong> that combine classical elliptic-curve cryptography 
-        with NIST-aligned <strong>Post-Quantum Cryptography (PQC)</strong> to build <strong>algorithm-agile</strong> and 
-        <strong>quantum-resilient</strong> protocols for the transition era. My current work explores <strong>Hybrid PQC-TLS/IPsec</strong> 
-        with <em>AND/OR handshake modes</em>, dual-signature authentication, and domain-separated key derivation.
-      </p>
-      <div class="research-keywords">
-        <span class="keyword-tag">Hybrid PQC-TLS</span>
-        <span class="keyword-tag">Algorithm Agility</span>
-        <span class="keyword-tag">ECDH + Kyber</span>
-        <span class="keyword-tag">Dilithium</span>
-        <span class="keyword-tag">GREASE</span>
-      </div>
-    </div>
-
-    <!-- Quantum Communication Protocols -->
-    <div class="research-card fade-in">
-      <div class="research-icon">
-        <i class="fas fa-atom"></i>
-      </div>
-      <h3>Quantum Communication Protocols</h3>
-      <p>
-        Developing <strong>secure quantum communication systems</strong> using Quantum Key Distribution (QKD) 
-        and quantum entanglement (BB84, B92, E91, W-state). These studies focus on <strong>chaos-assisted QKD</strong> 
-        and <strong>multi-layered hybrid quantum–classical channels</strong> that maintain integrity under noise and 
-        imperfect photon transmission.
-      </p>
-      <div class="research-keywords">
-        <span class="keyword-tag">QKD</span>
-        <span class="keyword-tag">Entanglement</span>
-        <span class="keyword-tag">E91</span>
-        <span class="keyword-tag">W-state</span>
-        <span class="keyword-tag">Quantum Security</span>
-      </div>
-    </div>
-
-    <!-- Post-Quantum Infrastructure Security -->
-    <div class="research-card fade-in">
-      <div class="research-icon">
-        <i class="fas fa-shield-alt"></i>
-      </div>
-      <h3>Post-Quantum Infrastructure Security</h3>
-      <p>
-        Engineering <strong>quantum-safe cloud architectures</strong> through PQC-integrated TLS/IPsec, 
-        certificate stapling, and <strong>domain-separated HKDF</strong> key schedules. 
-        Focused on optimizing latency, throughput, and wire efficiency across hybrid handshake modes.
-      </p>
-      <div class="research-keywords">
-        <span class="keyword-tag">TLS 1.3</span>
-        <span class="keyword-tag">IPsec</span>
-        <span class="keyword-tag">Kyber</span>
-        <span class="keyword-tag">Dilithium</span>
-        <span class="keyword-tag">HKDF</span>
-      </div>
-    </div>
-
-    <!-- Efficient Quantum Machine Learning -->
-    <div class="research-card fade-in">
-      <div class="research-icon">
-        <i class="fas fa-microchip"></i>
-      </div>
-      <h3>Efficient Quantum Machine Learning (QML)</h3>
-      <p>
-        Investigating <strong>resource-efficient Quantum Machine Learning</strong> algorithms for 
-        constrained hardware by optimizing <strong>parameterized quantum circuits</strong> and exploring 
-        <strong>variational hybrid networks</strong>. The goal is to enable <em>low-depth, high-fidelity QML</em> 
-        models deployable on NISQ-era devices.
-      </p>
-      <div class="research-keywords">
-        <span class="keyword-tag">QML</span>
-        <span class="keyword-tag">Variational Circuits</span>
-        <span class="keyword-tag">Quantum Neural Networks</span>
-        <span class="keyword-tag">NISQ</span>
-        <span class="keyword-tag">Optimization</span>
-      </div>
-    </div>
-
-    <!-- Translational Quantum × AI Applications -->
-    <div class="research-card fade-in">
-      <div class="research-icon">
-        <i class="fas fa-brain"></i>
-      </div>
-      <h3>Translational Quantum × AI Applications</h3>
-      <p>
-        Bridging <strong>quantum computing</strong> and <strong>explainable AI (XAI)</strong> to solve 
-        real-world problems in cybersecurity, healthcare, and behavioral analysis. 
-        My work integrates <strong>ML-based feature attribution</strong> with <strong>quantum feature mapping</strong> 
-        to interpret hybrid decision systems.
-      </p>
-      <div class="research-keywords">
-        <span class="keyword-tag">Quantum × AI</span>
-        <span class="keyword-tag">XAI</span>
-        <span class="keyword-tag">Feature Mapping</span>
-        <span class="keyword-tag">SHAP</span>
-        <span class="keyword-tag">LIME</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- Publications Tab -->
-<div class="publications-list">
-  <!-- IET Quantum Communication -->
-  <div class="publication-card fade-in" data-category="quantum">
-    <div class="publication-image">
-      <img src="./assets/img/qc3.png" alt="Chaos-assisted QKD" />
-    </div>
-    <div class="publication-details">
-      <span class="publication-type">Journal Article</span>
-      <h3 class="publication-title">
-        <a href="https://doi.org/10.1049/qtc2.70016" target="_blank" rel="noopener">
-          Quantum Secure Image Transmission: A Chaos-Assisted QKD Approach Using Entanglement
-        </a>
-      </h3>
-      <p class="publication-authors">
-        <span class="highlight">M. S. Azad*</span>, R. Rayhan*, et&nbsp;al. • Equal Contribution 1st Author
-      </p>
-      <p class="publication-venue"><em>IET Quantum Communication (Q2), 2025</em></p>
-      <p class="publication-summary">
-        Entanglement-based, chaos-assisted QKD scheme enabling robust image transmission with CHSH-based eavesdrop detection.
-      </p>
-      <div class="publication-meta">
-        <span class="meta-badge">Q2 Journal</span>
-        <span class="meta-badge">IF: 3.3</span>
-      </div>
-      <div class="publication-links">
-        <a href="https://doi.org/10.1049/qtc2.70016" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Alexandria Engineering Journal -->
-  <div class="publication-card fade-in" data-category="quantum">
-    <div class="publication-image">
-      <img src="./assets/img/qc1.png" alt="QKD-integrated steganography" />
-    </div>
-    <div class="publication-details">
-      <span class="publication-type">Journal Article</span>
-      <h3 class="publication-title">
-        <a href="https://doi.org/10.1016/j.aej.2025.02.056" target="_blank" rel="noopener">
-          Multi-layered Security: Integrating QKD with Classical Cryptography to Enhance Steganographic Security
-        </a>
-      </h3>
-      <p class="publication-authors">
-        A. Sykot, <span class="highlight">M. S. Azad</span>, et&nbsp;al. • 2nd Co-author
-      </p>
-      <p class="publication-venue"><em>Alexandria Engineering Journal (Q1), 2025</em></p>
-      <p class="publication-summary">
-        E91-QKD + classical ciphers for resilient stego-image protection; entropy/NPCR analyses demonstrate robustness.
-      </p>
-      <div class="publication-meta">
-        <span class="meta-badge">Q1 Journal</span>
-        <span class="meta-badge">IF: 6.2</span>
-      </div>
-      <div class="publication-links">
-        <a href="https://doi.org/10.1016/j.aej.2025.02.056" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Engineering Science & Technology (QSAC) -->
-  <div class="publication-card fade-in" data-category="quantum">
-    <div class="publication-image">
-      <img src="./assets/img/qc2.png" alt="QSAC audio security" />
-    </div>
-    <div class="publication-details">
-      <span class="publication-type">Journal Article</span>
-      <h3 class="publication-title">
-        <a href="https://doi.org/10.1016/j.jestch.2025.102167" target="_blank" rel="noopener">
-          QSAC: Quantum-assisted Secure Audio Communication using Entanglement, Audio Steganography, and Classical Encryption
-        </a>
-      </h3>
-      <p class="publication-authors">
-        <span class="highlight">M. S. Azad</span>, et&nbsp;al. • Co-supervised
-      </p>
-      <p class="publication-venue"><em>Engineering Science &amp; Technology (Q1), 2025</em></p>
-      <p class="publication-summary">
-        Entanglement-driven keys with layered classical protection for robust audio confidentiality over noisy channels.
-      </p>
-      <div class="publication-meta">
-        <span class="meta-badge">Q1 Journal</span>
-        <span class="meta-badge">IF: 5.4</span>
-      </div>
-      <div class="publication-links">
-        <a href="https://doi.org/10.1016/j.jestch.2025.102167" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ARRAY: Depression ML -->
-  <div class="publication-card fade-in" data-category="ai">
-    <div class="publication-image">
-      <img src="./assets/img/ml2.png" alt="Depression ML" />
-    </div>
-    <div class="publication-details">
-      <span class="publication-type">Journal Article</span>
-      <h3 class="publication-title">
-        <a href="https://doi.org/10.1016/j.array.2024.100372" target="_blank" rel="noopener">
-          SAD: Self-Assessment of Depression for Bangladeshi University Students Using ML and NLP
-        </a>
-      </h3>
-      <p class="publication-authors">
-        <span class="highlight">M. S. Azad</span>, et&nbsp;al. • First Author
-      </p>
-      <p class="publication-venue"><em>ARRAY (Q1), 2024</em></p>
-      <p class="publication-summary">
-        Interpretable pipeline (BioBERT + survey features) with LIME for transparent mental-health screening (99.14% accuracy).
-      </p>
-      <div class="publication-meta">
-        <span class="meta-badge">Q1 Journal</span>
-        <span class="meta-badge">IF: 4.5</span>
-      </div>
-      <div class="publication-links">
-        <a href="https://doi.org/10.1016/j.array.2024.100372" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- PLOS ONE: Consumer behavior -->
-  <div class="publication-card fade-in" data-category="ai">
-    <div class="publication-image">
-      <img src="./assets/img/ml1.png" alt="TPB + ML" />
-    </div>
-    <div class="publication-details">
-      <span class="publication-type">Journal Article</span>
-      <h3 class="publication-title">
-        <a href="https://doi.org/10.1371/journal.pone.0296336" target="_blank" rel="noopener">
-          Predictive Modeling of Consumer Purchase Behavior: TPB + Machine Learning for Actionable Insights
-        </a>
-      </h3>
-      <p class="publication-authors">
-        <span class="highlight">M. S. Azad</span>, et&nbsp;al. • First Author
-      </p>
-      <p class="publication-venue"><em>PLOS ONE (Q1), 2023</em></p>
-      <p class="publication-summary">
-        Combines Theory of Planned Behavior with gradient boosting and LIME to predict social-media-driven purchase intent.
-      </p>
-      <div class="publication-meta">
-        <span class="meta-badge">Q1 Journal</span>
-        <span class="meta-badge">IF: 3.7</span>
-      </div>
-      <div class="publication-links">
-        <a href="https://doi.org/10.1371/journal.pone.0296336" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Under Review: PLOS ONE (Problematic Internet Use) -->
-  <div class="publication-card fade-in" data-category="ai">
-    <div class="publication-image">
-      <img src="./assets/img/ml3.png" alt="Problematic Internet Use XAI" />
-    </div>
-    <div class="publication-details">
-      <span class="publication-type">Under Review</span>
-      <h3 class="publication-title">
-        <a href="#" onclick="return false;">
-          Explainable AI for Predicting Problematic Internet Use Among University Students
-        </a>
-      </h3>
-      <p class="publication-authors">
-        <span class="highlight">M. S. Azad</span>, et&nbsp;al. • Co-supervised
-      </p>
-      <p class="publication-venue"><em>PLOS ONE — Under Review</em></p>
-      <p class="publication-summary">
-        XAI-driven modeling of PIU with SHAP/LIME attribution to identify behavioral and psychosocial drivers.
-      </p>
-      <div class="publication-meta">
-        <span class="meta-badge">Q1 Submission</span>
-        <span class="meta-badge">Status: Under Review</span>
-      </div>
-      <div class="publication-links">
-        <a href="#" class="pub-link" onclick="return false;"><i class="fas fa-external-link-alt"></i> DOI (pending)</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Under Review: Quantum Information Processing -->
-  <div class="publication-card fade-in" data-category="quantum">
-    <div class="publication-image">
-      <img src="./assets/img/qc4.png" alt="QKD + PQC Cloud Security" />
-    </div>
-    <div class="publication-details">
-      <span class="publication-type">Under Review</span>
-      <h3 class="publication-title">
-        <a href="#" onclick="return false;">
-          Enhancing Cloud Storage Security with QKD and Post-Quantum Cryptography Using Custom Proxy Re-Encryption
-        </a>
-      </h3>
-      <p class="publication-authors">
-        <span class="highlight">M. S. Azad</span>, et&nbsp;al. • Co-supervised
-      </p>
-      <p class="publication-venue"><em>Quantum Information Processing — Under Review</em></p>
-      <p class="publication-summary">
-        Hybrid E91-QKD + Kyber-PKE architecture with proxy re-encryption to protect multi-tenant cloud storage.
-      </p>
-      <div class="publication-meta">
-        <span class="meta-badge">Q1 Submission</span>
-        <span class="meta-badge">Status: Under Review</span>
-      </div>
-      <div class="publication-links">
-        <a href="#" class="pub-link" onclick="return false;"><i class="fas fa-external-link-alt"></i> DOI (pending)</a>
-      </div>
-    </div>
-  </div>
-</div>
-        `;
-
-        // Initialize tab functionality
-        this.initResearchTabs();
-      }
-
-      renderTeaching() {
-        const app = document.getElementById('app');
-        app.innerHTML = `
-          <div class="page-container">
-            <section style="padding-top: 100px; background: var(--bg-secondary);">
-              <div class="section-container">
-                <div class="section-header fade-in">
-                  <span class="section-label">Education</span>
-                  <h2 class="section-title">Teaching Experience</h2>
-                  <p class="section-subtitle">Mentoring and educating the next generation of computer scientists</p>
-                </div>
-                
-                <div class="teaching-grid">
-                  <div class="teaching-card fade-in">
-                    <div class="course-code">CSE323</div>
-                    <h3 class="course-name">Operating System Design</h3>
-                    <p class="course-details">
-                      Covered OS structures, process and memory management, file systems, and security. 
-                      Developed hands-on labs and assignments focusing on practical system programming.
-                    </p>
-                    <div class="student-count">
-                      <i class="fas fa-users"></i> 200+ students (10 sections)
-                    </div>
-                  </div>
-                  
-                  <div class="teaching-card fade-in">
-                    <div class="course-code">CSE115</div>
-                    <h3 class="course-name">Programming Language I</h3>
-                    <p class="course-details">
-                      Taught C programming fundamentals, data structures, algorithms, and problem-solving 
-                      techniques. Mentored students through programming projects and competitions.
-                    </p>
-                    <div class="student-count">
-                      <i class="fas fa-users"></i> 200+ students (15 sections)
-                    </div>
-                  </div>
-                  
-                  <div class="teaching-card fade-in">
-                    <div class="course-code">MRA-QC</div>
-                    <h3 class="course-name">Quantum Computing & Cryptography</h3>
-                    <p class="course-details">
-                      Research training on QKD protocols (BB84, E91), Post-Quantum schemes, and quantum 
-                      algorithms. Supervised 10+ student research projects at Mahdy Research Academy.
-                    </p>
-                    <div class="student-count">
-                      <i class="fas fa-users"></i> 800+ students
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        `;
-      }
-
-      renderBlog() {
-        const app = document.getElementById('app');
-        app.innerHTML = `
-          <div class="page-container">
-            <section style="padding-top: 100px; background: var(--bg-accent);">
-              <div class="section-container">
-                <div class="section-header fade-in">
-                  <span class="section-label">Writings</span>
-                  <h2 class="section-title">Blog & Articles</h2>
-                  <p class="section-subtitle">Sharing insights on quantum computing, AI, and academia<br>(Coming Soon!)</p>
-                </div>
-                
-                <!-- 
-                <div class="blog-grid">
-                  <div class="blog-card fade-in">
-                    <div class="blog-image">
-                      <img src="https://via.placeholder.com/400x240/e3f2fd/1e3a5f?text=Quantum+Future" alt="Blog post" />
-                      <span class="blog-tag-overlay">Quantum Computing</span>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <span><i class="far fa-calendar"></i> Oct 10, 2025</span>
-                        <span><i class="far fa-clock"></i> 8 min read</span>
-                      </div>
-                      <h3 class="blog-title">
-                        <a href="#">The Future of Quantum Key Distribution in Cloud Security</a>
-                      </h3>
-                      <p class="blog-excerpt">
-                        Exploring how quantum key distribution protocols can revolutionize cloud security infrastructure 
-                        and protect against quantum computing threats...
-                      </p>
-                      <a href="#" class="blog-read-more">
-                        Read More <i class="fas fa-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="blog-card fade-in">
-                    <div class="blog-image">
-                      <img src="https://via.placeholder.com/400x240/f3e5f5/6a1b9a?text=AI+Ethics" alt="Blog post" />
-                      <span class="blog-tag-overlay">Artificial Intelligence</span>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <span><i class="far fa-calendar"></i> Sep 28, 2025</span>
-                        <span><i class="far fa-clock"></i> 6 min read</span>
-                      </div>
-                      <h3 class="blog-title">
-                        <a href="#">Explainable AI: Making Machine Learning Transparent</a>
-                      </h3>
-                      <p class="blog-excerpt">
-                        Why interpretability matters in AI systems, especially in healthcare and critical applications. 
-                        A deep dive into LIME and SHAP techniques...
-                      </p>
-                      <a href="#" class="blog-read-more">
-                        Read More <i class="fas fa-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="blog-card fade-in">
-                    <div class="blog-image">
-                      <img src="https://via.placeholder.com/400x240/fff3e0/e65100?text=PhD+Journey" alt="Blog post" />
-                      <span class="blog-tag-overlay">Academia</span>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <span><i class="far fa-calendar"></i> Sep 15, 2025</span>
-                        <span><i class="far fa-clock"></i> 10 min read</span>
-                      </div>
-                      <h3 class="blog-title">
-                        <a href="#">My First Semester as a PhD Student: Lessons Learned</a>
-                      </h3>
-                      <p class="blog-excerpt">
-                        Reflections on transitioning from industry to academia, managing research expectations, 
-                        and finding balance in doctoral studies...
-                      </p>
-                      <a href="#" class="blog-read-more">
-                        Read More <i class="fas fa-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="blog-card fade-in">
-                    <div class="blog-image">
-                      <img src="https://via.placeholder.com/400x240/e8f5e9/2e7d32?text=Cryptography" alt="Blog post" />
-                      <span class="blog-tag-overlay">Cryptography</span>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <span><i class="far fa-calendar"></i> Aug 30, 2025</span>
-                        <span><i class="far fa-clock"></i> 12 min read</span>
-                      </div>
-                      <h3 class="blog-title">
-                        <a href="#">Post-Quantum Cryptography: Preparing for the Quantum Threat</a>
-                      </h3>
-                      <p class="blog-excerpt">
-                        An overview of NIST's post-quantum cryptography standards and why organizations 
-                        need to start transitioning now...
-                      </p>
-                      <a href="#" class="blog-read-more">
-                        Read More <i class="fas fa-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="blog-card fade-in">
-                    <div class="blog-image">
-                      <img src="https://via.placeholder.com/400x240/fce7f3/a21caf?text=Research+Tips" alt="Blog post" />
-                      <span class="blog-tag-overlay">Research</span>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <span><i class="far fa-calendar"></i> Aug 10, 2025</span>
-                        <span><i class="far fa-clock"></i> 7 min read</span>
-                      </div>
-                      <h3 class="blog-title">
-                        <a href="#">How to Write a Strong Research Paper: Tips for Early Researchers</a>
-                      </h3>
-                      <p class="blog-excerpt">
-                        Practical advice on structuring papers, conducting literature reviews, and 
-                        handling peer review feedback based on my publishing experience...
-                      </p>
-                      <a href="#" class="blog-read-more">
-                        Read More <i class="fas fa-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="blog-card fade-in">
-                    <div class="blog-image">
-                      <img src="https://via.placeholder.com/400x240/dbeafe/1e40af?text=Quantum+ML" alt="Blog post" />
-                      <span class="blog-tag-overlay">Quantum + AI</span>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <span><i class="far fa-calendar"></i> Jul 25, 2025</span>
-                        <span><i class="far fa-clock"></i> 9 min read</span>
-                      </div>
-                      <h3 class="blog-title">
-                        <a href="#">Quantum Machine Learning: Hype vs Reality</a>
-                      </h3>
-                      <p class="blog-excerpt">
-                        Separating fact from fiction in quantum machine learning, examining current capabilities 
-                        and realistic near-term applications...
-                      </p>
-                      <a href="#" class="blog-read-more">
-                        Read More <i class="fas fa-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                -->
-              </div>
-            </section>
-          </div>
-
-        `;
-      }
-
-      renderAwards() {
-        const app = document.getElementById('app');
-        app.innerHTML = `
-          <div class="page-container">
-            <section style="padding-top: 100px; background: var(--bg-secondary);">
-              <div class="section-container">
-                <div class="section-header fade-in">
-                  <span class="section-label">Recognitions</span>
-                  <h2 class="section-title">Awards & Honors</h2>
-                  <p class="section-subtitle">Recognition for academic excellence and research contributions</p>
-                </div>
-                
-                <div class="awards-grid">
-                  <div class="award-card fade-in">
-                    <div class="award-icon">
-                      <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="award-content">
-                      <div class="award-title">Magna Cum Laude</div>
-                      <div class="award-year">North South University, 2024</div>
-                    </div>
-                  </div>
-                  
-                  <div class="award-card fade-in">
-                    <div class="award-icon">
-                      <i class="fas fa-medal"></i>
-                    </div>
-                    <div class="award-content">
-                      <div class="award-title">Top 10 - Innovation Challenge 13</div>
-                      <div class="award-year">NSU ACM, 2023</div>
-                    </div>
-                  </div>
-                  
-                  <div class="award-card fade-in">
-                    <div class="award-icon">
-                      <i class="fas fa-award"></i>
-                    </div>
-                    <div class="award-content">
-                      <div class="award-title">50% Merit Scholarship</div>
-                      <div class="award-year">NSU, 2020-2022</div>
-                    </div>
-                  </div>
-                  
-                  <div class="award-card fade-in">
-                    <div class="award-icon">
-                      <i class="fas fa-coins"></i>
-                    </div>
-                    <div class="award-content">
-                      <div class="award-title">4 CTRGC Research Grants</div>
-                      <div class="award-year">NSU, 2023-2025</div>
-                    </div>
-                  </div>
-
-                  <div class="award-card fade-in">
-                    <div class="award-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="award-content">
-                      <div class="award-title">Full Funded PhD Postion</div>
-                      <div class="award-year">Cleveland State University, 2025-Present</div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </section>
-          </div>
-        `;
-      }
-
-      initResearchTabs() {
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const interestsTab = document.getElementById('interestsTab');
-        const publicationsTab = document.getElementById('publicationsTab');
-        const searchFilterContainer = document.getElementById('searchFilterContainer');
-
-        tabBtns.forEach(btn => {
-          btn.addEventListener('click', () => {
-            const tab = btn.dataset.tab;
-            
-            // Update active button
-            tabBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            // Show/hide tabs
-            if (tab === 'interests') {
-              interestsTab.style.display = 'block';
-              publicationsTab.style.display = 'none';
-              searchFilterContainer.style.display = 'none';
-            } else {
-              interestsTab.style.display = 'none';
-              publicationsTab.style.display = 'block';
-              searchFilterContainer.style.display = 'flex';
-              this.initPublicationsFilter();
-            }
-          });
-        });
-      }
-
-      initPublicationsFilter() {
-        const searchInput = document.getElementById('pubSearch');
-        const filterBtn = document.getElementById('filterBtn');
-        const publications = document.querySelectorAll('.publication-card');
-
-        // Search functionality
-        if (searchInput) {
-          searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            publications.forEach(pub => {
-              const text = pub.textContent.toLowerCase();
-              pub.style.display = text.includes(searchTerm) ? 'flex' : 'none';
-            });
-          });
-        }
-
-        // Filter functionality
-        if (filterBtn) {
-          let currentFilter = 'all';
-          filterBtn.addEventListener('click', () => {
-            const filters = ['all', 'quantum', 'ai'];
-            const currentIndex = filters.indexOf(currentFilter);
-            currentFilter = filters[(currentIndex + 1) % filters.length];
-            
-            const labels = {
-              'all': 'All Categories',
-              'quantum': 'Quantum Computing',
-              'ai': 'AI/ML'
-            };
-            
-            filterBtn.innerHTML = `<i class="fas fa-filter"></i> ${labels[currentFilter]}`;
-            
-            publications.forEach(pub => {
-              if (currentFilter === 'all') {
-                pub.style.display = 'flex';
-              } else {
-                pub.style.display = pub.dataset.category === currentFilter ? 'flex' : 'none';
-              }
-            });
-          });
-        }
-      }
-
-      initScrollAnimations() {
-        const observerOptions = {
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-            }
-          });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-          observer.observe(el);
-        });
-      }
-    }
-
-    // Initialize router
-    const router = new Router();
-
-    // Header scroll effect
-    window.addEventListener('scroll', () => {
-      const header = document.getElementById('header');
-      const currentScroll = window.pageYOffset;
-      
-      if (currentScroll > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
-    // Back to top button
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 300) {
-        backToTop.classList.add('visible');
-      } else {
-        backToTop.classList.remove('visible');
-      }
-    });
-
-    backToTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Mobile Menu Toggle
-    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-    const mobileMenuLinks = document.querySelectorAll('.mobile-menu .nav-link');
-
-    function toggleMobileMenu() {
-      mobileMenuToggle.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-      mobileMenuOverlay.classList.toggle('active');
-      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    }
-
-    function closeMobileMenu() {
-      mobileMenuToggle.classList.remove('active');
-      mobileMenu.classList.remove('active');
-      mobileMenuOverlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
-    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
-    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
-
-    // Handle mobile menu navigation
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const page = link.dataset.page;
-        
-        // Update active state in mobile menu
-        mobileMenuLinks.forEach(l => l.classList.remove('active'));
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
         link.classList.add('active');
-        
-        // Close mobile menu
-        closeMobileMenu();
-        
-        // Navigate to page
-        router.navigate(page);
-      });
-    });
-
-    // Handle logo click in mobile menu
-    document.querySelector('.mobile-menu .logo').addEventListener('click', (e) => {
-      e.preventDefault();
-      closeMobileMenu();
-      router.navigate('home');
+      }
     });
   </script>
 </body>

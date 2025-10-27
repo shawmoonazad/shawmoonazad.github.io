@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research Interests - Md Shawmoon Azad">
+  
+  <title>Research Interests - Md Shawmoon Azad</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-blue: #1e3a5f;
+      --accent-blue: #2e5090;
+      --light-blue: #4a7ba7;
+      --gold-accent: #b8860b;
+      
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-tertiary: #f0f2f5;
+      
+      --text-primary: #2c3e50;
+      --text-secondary: #5a6c7d;
+      --text-light: #718096;
+      
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
+      
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.08);
+      
+      --max-width: 1100px;
+      --serif: 'Crimson Text', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      line-height: 1.5;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary-blue);
+    }
+
+    /* Navigation */
+    header {
+      background: var(--bg-primary);
+      border-bottom: 2px solid var(--primary-blue);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-accent);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--accent-blue);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .cv-download {
+      padding: 8px 16px;
+      background: var(--primary-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cv-download:hover {
+      background: var(--accent-blue);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Section Styling */
+    section {
+      padding: 50px 0;
+      min-height: calc(100vh - 250px);
+    }
+
+    .section-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 30px;
+      color: var(--primary-blue);
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--text-secondary);
+    }
+
+    /* Research Interests */
+    .research-areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    .research-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .research-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--primary-blue);
+      transform: translateX(-3px);
+      transition: transform 0.3s ease;
+    }
+
+    .research-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-blue);
+    }
+
+    .research-card:hover::before {
+      transform: translateX(0);
+    }
+
+    .research-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-blue);
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .research-card h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+      color: var(--primary-blue);
+    }
+
+    .research-card p {
+      color: var(--text-secondary);
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .research-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    .keyword-tag {
+      padding: 4px 10px;
+      background: var(--bg-tertiary);
+      border-radius: 3px;
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-family: var(--mono);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-blue);
+      color: white;
+      padding: 28px 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+      font-size: 14px;
+      transition: opacity 0.3s ease;
+    }
+
+    .footer-link:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .research-areas {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <nav>
+        <a href="index.html" class="logo">Md Shawmoon Azad</a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link active">Research</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
+              <i class="fas fa-file-pdf"></i>
+              CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Research Interests -->
+  <section id="research">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Research Interests</h2>
+        <p class="section-subtitle">Bridging Quantum Security and AI</p>
+      </div>
+      
+      <div class="research-areas">
+        <div class="research-card">
+          <div class="research-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Hybrid Post Quantum Cryptography Algorithms</h3>
+          <p>
+            To designe <strong>hybrid Post-Quantum Cryptography frameworks </strong> to achieve 
+            quantum-safe communication. My work integrates 
+            <strong>NIST-standardized schemes</strong> (Kyber, Dilithium) into robust TLS/IPsec pipelines with <strong> improved policy engine</strong> for secure cloud infrastructures.
+    
+          </p>
+          <div class="research-keywords">
+            <span class="keyword-tag">PQC</span>
+            <span class="keyword-tag">Hybrid Cryptography</span>
+            <span class="keyword-tag">Kyber</span>
+            <span class="keyword-tag">Dilithium</span>
+            <span class="keyword-tag">TLS 1.3</span>
+          </div>
+        </div>
+        
+        <div class="research-card">
+          <div class="research-icon">
+            <i class="fas fa-atom"></i>
+          </div>
+          <h3>Secure Quantum Communication Protocols</h3>
+          <p>
+            To develope <strong>Quantum Key Distribution (QKD) protocols</strong> 
+            integrated with classical encryption layers for imperfect quantum channels. 
+            Focus areas include <strong>entanglement-based QKD </strong> using CHSH inequalities to evesdrop detection.
+          </p>
+          <div class="research-keywords">
+            <span class="keyword-tag">QKD</span>
+            <span class="keyword-tag">BB84</span>
+            <span class="keyword-tag">E91</span>
+            <span class="keyword-tag">Entanglement</span>
+            <span class="keyword-tag">CHSH Inequality</span>
+          </div>
+        </div>
+        
+        <div class="research-card">
+          <div class="research-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3>Efficient Quantum Machine Learning (QML)</h3>
+          <p>
+            To explore <strong>resource-efficient Quantum Machine Learning</strong> algorithms for 
+            constrained hardware by optimizing <strong>parameterized quantum circuits</strong> and exploring 
+            <strong>variational hybrid networks</strong>. The goal is to enable low-depth, high-fidelity QML 
+            models deployable on NISQ-era devices.
+          </p>
+          <div class="research-keywords">
+            <span class="keyword-tag">QML</span>
+            <span class="keyword-tag">Variational Circuits</span>
+            <span class="keyword-tag">Quantum Neural Networks</span>
+            <span class="keyword-tag">NISQ</span>
+            <span class="keyword-tag">Optimization</span>
+          </div>
+        </div>
+
+        <!-- <div class="research-card">
+          <div class="research-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Translational Quantum × AI Applications</h3>
+          <p>
+            Bridging <strong>quantum computing</strong> and <strong>explainable AI (XAI)</strong> to solve 
+            real-world problems in cybersecurity, healthcare, and behavioral analysis. 
+            My work integrates <strong>ML-based feature attribution</strong> with <strong>quantum feature mapping</strong> 
+            to interpret hybrid decision systems.
+          </p>
+          <div class="research-keywords">
+            <span class="keyword-tag">Quantum × AI</span>
+            <span class="keyword-tag">XAI</span>
+            <span class="keyword-tag">Feature Mapping</span>
+            <span class="keyword-tag">SHAP</span>
+            <span class="keyword-tag">LIME</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ" target="_blank" class="footer-link">
+          Google Scholar
+        </a>
+        <a href="https://orcid.org/0009-0005-1318-072X" target="_blank" class="footer-link">
+          ORCID
+        </a>
+        <a href="https://github.com/shawmoonazad" target="_blank" class="footer-link">
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/shawmoonazad" target="_blank" class="footer-link">
+          LinkedIn
+        </a>
+      </div>
+      <p class="footer-text">
+        © 2025 Md Shawmoon Azad. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Active navigation highlighting
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

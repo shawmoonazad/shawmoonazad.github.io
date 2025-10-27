@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic Timeline - Md Shawmoon Azad">
+  
+  <title>Academic Timeline - Md Shawmoon Azad</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-blue: #1e3a5f;
+      --accent-blue: #2e5090;
+      --light-blue: #4a7ba7;
+      --gold-accent: #b8860b;
+      
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-tertiary: #f0f2f5;
+      
+      --text-primary: #2c3e50;
+      --text-secondary: #5a6c7d;
+      --text-light: #718096;
+      
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
+      
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.08);
+      
+      --max-width: 1100px;
+      --serif: 'Crimson Text', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      line-height: 1.5;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary-blue);
+    }
+
+    /* Navigation */
+    header {
+      background: var(--bg-primary);
+      border-bottom: 2px solid var(--primary-blue);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-accent);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--accent-blue);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .cv-download {
+      padding: 8px 16px;
+      background: var(--primary-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cv-download:hover {
+      background: var(--accent-blue);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Section Styling */
+    section {
+      padding: 50px 0;
+    }
+
+    .section-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 30px;
+      color: var(--primary-blue);
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--text-secondary);
+    }
+
+    /* Academic Timeline - Compact */
+    .timeline {
+      position: relative;
+      padding: 16px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background: var(--border-medium);
+    }
+
+    .timeline-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .timeline-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .timeline-content {
+      width: 45%;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 14px;
+      background: var(--primary-blue);
+      border: 3px solid var(--bg-primary);
+      border-radius: 50%;
+      box-shadow: var(--shadow-md);
+    }
+
+    .timeline-date {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--gold-accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .timeline-title {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--primary-blue);
+      margin-bottom: 6px;
+    }
+
+    .timeline-institution {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .timeline-description {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Awards Section - Compact */
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .award-item {
+      display: flex;
+      align-items: start;
+      gap: 14px;
+      padding: 16px;
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .award-item:hover {
+      background: var(--bg-primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .award-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--gold-accent);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .award-content {
+      flex: 1;
+    }
+
+    .award-title {
+      font-weight: 600;
+      color: var(--primary-blue);
+      margin-bottom: 3px;
+      font-size: 14px;
+    }
+
+    .award-year {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-blue);
+      color: white;
+      padding: 28px 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+      font-size: 14px;
+      transition: opacity 0.3s ease;
+    }
+
+    .footer-link:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item,
+      .timeline-item:nth-child(even) {
+        flex-direction: column;
+        padding-left: 50px;
+      }
+
+      .timeline-content {
+        width: 100%;
+      }
+
+      .timeline-dot {
+        left: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .awards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <nav>
+        <a href="index.html" class="logo">Md Shawmoon Azad</a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li><a href="timeline.html" class="nav-link active">Timeline</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
+              <i class="fas fa-file-pdf"></i>
+              CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Academic Timeline -->
+  <section id="timeline">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Academic Timeline</h2>
+        <p class="section-subtitle">Education and Professional Experience</p>
+      </div>
+      
+      <div class="timeline">
+
+            <!-- Graduate Research Section -->
+            <div class="timeline-item">
+              <div class="timeline-content">
+              <div class="timeline-date">AUG 2025 – PRESENT</div>
+              <h3 class="timeline-title">Graduate Research Assistant</h3>
+              <div class="timeline-institution">Intelligent Secure Cyber-Systems and Applications (ISCAR) Lab</div>
+              <p class="timeline-description">
+                Advisor: <strong>Dr. Sathish A. P. Kumar</strong><br>
+                Research: <em>Hybrid Post-Quantum TLS/IPsec Frameworks for Quantum-Safe Cloud Communication</em>
+                </p>
+              </div>
+              <div class="timeline-dot"></div>
+              </div>
+            <!-- PhD -->
+            <div class="timeline-item">
+              <div class="timeline-content">
+              <div class="timeline-date">AUG 2025 – PRESENT</div>
+              <h3 class="timeline-title">Ph.D. in Computer Science</h3>
+              <div class="timeline-institution">Cleveland State University (CSU), USA</div>
+              <p class="timeline-description">
+                Research Theme: <strong>Quantum-Safe Security for Cloud Computing</strong><br>
+                Advisor: <strong>Dr. Sathish A. P. Kumar</strong><br>
+                Focus: Post-quantum cryptography, quantum machine learning, and secure cloud architectures.
+              </p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+            
+            <!-- Quantum Research Assistant -->
+            <div class="timeline-item">
+              <div class="timeline-content">
+              <div class="timeline-date">OCT 2023 – JUL 2025</div>
+            <h3 class="timeline-title">Quantum Research Assistant</h3>
+            <div class="timeline-institution">NSU Optics-Quantum & AI Lab, North South University</div>
+            <p class="timeline-description">
+              Supervisor: <strong>Dr. Mahdy Rahman Chowdhury</strong><br>
+              Research: Developed hybrid Quantum–Classical security protocols using QKD (BB84, B92, E91, W-state).
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- AI Research Assistant -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">JAN 2024 – JAN 2025</div>
+            <h3 class="timeline-title">AI Research Assistant</h3>
+            <div class="timeline-institution">Department of Electrical & Computer Engineering, North South University</div>
+            <p class="timeline-description">
+              Supervisor: <strong>Dr. Sifat Momen</strong><br>
+              Research: Built Explainable AI frameworks for healthcare and behavioral analytics.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Research Instructor -->
+        <!-- <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">JAN 2024 – PRESENT</div>
+            <h3 class="timeline-title">Quantum & AI Research Instructor</h3>
+            <div class="timeline-institution">Mahdy Research Academy (MRA)</div>
+            <p class="timeline-description">
+              Trained <strong>800+ students</strong> through workshops on ML, NLP, and Quantum Cryptography.<br>
+              Supervised <strong>20+ student-led projects</strong> across Quantum Security and Applied AI.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div> -->
+
+        <!-- Teaching Assistant -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">JUN 2022 – JUN 2024</div>
+            <h3 class="timeline-title">Teaching Assistant</h3>
+            <div class="timeline-institution">Department of Electrical & Computer Engineering, NSU</div>
+            <p class="timeline-description">
+              Courses: <em>Operating Systems (CSE323)</em> and <em>Programming Language I (CSE115)</em>.<br>
+              Task: Assisted in lectures, graded assignments, and mentored students in lab sessions.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <!-- Undergraduate -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">JAN 2019 – JUN 2023</div>
+            <h3 class="timeline-title">B.Sc. in Computer Science & Engineering</h3>
+            <div class="timeline-institution">North South University, Bangladesh</div>
+            <p class="timeline-description">
+              Distinction: <em>Magna Cum Laude</em><br>
+              CGPA: 3.74 / 4.00 <em>(≈ 93.5% marks)</em><br>
+
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards and Honors -->
+  <section id="awards" style="background: var(--bg-secondary);">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Awards & Honors</h2>
+        <p class="section-subtitle">Recognition for Academic Excellence</p>
+      </div>
+      
+      <div class="awards-grid">
+        <div class="award-item">
+          <div class="award-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="award-content">
+            <div class="award-title">Magna Cum Laude</div>
+            <div class="award-year">North South University, 2024</div>
+          </div>
+        </div>
+        
+        <div class="award-item">
+          <div class="award-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <div class="award-content">
+            <div class="award-title">Top 10 - Innovation Challenge 13</div>
+            <div class="award-year">NSU ACM, 2023</div>
+          </div>
+        </div>
+        
+        <div class="award-item">
+          <div class="award-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="award-content">
+            <div class="award-title">50% Merit Scholarship</div>
+            <div class="award-year">NSU, 2020-2022</div>
+          </div>
+        </div>
+        
+        <div class="award-item">
+          <div class="award-icon">
+            <i class="fas fa-coins"></i>
+          </div>
+          <div class="award-content">
+            <div class="award-title">4 CTRGC Research Grants</div>
+            <div class="award-year">NSU, 2023-2025</div>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="award-content">
+            <div class="award-title">Full Funded PhD Position</div>
+            <div class="award-year">Cleveland State University, 2025-Present</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ" target="_blank" class="footer-link">
+          Google Scholar
+        </a>
+        <a href="https://orcid.org/0009-0005-1318-072X" target="_blank" class="footer-link">
+          ORCID
+        </a>
+        <a href="https://github.com/shawmoonazad" target="_blank" class="footer-link">
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/shawmoonazad" target="_blank" class="footer-link">
+          LinkedIn
+        </a>
+      </div>
+      <p class="footer-text">
+        © 2025 Md Shawmoon Azad. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Active navigation highlighting
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

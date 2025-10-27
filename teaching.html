@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teaching Experience - Md Shawmoon Azad">
+  
+  <title>Teaching Experience - Md Shawmoon Azad</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-blue: #1e3a5f;
+      --accent-blue: #2e5090;
+      --light-blue: #4a7ba7;
+      --gold-accent: #b8860b;
+      
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-tertiary: #f0f2f5;
+      
+      --text-primary: #2c3e50;
+      --text-secondary: #5a6c7d;
+      --text-light: #718096;
+      
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
+      
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.08);
+      
+      --max-width: 1100px;
+      --serif: 'Crimson Text', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      line-height: 1.5;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary-blue);
+    }
+
+    /* Navigation */
+    header {
+      background: var(--bg-primary);
+      border-bottom: 2px solid var(--primary-blue);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-accent);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--accent-blue);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .cv-download {
+      padding: 8px 16px;
+      background: var(--primary-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cv-download:hover {
+      background: var(--accent-blue);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Section Styling */
+    section {
+      padding: 50px 0;
+      background: var(--bg-secondary);
+      min-height: calc(100vh - 250px);
+    }
+
+    .section-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 30px;
+      color: var(--primary-blue);
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--text-secondary);
+    }
+
+    /* Teaching Section */
+    .teaching-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .teaching-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .teaching-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .course-code {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--gold-accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .course-name {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--primary-blue);
+      margin-bottom: 10px;
+    }
+
+    .course-details {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .student-count {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-light);
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .student-count i {
+      color: var(--primary-blue);
+      margin-right: 6px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-blue);
+      color: white;
+      padding: 28px 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+      font-size: 14px;
+      transition: opacity 0.3s ease;
+    }
+
+    .footer-link:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .teaching-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <nav>
+        <a href="index.html" class="logo">Md Shawmoon Azad</a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="teaching.html" class="nav-link active">Teaching</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
+              <i class="fas fa-file-pdf"></i>
+              CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Teaching Experience -->
+  <section id="teaching">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Teaching Experience</h2>
+        <p class="section-subtitle">Educating the Next Generation of Computer Scientists</p>
+      </div>
+      
+        <div class="teaching-grid">
+          <div class="teaching-card">
+            <div class="course-code">CSE323</div>
+            <h3 class="course-name">Operating System Design</h3>
+            <p class="course-details">
+              Delivered comprehensive instruction on the principles and architecture of modern operating systems, 
+              encompassing kernel design, process scheduling, synchronization, deadlock handling, and inter-process communication. 
+              Explored key components such as memory management techniques (paging, segmentation, and virtual memory), 
+              file system implementation, and device I/O management.  
+              <br><br>
+              Integrated discussions on operating system security, access control models, and recent 
+              research trends in virtualization and containerization technologies.
+              <br><br>
+              Mentored students through term projects focused on the design and simulation of core 
+              operating system components, reinforcing their theoretical knowledge through applied 
+              experimentation and performance evaluation.  
+            </p>
+            <div class="student-count">
+              <i class="fas fa-users"></i> 10 sections
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="teaching-card">
+          <div class="course-code">CSE115</div>
+          <h3 class="course-name">Programming Language I</h3>
+          <p class="course-details">
+            Instructed foundational concepts of structured programming using the C language, including 
+            syntax, control structures, functions, arrays, pointers, and memory management. Emphasized 
+            algorithmic thinking and the development of efficient, modular, and maintainable code.  
+            <br><br>
+            Provided mentorship on 
+            code optimization, complexity analysis, and best practices for software documentation. 
+            Introduced fundamental data structures (linked lists, stacks, queues) and their algorithmic 
+            use cases.  
+            <br><br>
+            Evaluated student performance through a combination of programming assignments, quizzes, 
+            lab assessments, and project presentations. Supported struggling students through 
+            one-on-one mentoring and feedback sessions to strengthen their logical reasoning and 
+            coding confidence. 
+          </p>
+          <div class="student-count">
+            <i class="fas fa-users"></i> 15 sections
+          </div>
+        </div>
+
+        
+        <!-- <div class="teaching-card">
+          <div class="course-code">MRA-QC</div>
+          <h3 class="course-name">Quantum Computing & Cryptography</h3>
+          <p class="course-details">
+            Research training on QKD protocols (BB84, E91), Post-Quantum schemes, and quantum 
+            algorithms. Supervised 10+ student research projects at Mahdy Research Academy.
+          </p>
+          <div class="student-count">
+            <i class="fas fa-users"></i> 800+ students
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ" target="_blank" class="footer-link">
+          Google Scholar
+        </a>
+        <a href="https://orcid.org/0009-0005-1318-072X" target="_blank" class="footer-link">
+          ORCID
+        </a>
+        <a href="https://github.com/shawmoonazad" target="_blank" class="footer-link">
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/shawmoonazad" target="_blank" class="footer-link">
+          LinkedIn
+        </a>
+      </div>
+      <p class="footer-text">
+        © 2025 Md Shawmoon Azad. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Active navigation highlighting
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publications - Md Shawmoon Azad">
+  
+  <title>Publications - Md Shawmoon Azad</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-blue: #1e3a5f;
+      --accent-blue: #2e5090;
+      --light-blue: #4a7ba7;
+      --gold-accent: #b8860b;
+      
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-tertiary: #f0f2f5;
+      
+      --text-primary: #2c3e50;
+      --text-secondary: #5a6c7d;
+      --text-light: #718096;
+      
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
+      
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.08);
+      
+      --max-width: 1100px;
+      --serif: 'Crimson Text', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      line-height: 1.5;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary-blue);
+    }
+
+    /* Navigation */
+    header {
+      background: var(--bg-primary);
+      border-bottom: 2px solid var(--primary-blue);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-accent);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--accent-blue);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .cv-download {
+      padding: 8px 16px;
+      background: var(--primary-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cv-download:hover {
+      background: var(--accent-blue);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Section Styling */
+    section {
+      padding: 50px 0;
+      background: var(--bg-secondary);
+    }
+
+    .section-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 30px;
+      color: var(--primary-blue);
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--text-secondary);
+    }
+
+    /* Publications Grid */
+    .publications-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* Publication Card - Compact List Style */
+    .publication-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 16px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .2s ease, border-color .2s ease;
+      min-height: 140px;
+      overflow: hidden;
+    }
+
+    .publication-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-medium);
+    }
+
+    /* Left thumbnail: rectangular, rounded, with thin border */
+    .publication-image {
+      flex: 0 0 240px;
+      max-width: 30%;
+      aspect-ratio: 16 / 10;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      background: var(--bg-secondary);
+    }
+
+    .publication-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .25s ease;
+    }
+
+    .publication-card:hover .publication-image img {
+      transform: scale(1.03);
+    }
+
+    /* Right content column */
+    .publication-details {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .publication-type {
+      display: inline-block;
+      padding: 3px 10px;
+      background: var(--primary-blue);
+      color: white;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 8px;
+    }
+
+    .publication-title {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .publication-title a {
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+
+    .publication-title a:hover {
+      color: var(--accent-blue);
+      text-decoration: underline;
+    }
+
+    .publication-authors {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .publication-authors .highlight {
+      font-weight: 600;
+      color: var(--primary-blue);
+    }
+
+    .publication-venue {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 13px;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .publication-summary {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .publication-meta {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 3px 8px;
+      background: var(--bg-secondary);
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .meta-badge.impact {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .meta-badge.quartile {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .publication-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pub-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 10px;
+      background: transparent;
+      border: 1px solid var(--border-medium);
+      border-radius: 3px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .pub-link:hover {
+      background: var(--primary-blue);
+      color: white;
+      border-color: var(--primary-blue);
+      transform: translateY(-1px);
+    }
+
+    .more-publications {
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .more-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      background: var(--primary-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .more-link:hover {
+      background: var(--accent-blue);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .more-link.secondary {
+      background: transparent;
+      color: var(--primary-blue);
+      border: 2px solid var(--primary-blue);
+    }
+
+    .more-link.secondary:hover {
+      background: var(--primary-blue);
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-blue);
+      color: white;
+      padding: 28px 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+      font-size: 14px;
+      transition: opacity 0.3s ease;
+    }
+
+    .footer-link:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .publication-card {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px;
+      }
+
+      .publication-image {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <nav>
+        <a href="index.html" class="logo">Md Shawmoon Azad</a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="publications.html" class="nav-link active">Publications</a></li>
+          <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
+              <i class="fas fa-file-pdf"></i>
+              CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Selected Publications</h2>
+        <p class="section-subtitle">Peer-Reviewed Journal Articles and Conference Papers</p>
+      </div>
+
+      <div class="publications-grid">
+        <!-- Publication 1: IET Quantum Communication -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/qc3.png" 
+                 alt="Chaos-assisted QKD image transmission architecture" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type">Journal Article</span>
+            <h3 class="publication-title">
+              <a href="https://doi.org/10.1049/qtc2.70016" target="_blank">
+                Quantum Secure Image Transmission: A Chaos-Assisted QKD Approach Using Entanglement
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad*</span>, R. Rayhan*, et al. • Equal Contribution 1st Author
+            </p>
+            <p class="publication-venue">
+              <em>IET Quantum Communication (Q2), 2025</em>
+            </p>
+            <p class="publication-summary">
+              This study proposes a secure image transmission framework that merges the E91 quantum key distribution protocol with logistic chaotic maps. By combining quantum entanglement for key exchange and chaos-based encryption for data protection, the system enhances resistance to quantum attacks. Simulation analyses show strong security metrics and efficient performance, making it a promising approach for quantum-era cybersecurity across sensitive sectors.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q2 Journal</span>
+              <span class="meta-badge impact">IF: 3.3</span>
+            </div>
+            <div class="publication-links">
+              <a href="https://doi.org/10.1049/qtc2.70016" class="pub-link">
+                <i class="fas fa-external-link-alt"></i> DOI
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 2: Alexandria Engineering Journal -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/qc1.png" 
+                 alt="QKD-integrated steganographic system diagram" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type">Journal Article</span>
+            <h3 class="publication-title">
+              <a href="https://doi.org/10.1016/j.aej.2025.02.056" target="_blank">
+                Multi-layered Security: Integrating QKD with Classical Cryptography to Enhance Steganographic Security
+              </a>
+            </h3>
+            <p class="publication-authors">
+              A. Sykot, <span class="highlight">M. S. Azad</span>, et al. • 2nd Co-author
+            </p>
+            <p class="publication-venue">
+              <em>Alexandria Engineering Journal (Q1), 2025</em>
+            </p>
+            <p class="publication-summary">
+              This study develops a secure image encryption system that combines Quantum Key Distribution (E91 protocol) with AES encryption, SHA hashing, and deep learning-based steganography. Quantum-generated keys strengthen encryption security, while steganography conceals encrypted images for covert transmission. The hybrid quantum–classical framework enhances confidentiality, integrity, and resistance to eavesdropping, offering a practical step toward next-generation secure image communication.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Journal</span>
+              <span class="meta-badge impact">IF: 6.2</span>
+            </div>
+            <div class="publication-links">
+              <a href="https://doi.org/10.1016/j.aej.2025.02.056" class="pub-link">
+                <i class="fas fa-external-link-alt"></i> DOI
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 3: Engineering Science & Technology (QSAC) -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/qc2.png" 
+                 alt="QSAC audio security system" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type">Journal Article</span>
+            <h3 class="publication-title">
+              <a href="https://doi.org/10.1016/j.jestch.2025.102167" target="_blank">
+                QSAC: Quantum-assisted Secure Audio Communication using Entanglement, Audio Steganography, and Classical Encryption
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad</span>, et al. • Co-supervised
+            </p>
+            <p class="publication-venue">
+              <em>Engineering Science & Technology (Q1), 2025</em>
+            </p>
+            <p class="publication-summary">
+              This research proposes a secure audio transmission framework that integrates Quantum Key Distribution (E91 protocol) with the ChaCha20-Poly1305 encryption–authentication scheme and steganography. Quantum-generated keys provide eavesdropping resistance, while classical encryption ensures integrity and confidentiality. Experimental results confirm high randomness, strong resistance to quantum and classical attacks, and reliable message integrity, establishing a robust hybrid system for secure end-to-end audio communication.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Journal</span>
+              <span class="meta-badge impact">IF: 5.4</span>
+            </div>
+            <div class="publication-links">
+              <a href="https://doi.org/10.1016/j.jestch.2025.102167" class="pub-link">
+                <i class="fas fa-external-link-alt"></i> DOI
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Publication 4: ARRAY Depression ML -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/ml2.png" 
+                 alt="Pipeline for depression self-assessment using ML/NLP" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type">Journal Article</span>
+            <h3 class="publication-title">
+              <a href="https://doi.org/10.1016/j.array.2024.100372" target="_blank">
+                SAD: Self-Assessment of Depression for Bangladeshi University Students Using ML and NLP
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad</span>, et al. • First Author
+            </p>
+            <p class="publication-venue">
+              <em>ARRAY (Q1), 2024</em>
+            </p>
+            <p class="publication-summary">
+              This research analyzes depression among Bangladeshi university students by linking social factors with multiple machine learning, NLP, and explainable AI techniques. Support Vector Machines achieved 99.14% accuracy using the PHQ-9 scale, while the stacking ensemble model performed best across social dimensions. BioBERT led NLP-based methods with 90.34% accuracy, and LIME improved model interpretability. Overall, traditional ML models outperformed large language models for structured depression assessment data
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Journal</span>
+              <span class="meta-badge impact">IF: 4.5</span>
+            </div>
+            <div class="publication-links">
+              <a href="https://doi.org/10.1016/j.array.2024.100372" class="pub-link">
+                <i class="fas fa-external-link-alt"></i> DOI
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 5: PLOS ONE Consumer Behavior -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/ml1.png" 
+                 alt="Model integrating TPB constructs with ML" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type">Journal Article</span>
+            <h3 class="publication-title">
+              <a href="https://doi.org/10.1371/journal.pone.0296336" target="_blank">
+                Predictive Modeling of Consumer Purchase Behavior: TPB + Machine Learning for Actionable Insights
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad</span>, et al. • First Author
+            </p>
+            <p class="publication-venue">
+              <em>PLOS ONE (Q1), 2023</em>
+            </p>
+            <p class="publication-summary">
+              This study integrates the Theory of Planned Behavior (attitude, social norm, and perceived behavioral control) with machine learning to predict online consumer purchasing behavior. Among eight tested algorithms, gradient boosting achieved the best accuracy (0.91) and F1 score (0.91). Using Explainable AI via LIME, the model’s decision-making process was made interpretable, offering actionable insights for businesses to tailor marketing strategies based on behavioral determinants.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Journal</span>
+              <span class="meta-badge impact">IF: 3.7</span>
+            </div>
+            <div class="publication-links">
+              <a href="https://doi.org/10.1371/journal.pone.0296336" class="pub-link">
+                <i class="fas fa-external-link-alt"></i> DOI
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 6: Under Review - Problematic Internet Use -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/ml3.png" 
+                 alt="Problematic Internet Use XAI" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type">Under Review</span>
+            <h3 class="publication-title">
+              <a href="#" onclick="return false;">
+                Explainable AI for Predicting Problematic Internet Use Among University Students
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad</span>, et al. • Co-supervised
+            </p>
+            <p class="publication-venue">
+              <em>PLOS ONE — Under Review</em>
+            </p>
+            <p class="publication-summary">
+              XAI-driven modeling of PIU with SHAP/LIME attribution to identify behavioral and psychosocial drivers.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Submission</span>
+              <span class="meta-badge">Status: Under Review</span>
+            </div>
+            <div class="publication-links">
+              <a href="#" class="pub-link" onclick="return false;">
+                <i class="fas fa-external-link-alt"></i> DOI (pending)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 7: Under Review - QKD + PQC Cloud Security -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/qc4.png" 
+                 alt="QKD + PQC Cloud Security" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type">Under Review</span>
+            <h3 class="publication-title">
+              <a href="#" onclick="return false;">
+                Enhancing Cloud Storage Security with QKD and Post-Quantum Cryptography Using Custom Proxy Re-Encryption
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad</span>, et al. • Co-supervised
+            </p>
+            <p class="publication-venue">
+              <em>Quantum Information Processing — Under Review</em>
+            </p>
+            <p class="publication-summary">
+              Hybrid E91-QKD + Kyber-PKE architecture with proxy re-encryption to protect multi-tenant cloud storage.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Submission</span>
+              <span class="meta-badge">Status: Under Review</span>
+            </div>
+            <div class="publication-links">
+              <a href="#" class="pub-link" onclick="return false;">
+                <i class="fas fa-external-link-alt"></i> DOI (pending)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-publications">
+        <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ" target="_blank" class="more-link">
+          See more on Google Scholar <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://scholar.google.com/citations?user=qiLaY-AAAAAJ" target="_blank" class="footer-link">
+          Google Scholar
+        </a>
+        <a href="https://orcid.org/0009-0005-1318-072X" target="_blank" class="footer-link">
+          ORCID
+        </a>
+        <a href="https://github.com/shawmoonazad" target="_blank" class="footer-link">
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/shawmoonazad" target="_blank" class="footer-link">
+          LinkedIn
+        </a>
+      </div>
+      <p class="footer-text">
+        © 2025 Md Shawmoon Azad. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Active navigation highlighting
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
