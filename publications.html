@@ -66,6 +66,31 @@
       color: var(--primary-blue);
     }
 
+    /* Animation Keyframes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .delay-3 { animation-delay: 0.3s; opacity: 0; }
+
     /* Navigation */
     header {
       background: var(--bg-primary);
@@ -95,6 +120,11 @@
       font-weight: 700;
       color: var(--primary-blue);
       text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: var(--accent-blue);
     }
 
     .nav-menu {
@@ -154,6 +184,148 @@
       box-shadow: var(--shadow-md);
     }
 
+    /* Hamburger Menu Button */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 28px;
+      height: 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      width: 100%;
+      height: 3px;
+      background: var(--primary-blue);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: left;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    /* Mobile Slide Panel */
+    .mobile-menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+      opacity: 1;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -280px;
+      width: 280px;
+      height: 100%;
+      background: var(--bg-primary);
+      z-index: 1000;
+      transition: right 0.3s ease;
+      box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+      overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
+
+    .mobile-menu-header {
+      padding: 20px;
+      border-bottom: 2px solid var(--primary-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mobile-menu-header .logo {
+      font-size: 18px;
+    }
+
+    .mobile-menu-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: var(--text-primary);
+      cursor: pointer;
+      padding: 4px;
+      transition: color 0.3s ease;
+    }
+
+    .mobile-menu-close:hover {
+      color: var(--accent-blue);
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      padding: 20px 0;
+    }
+
+    .mobile-nav-list li {
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .mobile-nav-list a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-nav-list a:hover,
+    .mobile-nav-list a.active {
+      background: var(--bg-secondary);
+      color: var(--accent-blue);
+      padding-left: 28px;
+    }
+
+    .mobile-nav-list a i {
+      width: 20px;
+      text-align: center;
+      color: var(--gold-accent);
+    }
+
+    .mobile-menu-footer {
+      padding: 20px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .mobile-menu-footer .cv-download {
+      width: 100%;
+      justify-content: center;
+      padding: 12px;
+    }
+
     /* Section Styling */
     section {
       padding: 50px 0;
@@ -185,6 +357,37 @@
       color: var(--text-secondary);
     }
 
+    /* Subsection Header */
+    .subsection-header {
+      margin: 40px 0 24px 0;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--gold-accent);
+    }
+
+    .subsection-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .subsection-title i {
+      color: var(--gold-accent);
+      font-size: 20px;
+    }
+
+    .subsection-count {
+      background: var(--primary-blue);
+      color: white;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-family: var(--sans);
+      font-weight: 600;
+    }
+
     /* Publications Grid */
     .publications-grid {
       display: flex;
@@ -192,7 +395,7 @@
       gap: 24px;
     }
 
-    /* Publication Card - Compact List Style */
+    /* Publication Card */
     .publication-card {
       display: flex;
       align-items: flex-start;
@@ -202,17 +405,25 @@
       border: 1px solid var(--border-light);
       border-radius: 8px;
       box-shadow: var(--shadow-sm);
-      transition: box-shadow .2s ease, border-color .2s ease;
+      transition: all 0.3s ease;
       min-height: 140px;
       overflow: hidden;
+      opacity: 0;
+      animation: fadeInUp 0.5s ease-out forwards;
     }
+
+    .publication-card:nth-child(1) { animation-delay: 0.1s; }
+    .publication-card:nth-child(2) { animation-delay: 0.15s; }
+    .publication-card:nth-child(3) { animation-delay: 0.2s; }
+    .publication-card:nth-child(4) { animation-delay: 0.25s; }
+    .publication-card:nth-child(5) { animation-delay: 0.3s; }
 
     .publication-card:hover {
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-lg);
       border-color: var(--border-medium);
+      transform: translateY(-3px);
     }
 
-    /* Left thumbnail: rectangular, rounded, with thin border */
     .publication-image {
       flex: 0 0 240px;
       max-width: 30%;
@@ -228,14 +439,13 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform .25s ease;
+      transition: transform 0.3s ease;
     }
 
     .publication-card:hover .publication-image img {
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
 
-    /* Right content column */
     .publication-details {
       flex: 1;
       min-width: 0;
@@ -254,6 +464,10 @@
       margin-bottom: 8px;
     }
 
+    .publication-type.under-review {
+      background: var(--gold-accent);
+    }
+
     .publication-title {
       font-family: var(--serif);
       font-size: 18px;
@@ -265,6 +479,7 @@
     .publication-title a {
       color: var(--primary-blue);
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     .publication-title a:hover {
@@ -315,6 +530,11 @@
       font-size: 10px;
       font-weight: 600;
       color: var(--text-primary);
+      transition: transform 0.2s ease;
+    }
+
+    .meta-badge:hover {
+      transform: scale(1.05);
     }
 
     .meta-badge.impact {
@@ -325,6 +545,11 @@
     .meta-badge.quartile {
       background: #dbeafe;
       color: #1e40af;
+    }
+
+    .meta-badge.status {
+      background: #fef3c7;
+      color: #92400e;
     }
 
     .publication-links {
@@ -352,7 +577,19 @@
       background: var(--primary-blue);
       color: white;
       border-color: var(--primary-blue);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+    }
+
+    .pub-link.disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .pub-link.disabled:hover {
+      background: transparent;
+      color: var(--text-primary);
+      border-color: var(--border-medium);
+      transform: none;
     }
 
     .more-publications {
@@ -381,19 +618,8 @@
 
     .more-link:hover {
       background: var(--accent-blue);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
       box-shadow: var(--shadow-md);
-    }
-
-    .more-link.secondary {
-      background: transparent;
-      color: var(--primary-blue);
-      border: 2px solid var(--primary-blue);
-    }
-
-    .more-link.secondary:hover {
-      background: var(--primary-blue);
-      color: white;
     }
 
     /* Footer */
@@ -422,12 +648,13 @@
       text-decoration: none;
       opacity: 0.9;
       font-size: 14px;
-      transition: opacity 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .footer-link:hover {
       opacity: 1;
       text-decoration: underline;
+      transform: translateY(-2px);
     }
 
     .footer-text {
@@ -441,6 +668,19 @@
         display: none;
       }
 
+      .hamburger {
+        display: flex;
+      }
+
+      .mobile-menu-overlay {
+        display: block;
+        pointer-events: none;
+      }
+
+      .mobile-menu-overlay.active {
+        pointer-events: auto;
+      }
+
       .publication-card {
         flex-direction: column;
         gap: 12px;
@@ -451,6 +691,14 @@
         width: 100%;
         max-width: 100%;
         aspect-ratio: 16 / 9;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .subsection-title {
+        font-size: 18px;
       }
     }
   </style>
@@ -476,16 +724,58 @@
             </a>
           </li>
         </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="logo">Md Shawmoon Azad</a>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
+      <li><a href="publications.html" class="active"><i class="fas fa-book"></i> Publications</a></li>
+      <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+      <li><a href="timeline.html"><i class="fas fa-stream"></i> Timeline</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
+        <i class="fas fa-file-pdf"></i>
+        Download CV
+      </a>
+    </div>
+  </div>
 
   <!-- Publications Section -->
   <section id="publications">
     <div class="section-container">
       <div class="section-header">
-        <h2 class="section-title">Selected Publications</h2>
+        <h2 class="section-title">Publications</h2>
         <p class="section-subtitle">Peer-Reviewed Journal Articles and Conference Papers</p>
+      </div>
+
+      <!-- Published Papers Subsection -->
+      <div class="subsection-header">
+        <h3 class="subsection-title">
+          <i class="fas fa-check-circle"></i>
+          Published Papers
+          <span class="subsection-count">5</span>
+        </h3>
       </div>
 
       <div class="publications-grid">
@@ -509,14 +799,14 @@
               <em>IET Quantum Communication (Q2), 2025</em>
             </p>
             <p class="publication-summary">
-              This study proposes a secure image transmission framework that merges the E91 quantum key distribution protocol with logistic chaotic maps. By combining quantum entanglement for key exchange and chaos-based encryption for data protection, the system enhances resistance to quantum attacks. Simulation analyses show strong security metrics and efficient performance, making it a promising approach for quantum-era cybersecurity across sensitive sectors.
+              This study proposes a secure image transmission framework that merges the E91 quantum key distribution protocol with logistic chaotic maps. By combining quantum entanglement for key exchange and chaos-based encryption for data protection, the system enhances resistance to quantum attacks.
             </p>
             <div class="publication-meta">
               <span class="meta-badge quartile">Q2 Journal</span>
               <span class="meta-badge impact">IF: 3.3</span>
             </div>
             <div class="publication-links">
-              <a href="https://doi.org/10.1049/qtc2.70016" class="pub-link">
+              <a href="https://doi.org/10.1049/qtc2.70016" class="pub-link" target="_blank">
                 <i class="fas fa-external-link-alt"></i> DOI
               </a>
             </div>
@@ -543,14 +833,14 @@
               <em>Alexandria Engineering Journal (Q1), 2025</em>
             </p>
             <p class="publication-summary">
-              This study develops a secure image encryption system that combines Quantum Key Distribution (E91 protocol) with AES encryption, SHA hashing, and deep learning-based steganography. Quantum-generated keys strengthen encryption security, while steganography conceals encrypted images for covert transmission. The hybrid quantum–classical framework enhances confidentiality, integrity, and resistance to eavesdropping, offering a practical step toward next-generation secure image communication.
+              This study develops a secure image encryption system that combines Quantum Key Distribution (E91 protocol) with AES encryption, SHA hashing, and deep learning-based steganography for enhanced confidentiality and integrity.
             </p>
             <div class="publication-meta">
               <span class="meta-badge quartile">Q1 Journal</span>
               <span class="meta-badge impact">IF: 6.2</span>
             </div>
             <div class="publication-links">
-              <a href="https://doi.org/10.1016/j.aej.2025.02.056" class="pub-link">
+              <a href="https://doi.org/10.1016/j.aej.2025.02.056" class="pub-link" target="_blank">
                 <i class="fas fa-external-link-alt"></i> DOI
               </a>
             </div>
@@ -577,14 +867,14 @@
               <em>Engineering Science & Technology (Q1), 2025</em>
             </p>
             <p class="publication-summary">
-              This research proposes a secure audio transmission framework that integrates Quantum Key Distribution (E91 protocol) with the ChaCha20-Poly1305 encryption–authentication scheme and steganography. Quantum-generated keys provide eavesdropping resistance, while classical encryption ensures integrity and confidentiality. Experimental results confirm high randomness, strong resistance to quantum and classical attacks, and reliable message integrity, establishing a robust hybrid system for secure end-to-end audio communication.
+              This research proposes a secure audio transmission framework that integrates Quantum Key Distribution (E91 protocol) with the ChaCha20-Poly1305 encryption–authentication scheme and steganography.
             </p>
             <div class="publication-meta">
               <span class="meta-badge quartile">Q1 Journal</span>
               <span class="meta-badge impact">IF: 5.4</span>
             </div>
             <div class="publication-links">
-              <a href="https://doi.org/10.1016/j.jestch.2025.102167" class="pub-link">
+              <a href="https://doi.org/10.1016/j.jestch.2025.102167" class="pub-link" target="_blank">
                 <i class="fas fa-external-link-alt"></i> DOI
               </a>
             </div>
@@ -611,14 +901,14 @@
               <em>ARRAY (Q1), 2024</em>
             </p>
             <p class="publication-summary">
-              This research analyzes depression among Bangladeshi university students by linking social factors with multiple machine learning, NLP, and explainable AI techniques. Support Vector Machines achieved 99.14% accuracy using the PHQ-9 scale, while the stacking ensemble model performed best across social dimensions. BioBERT led NLP-based methods with 90.34% accuracy, and LIME improved model interpretability. Overall, traditional ML models outperformed large language models for structured depression assessment data
+              This research analyzes depression among Bangladeshi university students by linking social factors with multiple machine learning, NLP, and explainable AI techniques. Support Vector Machines achieved 99.14% accuracy using the PHQ-9 scale.
             </p>
             <div class="publication-meta">
               <span class="meta-badge quartile">Q1 Journal</span>
               <span class="meta-badge impact">IF: 4.5</span>
             </div>
             <div class="publication-links">
-              <a href="https://doi.org/10.1016/j.array.2024.100372" class="pub-link">
+              <a href="https://doi.org/10.1016/j.array.2024.100372" class="pub-link" target="_blank">
                 <i class="fas fa-external-link-alt"></i> DOI
               </a>
             </div>
@@ -645,32 +935,41 @@
               <em>PLOS ONE (Q1), 2023</em>
             </p>
             <p class="publication-summary">
-              This study integrates the Theory of Planned Behavior (attitude, social norm, and perceived behavioral control) with machine learning to predict online consumer purchasing behavior. Among eight tested algorithms, gradient boosting achieved the best accuracy (0.91) and F1 score (0.91). Using Explainable AI via LIME, the model’s decision-making process was made interpretable, offering actionable insights for businesses to tailor marketing strategies based on behavioral determinants.
+              This study integrates the Theory of Planned Behavior with machine learning to predict online consumer purchasing behavior. Gradient boosting achieved the best accuracy (0.91) and F1 score (0.91).
             </p>
             <div class="publication-meta">
               <span class="meta-badge quartile">Q1 Journal</span>
               <span class="meta-badge impact">IF: 3.7</span>
             </div>
             <div class="publication-links">
-              <a href="https://doi.org/10.1371/journal.pone.0296336" class="pub-link">
+              <a href="https://doi.org/10.1371/journal.pone.0296336" class="pub-link" target="_blank">
                 <i class="fas fa-external-link-alt"></i> DOI
               </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Publication 6: Under Review - Problematic Internet Use -->
+      <!-- Manuscripts Under Review Subsection -->
+      <div class="subsection-header">
+        <h3 class="subsection-title">
+          <i class="fas fa-clock"></i>
+          Manuscripts Under Review
+          <span class="subsection-count">4</span>
+        </h3>
+      </div>
+
+      <div class="publications-grid">
+        <!-- Under Review 1: Problematic Internet Use -->
         <div class="publication-card">
           <div class="publication-image">
             <img src="./assets/img/ml3.png" 
                  alt="Problematic Internet Use XAI" />
           </div>
           <div class="publication-details">
-            <span class="publication-type">Under Review</span>
+            <span class="publication-type under-review">Under Review</span>
             <h3 class="publication-title">
-              <a href="#" onclick="return false;">
-                Explainable AI for Predicting Problematic Internet Use Among University Students
-              </a>
+              Explainable AI for Predicting Problematic Internet Use Among University Students
             </h3>
             <p class="publication-authors">
               <span class="highlight">M. S. Azad</span>, et al. • Co-supervised
@@ -679,32 +978,30 @@
               <em>PLOS ONE — Under Review</em>
             </p>
             <p class="publication-summary">
-              XAI-driven modeling of PIU with SHAP/LIME attribution to identify behavioral and psychosocial drivers.
+              XAI-driven modeling of PIU with SHAP/LIME attribution to identify behavioral and psychosocial drivers among Bangladeshi university students.
             </p>
             <div class="publication-meta">
               <span class="meta-badge quartile">Q1 Submission</span>
-              <span class="meta-badge">Status: Under Review</span>
+              <span class="meta-badge status">Under Review</span>
             </div>
             <div class="publication-links">
-              <a href="#" class="pub-link" onclick="return false;">
-                <i class="fas fa-external-link-alt"></i> DOI (pending)
-              </a>
+              <span class="pub-link disabled">
+                <i class="fas fa-hourglass-half"></i> DOI (pending)
+              </span>
             </div>
           </div>
         </div>
 
-        <!-- Publication 7: Under Review - QKD + PQC Cloud Security -->
+        <!-- Under Review 2: QKD + PQC Cloud Security -->
         <div class="publication-card">
           <div class="publication-image">
             <img src="./assets/img/qc4.png" 
                  alt="QKD + PQC Cloud Security" />
           </div>
           <div class="publication-details">
-            <span class="publication-type">Under Review</span>
+            <span class="publication-type under-review">Under Review</span>
             <h3 class="publication-title">
-              <a href="#" onclick="return false;">
-                Enhancing Cloud Storage Security with QKD and Post-Quantum Cryptography Using Custom Proxy Re-Encryption
-              </a>
+              Enhancing Cloud Storage Security with QKD and Post-Quantum Cryptography Using Custom Proxy Re-Encryption
             </h3>
             <p class="publication-authors">
               <span class="highlight">M. S. Azad</span>, et al. • Co-supervised
@@ -713,16 +1010,80 @@
               <em>Quantum Information Processing — Under Review</em>
             </p>
             <p class="publication-summary">
-              Hybrid E91-QKD + Kyber-PKE architecture with proxy re-encryption to protect multi-tenant cloud storage.
+              Hybrid E91-QKD + Kyber-PKE architecture with proxy re-encryption to protect multi-tenant cloud storage against quantum and classical threats.
             </p>
             <div class="publication-meta">
               <span class="meta-badge quartile">Q1 Submission</span>
-              <span class="meta-badge">Status: Under Review</span>
+              <span class="meta-badge status">Under Review</span>
             </div>
             <div class="publication-links">
-              <a href="#" class="pub-link" onclick="return false;">
-                <i class="fas fa-external-link-alt"></i> DOI (pending)
-              </a>
+              <span class="pub-link disabled">
+                <i class="fas fa-hourglass-half"></i> DOI (pending)
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Under Review 3: LSC-XAI Healthcare -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/ml2.png" 
+                 alt="Healthcare Worker Attrition" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type under-review">Under Review</span>
+            <h3 class="publication-title">
+              LSC-XAI: A Hybrid Explainable AI Framework for Predicting and Mitigating Healthcare Worker Attrition
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad</span>, et al. • Co-supervised
+            </p>
+            <p class="publication-venue">
+              <em>Under Review</em>
+            </p>
+            <p class="publication-summary">
+              A hybrid explainable AI framework combining ensemble learning with SHAP-based interpretability to predict healthcare worker turnover and identify actionable intervention strategies.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Submission</span>
+              <span class="meta-badge status">Under Review</span>
+            </div>
+            <div class="publication-links">
+              <span class="pub-link disabled">
+                <i class="fas fa-hourglass-half"></i> DOI (pending)
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Under Review 4: Hybrid QNN Power Flow -->
+        <div class="publication-card">
+          <div class="publication-image">
+            <img src="./assets/img/qc1.png" 
+                 alt="Hybrid Quantum Neural Networks" />
+          </div>
+          <div class="publication-details">
+            <span class="publication-type under-review">Under Review</span>
+            <h3 class="publication-title">
+              Optimizing Power Flow Computations in the NREL-118 Bus System Using Hybrid Quantum-Classical Neural Networks
+            </h3>
+            <p class="publication-authors">
+              <span class="highlight">M. S. Azad</span>, et al. • Co-supervised
+            </p>
+            <p class="publication-venue">
+              <em>Under Review</em>
+            </p>
+            <p class="publication-summary">
+              Applying hybrid quantum-classical neural networks to optimize power flow computations in complex electrical grid systems, demonstrating quantum advantage for energy infrastructure problems.
+            </p>
+            <div class="publication-meta">
+              <span class="meta-badge quartile">Q1 Submission</span>
+              <span class="meta-badge status">Under Review</span>
+            </div>
+            <div class="publication-links">
+              <span class="pub-link disabled">
+                <i class="fas fa-hourglass-half"></i> DOI (pending)
+              </span>
             </div>
           </div>
         </div>
@@ -760,11 +1121,46 @@
   </footer>
 
   <script>
+    // Mobile Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    function openMobileMenu() {
+      hamburger.classList.add('active');
+      mobileMenu.classList.add('active');
+      mobileMenuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMobileMenu();
+    });
+
     // Active navigation highlighting
     const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-list a');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+
+    mobileNavLinks.forEach(link => {
       if (link.getAttribute('href') === currentPage) {
         link.classList.add('active');
       }

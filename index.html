@@ -30,7 +30,6 @@
     }
 
     :root {
-      /* Compact Academic color palette */
       --primary-blue: #1e3a5f;
       --accent-blue: #2e5090;
       --light-blue: #4a7ba7;
@@ -66,7 +65,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Typography - Compact */
+    /* Typography */
     h1, h2, h3, h4, h5, h6 {
       font-family: var(--serif);
       font-weight: 700;
@@ -74,7 +73,59 @@
       color: var(--primary-blue);
     }
 
-    /* Navigation - Compact */
+    /* Animation Keyframes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    .animate-slideInLeft {
+      animation: slideInLeft 0.5s ease-out forwards;
+    }
+
+    /* Staggered animation delays */
+    .delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .delay-4 { animation-delay: 0.4s; opacity: 0; }
+    .delay-5 { animation-delay: 0.5s; opacity: 0; }
+
+    /* Navigation */
     header {
       background: var(--bg-primary);
       border-bottom: 2px solid var(--primary-blue);
@@ -103,6 +154,11 @@
       font-weight: 700;
       color: var(--primary-blue);
       text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: var(--accent-blue);
     }
 
     .nav-menu {
@@ -162,7 +218,149 @@
       box-shadow: var(--shadow-md);
     }
 
-    /* Hero Section - Compact */
+    /* Hamburger Menu Button */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 28px;
+      height: 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      width: 100%;
+      height: 3px;
+      background: var(--primary-blue);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: left;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    /* Mobile Slide Panel */
+    .mobile-menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+      opacity: 1;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -280px;
+      width: 280px;
+      height: 100%;
+      background: var(--bg-primary);
+      z-index: 1000;
+      transition: right 0.3s ease;
+      box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+      overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
+
+    .mobile-menu-header {
+      padding: 20px;
+      border-bottom: 2px solid var(--primary-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mobile-menu-header .logo {
+      font-size: 18px;
+    }
+
+    .mobile-menu-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: var(--text-primary);
+      cursor: pointer;
+      padding: 4px;
+      transition: color 0.3s ease;
+    }
+
+    .mobile-menu-close:hover {
+      color: var(--accent-blue);
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      padding: 20px 0;
+    }
+
+    .mobile-nav-list li {
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .mobile-nav-list a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-nav-list a:hover,
+    .mobile-nav-list a.active {
+      background: var(--bg-secondary);
+      color: var(--accent-blue);
+      padding-left: 28px;
+    }
+
+    .mobile-nav-list a i {
+      width: 20px;
+      text-align: center;
+      color: var(--gold-accent);
+    }
+
+    .mobile-menu-footer {
+      padding: 20px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .mobile-menu-footer .cv-download {
+      width: 100%;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    /* Hero Section */
     .hero {
       background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
       padding: 50px 0;
@@ -238,7 +436,7 @@
       background: var(--primary-blue);
       color: white;
       border-color: var(--primary-blue);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
       box-shadow: var(--shadow-md);
     }
 
@@ -254,6 +452,12 @@
       border: 3px solid var(--primary-blue);
       margin-bottom: 16px;
       box-shadow: var(--shadow-lg);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(30, 58, 95, 0.25);
     }
 
     .profile-stats {
@@ -268,6 +472,13 @@
       background: var(--bg-primary);
       border-radius: 6px;
       border: 1px solid var(--border-light);
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--gold-accent);
     }
 
     .stat-value {
@@ -286,7 +497,7 @@
       margin-top: 2px;
     }
 
-    /* Section Styling - Compact */
+    /* Section Styling */
     section {
       padding: 50px 0;
     }
@@ -316,7 +527,7 @@
       color: var(--text-secondary);
     }
 
-    /* News Section - Compact */
+    /* News Section */
     .news-container {
       max-width: 900px;
       margin: 0 auto;
@@ -328,7 +539,16 @@
       padding: 18px 0;
       border-bottom: 1px solid var(--border-light);
       transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 0.5s ease-out forwards;
     }
+
+    .news-item:nth-child(1) { animation-delay: 0.1s; }
+    .news-item:nth-child(2) { animation-delay: 0.2s; }
+    .news-item:nth-child(3) { animation-delay: 0.3s; }
+    .news-item:nth-child(4) { animation-delay: 0.4s; }
+    .news-item:nth-child(5) { animation-delay: 0.5s; }
+    .news-item:nth-child(6) { animation-delay: 0.6s; }
 
     .news-item:last-child {
       border-bottom: none;
@@ -400,6 +620,11 @@
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.3px;
+      transition: transform 0.2s ease;
+    }
+
+    .news-tag:hover {
+      transform: scale(1.05);
     }
 
     .news-tag.quantum {
@@ -440,7 +665,7 @@
       gap: 10px;
     }
 
-    /* Footer - Compact */
+    /* Footer */
     footer {
       background: var(--primary-blue);
       color: white;
@@ -466,12 +691,13 @@
       text-decoration: none;
       opacity: 0.9;
       font-size: 14px;
-      transition: opacity 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .footer-link:hover {
       opacity: 1;
       text-decoration: underline;
+      transform: translateY(-2px);
     }
 
     .footer-text {
@@ -486,6 +712,19 @@
         text-align: center;
       }
 
+      .profile-section {
+        order: -1;
+      }
+
+      .hero-affiliation {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .hero-links {
+        justify-content: center;
+      }
+
       .nav-menu {
         gap: 16px;
       }
@@ -496,13 +735,74 @@
         display: none;
       }
 
-      .hero h1 {
-        font-size: 32px;
+      .hamburger {
+        display: flex;
+      }
+
+      .mobile-menu-overlay {
+        display: block;
+        pointer-events: none;
+      }
+
+      .mobile-menu-overlay.active {
+        pointer-events: auto;
+      }
+
+      .hero {
+        padding: 30px 0;
+      }
+
+      .hero-content h1 {
+        font-size: 28px;
+      }
+
+      .hero-title {
+        font-size: 16px;
+      }
+
+      .hero-affiliation {
+        font-size: 14px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .profile-image {
+        width: 140px;
+        height: 140px;
       }
 
       .section-title {
-        font-size: 26px;
+        font-size: 24px;
       }
+
+      .news-item {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .news-date {
+        flex-direction: row;
+        width: auto;
+        gap: 8px;
+      }
+
+      .news-date .day {
+        font-size: 18px;
+      }
+    }
+
+    /* Scroll animation helper */
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .scroll-animate.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -527,23 +827,57 @@
             </a>
           </li>
         </ul>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="logo">Md Shawmoon Azad</a>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
+      <li><a href="publications.html"><i class="fas fa-book"></i> Publications</a></li>
+      <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+      <li><a href="timeline.html"><i class="fas fa-stream"></i> Timeline</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
+        <i class="fas fa-file-pdf"></i>
+        Download CV
+      </a>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-container">
       <div class="hero-content">
-        <h1>Md Shawmoon Azad</h1>
-        <div class="hero-title">Graduate Research Assistant</div>
+        <h1 class="animate-fadeInUp">Md Shawmoon Azad</h1>
+        <div class="hero-title animate-fadeInUp delay-1">Graduate Research Assistant</div>
         
-        <div class="hero-affiliation">
+        <div class="hero-affiliation animate-fadeInUp delay-2">
           <i class="fas fa-university"></i>
           Intelligent Secure Cyber-Systems and Applications Research Lab (ISCAR-Lab), Cleveland State University
         </div>
         
-        <p class="hero-description">
+        <p class="hero-description animate-fadeInUp delay-3">
           Hi! I'm <strong>Md Shawmoon Azad</strong>, a researcher exploring the intersection of <strong>Quantum Security × AI</strong>. 
           I'm currently pursuing my Ph.D. in Computer Science at Cleveland State University under the supervision of <strong>Dr. Sathish A. P. Kumar</strong>, 
           where I work on <strong>Hybrid Post-Quantum TLS frameworks</strong> for quantum-safe cloud communication.<br><br>
@@ -555,7 +889,7 @@
           Email me for collaborations or research discussions!
         </p>
      
-        <div class="hero-links">
+        <div class="hero-links animate-fadeInUp delay-4">
           <a href="mailto:m.azad@vikes.csuohio.edu" class="hero-link">
             <i class="fas fa-envelope"></i>
             CSU Email
@@ -583,7 +917,7 @@
         </div>
       </div>
       
-      <div class="profile-section">
+      <div class="profile-section animate-fadeIn delay-2">
         <img src="./assets/img/shawmoon.jpg" alt="Md Shawmoon Azad" class="profile-image">
         
         <div class="profile-stats">
@@ -743,8 +1077,38 @@
   </footer>
 
   <script>
+    // Mobile Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    function openMobileMenu() {
+      hamburger.classList.add('active');
+      mobileMenu.classList.add('active');
+      mobileMenuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMobileMenu();
+    });
+
     // Active navigation highlighting
     const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-list a');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     navLinks.forEach(link => {
@@ -752,6 +1116,25 @@
         link.classList.add('active');
       }
     });
+
+    mobileNavLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+
+    // Scroll animation observer
+    const scrollAnimateElements = document.querySelectorAll('.scroll-animate');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    scrollAnimateElements.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>

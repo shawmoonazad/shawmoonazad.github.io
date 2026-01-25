@@ -66,6 +66,29 @@
       color: var(--primary-blue);
     }
 
+    /* Animation Keyframes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
     /* Navigation */
     header {
       background: var(--bg-primary);
@@ -95,6 +118,11 @@
       font-weight: 700;
       color: var(--primary-blue);
       text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: var(--accent-blue);
     }
 
     .nav-menu {
@@ -154,6 +182,148 @@
       box-shadow: var(--shadow-md);
     }
 
+    /* Hamburger Menu Button */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 28px;
+      height: 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      width: 100%;
+      height: 3px;
+      background: var(--primary-blue);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: left;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    /* Mobile Slide Panel */
+    .mobile-menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+      opacity: 1;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -280px;
+      width: 280px;
+      height: 100%;
+      background: var(--bg-primary);
+      z-index: 1000;
+      transition: right 0.3s ease;
+      box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+      overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
+
+    .mobile-menu-header {
+      padding: 20px;
+      border-bottom: 2px solid var(--primary-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mobile-menu-header .logo {
+      font-size: 18px;
+    }
+
+    .mobile-menu-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: var(--text-primary);
+      cursor: pointer;
+      padding: 4px;
+      transition: color 0.3s ease;
+    }
+
+    .mobile-menu-close:hover {
+      color: var(--accent-blue);
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      padding: 20px 0;
+    }
+
+    .mobile-nav-list li {
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .mobile-nav-list a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-nav-list a:hover,
+    .mobile-nav-list a.active {
+      background: var(--bg-secondary);
+      color: var(--accent-blue);
+      padding-left: 28px;
+    }
+
+    .mobile-nav-list a i {
+      width: 20px;
+      text-align: center;
+      color: var(--gold-accent);
+    }
+
+    .mobile-menu-footer {
+      padding: 20px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .mobile-menu-footer .cv-download {
+      width: 100%;
+      justify-content: center;
+      padding: 12px;
+    }
+
     /* Section Styling */
     section {
       padding: 50px 0;
@@ -201,7 +371,13 @@
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
     }
+
+    .research-card:nth-child(1) { animation-delay: 0.1s; }
+    .research-card:nth-child(2) { animation-delay: 0.2s; }
+    .research-card:nth-child(3) { animation-delay: 0.3s; }
 
     .research-card::before {
       content: '';
@@ -218,6 +394,7 @@
     .research-card:hover {
       box-shadow: var(--shadow-lg);
       border-color: var(--primary-blue);
+      transform: translateY(-5px);
     }
 
     .research-card:hover::before {
@@ -225,16 +402,23 @@
     }
 
     .research-icon {
-      width: 44px;
-      height: 44px;
-      background: var(--bg-secondary);
-      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--primary-blue);
-      font-size: 18px;
+      font-size: 22px;
       margin-bottom: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .research-card:hover .research-icon {
+      background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+      color: white;
+      transform: scale(1.1);
     }
 
     .research-card h3 {
@@ -245,7 +429,7 @@
 
     .research-card p {
       color: var(--text-secondary);
-      line-height: 1.5;
+      line-height: 1.6;
       font-size: 14px;
     }
 
@@ -263,6 +447,13 @@
       font-size: 11px;
       color: var(--text-secondary);
       font-family: var(--mono);
+      transition: all 0.3s ease;
+    }
+
+    .keyword-tag:hover {
+      background: var(--primary-blue);
+      color: white;
+      transform: translateY(-2px);
     }
 
     /* Footer */
@@ -291,12 +482,13 @@
       text-decoration: none;
       opacity: 0.9;
       font-size: 14px;
-      transition: opacity 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .footer-link:hover {
       opacity: 1;
       text-decoration: underline;
+      transform: translateY(-2px);
     }
 
     .footer-text {
@@ -310,8 +502,25 @@
         display: none;
       }
 
+      .hamburger {
+        display: flex;
+      }
+
+      .mobile-menu-overlay {
+        display: block;
+        pointer-events: none;
+      }
+
+      .mobile-menu-overlay.active {
+        pointer-events: auto;
+      }
+
       .research-areas {
         grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 24px;
       }
     }
   </style>
@@ -337,9 +546,42 @@
             </a>
           </li>
         </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="logo">Md Shawmoon Azad</a>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="research.html" class="active"><i class="fas fa-flask"></i> Research</a></li>
+      <li><a href="publications.html"><i class="fas fa-book"></i> Publications</a></li>
+      <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+      <li><a href="timeline.html"><i class="fas fa-stream"></i> Timeline</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="assets/cv/CV_Md_Shawmoon_Azad.pdf" class="cv-download">
+        <i class="fas fa-file-pdf"></i>
+        Download CV
+      </a>
+    </div>
+  </div>
 
   <!-- Research Interests -->
   <section id="research">
@@ -356,10 +598,9 @@
           </div>
           <h3>Hybrid Post Quantum Cryptography Algorithms</h3>
           <p>
-            To designe <strong>hybrid Post-Quantum Cryptography frameworks </strong> to achieve 
+            To design <strong>hybrid Post-Quantum Cryptography frameworks</strong> to achieve 
             quantum-safe communication. My work integrates 
-            <strong>NIST-standardized schemes</strong> (Kyber, Dilithium) into robust TLS/IPsec pipelines with <strong> improved policy engine</strong> for secure cloud infrastructures.
-    
+            <strong>NIST-standardized schemes</strong> (Kyber, Dilithium) into robust TLS/IPsec pipelines with <strong>improved policy engine</strong> for secure cloud infrastructures.
           </p>
           <div class="research-keywords">
             <span class="keyword-tag">PQC</span>
@@ -376,9 +617,9 @@
           </div>
           <h3>Secure Quantum Communication Protocols</h3>
           <p>
-            To develope <strong>Quantum Key Distribution (QKD) protocols</strong> 
+            To develop <strong>Quantum Key Distribution (QKD) protocols</strong> 
             integrated with classical encryption layers for imperfect quantum channels. 
-            Focus areas include <strong>entanglement-based QKD </strong> using CHSH inequalities to evesdrop detection.
+            Focus areas include <strong>entanglement-based QKD</strong> using CHSH inequalities for eavesdropping detection.
           </p>
           <div class="research-keywords">
             <span class="keyword-tag">QKD</span>
@@ -408,26 +649,6 @@
             <span class="keyword-tag">Optimization</span>
           </div>
         </div>
-
-        <!-- <div class="research-card">
-          <div class="research-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3>Translational Quantum × AI Applications</h3>
-          <p>
-            Bridging <strong>quantum computing</strong> and <strong>explainable AI (XAI)</strong> to solve 
-            real-world problems in cybersecurity, healthcare, and behavioral analysis. 
-            My work integrates <strong>ML-based feature attribution</strong> with <strong>quantum feature mapping</strong> 
-            to interpret hybrid decision systems.
-          </p>
-          <div class="research-keywords">
-            <span class="keyword-tag">Quantum × AI</span>
-            <span class="keyword-tag">XAI</span>
-            <span class="keyword-tag">Feature Mapping</span>
-            <span class="keyword-tag">SHAP</span>
-            <span class="keyword-tag">LIME</span>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -456,11 +677,46 @@
   </footer>
 
   <script>
+    // Mobile Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    function openMobileMenu() {
+      hamburger.classList.add('active');
+      mobileMenu.classList.add('active');
+      mobileMenuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMobileMenu();
+    });
+
     // Active navigation highlighting
     const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-list a');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+
+    mobileNavLinks.forEach(link => {
       if (link.getAttribute('href') === currentPage) {
         link.classList.add('active');
       }
