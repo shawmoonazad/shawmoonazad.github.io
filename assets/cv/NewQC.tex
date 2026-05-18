@@ -1,0 +1,263 @@
+\documentclass[10pt,letter]{article}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage[hidelinks,colorlinks=true, linkcolor=blue, urlcolor=cyan]{hyperref}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+
+% serif font
+\usepackage{XCharter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - ATS friendly
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge MD SHAWMOON AZAD}\\[4pt]
+    Cleveland, OH $|$ +1 (440) 771-3754 $|$ m.azad@vikes.csuohio.edu\\[2pt]
+    LinkedIn: \href{https://www.linkedin.com/in/shawmoonazad/}{linkedin.com/in/shawmoonazad} $|$ 
+    GitHub: \href{https://github.com/shawmoonazad}{github.com/shawmoonazad} $|$
+    Portfolio: \href{https://shawmoonazad.github.io}{shawmoonazad.github.io}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+PhD student in Computer Science working on quantum algorithms, hybrid quantum–classical frameworks, and quantum AI intersection with 2+ years of hands-on research experience. Published 5 peer-reviewed papers demonstrating the ability to turn quantum research into practical outcomes.  Thrives in fast-paced R\&D environments, building quantum solutions for real-world problems.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cleveland State University}{Cleveland, OH}
+      {Ph.D. in Computer Science (in progress)}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Research Focus: Quantum Algorithms, Post-Quantum Cryptography, Quantum Machine Learning}
+        % \resumeItem{Coursework: Network Security, Artificial Intelligence, Data Mining and Advanced Machine Learning}
+      \resumeItemListEnd
+      
+      
+    \resumeSubheading
+      {North South University}{Dhaka, Bangladesh}
+      {B.Sc. in Computer Science, GPA: 3.74/4.0, Magna Cum Laude}{Jan 2019 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Thesis: "Secure Image Transmission Using Chaotic System and Quantum Entanglement"}
+        \resumeItem{Relevant Coursework: Quantum Computing, Algorithm Analysis, Machine Learning, Neural Networks}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% %-----------CURRENT RESEARCH-----------
+% \section{Current Research Focus}
+%     \resumeSubHeadingListStart
+%       \resumeSubheading
+%         {Quantum-Safe Cloud Communication Framework}{Aug 2025 -- Present}
+%         {NSF-Funded Research, Cleveland State University}{Cleveland, OH}
+%         \resumeItemListStart
+%           \resumeItem{Designing hybrid post-quantum cryptographic systems combining NIST-standardized algorithms (Kyber, Dilithium) with quantum protocols for next-generation secure cloud infrastructure}
+%           \resumeItem{Developing machine learning-based optimization strategies to dynamically select quantum vs. post-quantum algorithms based on resource constraints, latency requirements, and threat models}
+%           \resumeItem{Analyzing algorithmic trade-offs in hybrid quantum-classical primitives: computational cost, scalability, performance under heterogeneous network conditions}
+%           \resumeItem{Focus areas: Adaptive security policies, quantum-resistant key exchange protocols, integration with existing TLS/IPsec infrastructure}
+%         \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+  
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graduate Research Assistant }{Aug 2025 -- Present}
+      {Cleveland State University - ISCAR Lab}{Cleveland, OH}
+      \resumeItemListStart
+        \resumeItem{Working on an NSF-funded research (\$800K+ project) on hybrid quantum-classical algorithms for secure cloud communication systems}
+        \resumeItem{Designing reinforcement learning agents to optimize quantum protocol selection in real-time based on security requirements and hardware constraints}
+        \resumeItem{Designing and optimizing hybrid quantum–classical algorithms and parameterized quantum circuits for efficient deployment on NISQ-era quantum hardware.}
+        \resumeItem{Managing full research lifecycle: problem formulation → algorithm design → Qiskit implementation → performance analysis → publication}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Quantum Research Assistant}{Oct 2023 -- Jul 2025}
+      {North South University - Optics-Quantum \& AI Lab}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Delivered 3 funded projects focused on quantum cryptography protocols and quantum-enhanced security systems}
+        \resumeItem{Implemented quantum key distribution(QKD) protocols (BB84, B92, E91) in IBM Qiskit with extensive quantum circuit design and optimization experience}
+        \resumeItem{Built hybrid quantum-classical algorithms integrating QKD with classical encryption (AES) and deep learning (CNN steganography) - demonstrated research on quantum and AI intersection for security applications}
+        \resumeItem{Developed quantum entanglement-based systems with CHSH inequality testing for eavesdropping detection}
+        \resumeItem{Mentored 4 undergraduate quantum researchers with 100\% project completion rate}
+        \resumeItem{Published 3 technical research on quantum cryptography and hybrid quantum-classical frameworks in peer-reviewed journals}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AI Research Assistant}{Jan 2024 -- Jan 2025}
+      {North South University - Dept. of Electrical and Computer Engineering}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Led \$5,000 funded project applying machine learning to healthcare}
+        \resumeItem{Worked with ensemble ML models, Large Language Models, and explainable AI}
+        \resumeItem{Published 2 first-author papers in Q1 journals on applied machine learning; demonstrated classical Machine Learning research}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant}{Jun 2022 -- Jun 2024}
+      {North South University - Dept. of Electrical and Computer Engineering}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Taught Programming and Operating Systems courses to 200+ students across 25 lab sections over 2 years}
+        \resumeItem{Developed instructional materials and coding exercises that improved student exam scores by 10-15\%}
+        \resumeItem{Provided one-on-one mentoring on programming concepts, algorithms, and software development best practices}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS (moved up to emphasize practical work)-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeSubheading
+        {Efficient Quantum Neural Networks via Knowledge Distillation}{\href{https://github.com/shawmoonazad/Parameter-Efficient-Quantum-Neural-Networks-via-Knowledge-Distillation.git}{GitHub}}
+        {16x model compression for NISQ devices with 86\% accuracy}{Sep 2025 -- Dec 2025}
+        \resumeItemListStart
+          \resumeItem{Developed teacher-student quantum algorithm achieving 16x parameter reduction (4-qubit vs 8-qubit) with 86.10\% accuracy (vs 65.74\% baseline)}
+          \resumeItem{Tech stack: IBM Qiskit, PyTorch, Parameterized Quantum Circuits (PQCs), custom gradient-based optimization}
+          \resumeItem{Outcome: knowledge distillation demonstration for QNNs - enables practical deployment on current NISQ hardware with limited coherence}
+          \resumeItem{Applications: Quantum chemistry simulations, optimization problems, pattern recognition on near-term quantum processors}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Quantum-Secure Communication Systems with Entanglement}{\href{https://github.com/shawmoonazad/Chaos-Assisted-Quantum-Key-Distribution-Approach-Using-Entanglement.git}{GitHub}}
+        {Entanglement protocol with chaos encryption and eavesdropping detection}{Oct 2023 -- Sep 2024}
+        \resumeItemListStart
+          \resumeItem{Built end-to-end E91 QKD system: entangled Bell pairs → random basis measurement → CHSH eavesdropping detection → secure key extraction}
+          \resumeItem{Achieved $\approx$99.7\% NPCR (near-perfect randomness), entropy $\approx$8 (maximum security), Eve detection via CHSH violations}
+          \resumeItem{Tech stack: IBM Qiskit (Bell state circuits), chaos-assisted encryption, Python post-processing; optimized for NISQ constraints}
+          \resumeItem{Quantum advantage: Physics-guaranteed security (no-cloning theorem), immune to quantum computer attacks unlike RSA}
+          \resumeItem{Published in \textit{IET Quantum Communication}; demonstrated practical quantum-safe internet infrastructure pathway}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Hybrid Quantum-Classical Security Framework}{\href{https://doi.org/10.1016/j.aej.2025.02.056}{Publication}}
+        {Multi-layered system combining QKD, classical crypto, and deep learning}{Jan 2024 -- Jul 2024}
+        \resumeItemListStart
+          \resumeItem{Production-ready hybrid system: E91 QKD → AES-256 encryption → CNN steganography for covert communication in images}
+          \resumeItem{Achieved $\approx$99.6\% NPCR differential attack resistance; validated for secure cloud storage, military comms, financial data transfer}
+          \resumeItem{Tech stack: IBM Qiskit (quantum layer), PyTorch (CNN steganography), AES-256, Hashing function(SHA)}
+          \resumeItem{Co-led team of 4 researchers; resulted in 2 peer-reviewed publications on quantum-secured audio and image transmission systems}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Selected Publications}
+\textbf{Quantum Information Science (4 publications):}
+\resumeItemListStart
+  \resumeItem{Rayhan, R., \textbf{Azad, M.S.} (Equal Contribution), et al. (2025). ``Quantum Secure Image Transmission: Chaos-Assisted QKD Using Entanglement.'' \textit{IET Quantum Communication}. \href{https://doi.org/10.1049/qtc2.70016}{DOI} $|$ \href{https://github.com/shawmoonazad/Chaos-Assisted-Quantum-Key-Distribution-Approach-Using-Entanglement.git}{Code}| Impact Factor: 3.3}
+  \resumeItem{Sykot, A., \textbf{Azad, M.S.}, et al. (2025). ``Multi-layered Security: Integrating QKD with Classical Cryptography.'' \textit{Alexandria Engineering Journal}, 121, 167-182. \href{https://doi.org/10.1016/j.aej.2025.02.056}{DOI} | Impact Factor: 6.8}
+  \resumeItem{Rifat, M.R.I., ..., \textbf{Azad, M.S.}, et al. (2025). ``QSAC: Quantum-assisted Secure Audio Communication.'' \textit{Engineering Science \& Technology}, 70, 102167. \href{https://doi.org/10.1016/j.jestch.2025.102167}{DOI} | Impact Factor 5.4}
+  \resumeItem{Zarin, A.T., ..., \textbf{Azad, M.S.}, et al. (2026). ``QuCloud : Enhancing cloud storage security by combining quantum key distribution, post-quantum cryptography, and custom proxy re-encryption'' \textit{Journal of Information Security and Applications, 99, 104449.} \href{https://doi.org/10.1016/j.jisa.2026.104449}{DOI} | Impact Factor 3.7}
+  
+  % \resumeItem{\textbf{Machine Learning \& AI (2 publications):}}
+  % \resumeItem{\textbf{Azad, M.S.}, et al. (2025). ``Self-assessment of Depression Using ML and NLP.'' \textit{Array}, 100372. \href{https://doi.org/10.1016/j.array.2024.100372}{DOI} $|$ \href{https://github.com/shawmoonazad/Self-Assessment-of-Depression.git}{Code}}
+  % \resumeItem{\textbf{Azad, M.S.}, et al. (2023). ``Predictive Modeling of Consumer Behavior Using ML.'' \textit{PLOS ONE}, 18(12), e0296336. \href{https://doi.org/10.1371/journal.pone.0296336}{DOI}}
+  \resumeItem{Full list: \href{https://scholar.google.com/citations?user=qiLaY-AAAAAJ}{Google Scholar} (TotAL 6 publications, 100+ citations, H-index 4)}
+\resumeItemListEnd
+
+%-----------TECHNICAL SKILLS (moved up)-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Quantum Programming:} IBM Qiskit, TensorFlow Quantum, Cirq basics, NumPy/SciPy\\
+     \textbf{Quantum Algorithms:} Variational Quantum Algorithms (VQE, QAOA), Quantum Circuit Optimization\\
+     \textbf{Quantum ML:} Parameterized Quantum Circuits (PQCs), Quantum Neural Networks, Knowledge Distillation\\
+     \textbf{Quantum Cryptography:} QKD Protocols (BB84, B92, E91 entanglement-based), CHSH inequality testing\\
+     \textbf{Post-Quantum Crypto:} NIST algorithms (ML-KEM/Kyber, ML-DSA/Dilithium), Hybrid key exchange\\
+     \textbf{Classical ML:} PyTorch, TensorFlow, Scikit-learn (for hybrid quantum-classical systems)\\
+     \textbf{Programming:} Python (expert), C/C++, Bash scripting\\
+     \textbf{Tools \& Methods:} Git/GitHub, Jupyter, LaTeX, Linux, Algorithm complexity analysis, Performance optimization
+    }}
+ \end{itemize}
+%-----------CERTIFICATIONS-----------
+\section{Certifications \& Training}
+  \resumeItemListStart
+    \resumeItem{\textbf{Quantum Mechanics \& Quantum Computing:} Comprehensive training in quantum theory, COMSOL simulation, and IBM Qiskit programming. \href{https://drive.google.com/file/d/1Lbl7eVo1facbWTuNTP8q5OGIX1OYPPnu/view?usp=sharing}{Certificate}}
+    % \resumeItem{\textbf{IBM Qiskit:} Extensive hands-on experience with quantum circuit design, optimization, and simulation (2+ years)}
+  \resumeItemListEnd
+
+%-----------AWARDS-----------
+\section{Achievements}
+  \resumeItemListStart
+      \resumeItem{\textbf{Fully Funded PhD} - Awarded a fully funded PhD at Cleveland State University through NSF grant}
+    \resumeItem{\textbf{Magna Cum Laude} - Top 5\% of graduating class for academic excellence in Computer Science at North South University}
+    \resumeItem{\textbf{Top 10 Quantum Innovator} - Ranked 10/104 teams in university-wide quantum computing project competition}
+    % \resumeItem{\textbf{contributed \$22,500 in quantum research grants} - Demonstrated ability to secure competitive funding and deliver results}
+    \resumeItem{\textbf{50\% Merit Scholarship} - Awarded competitive academic scholarship for 3 consecutive years}
+    \resumeItem{\textbf{5 peer-reviewed publications} - Track record of turning quantum research into impactful scientific contributions}
+
+  \resumeItemListEnd
+
+\end{document}
