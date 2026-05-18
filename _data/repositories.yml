@@ -1,0 +1,8 @@
+github_users:
+  - shawmoonazad
+
+repo_description_lines_max: 3
+
+github_repos:
+  - shawmoonazad/Parameter-Efficient-Quantum-Neural-Networks-via-Knowledge-Distillation
+  - shawmoonazad/Chaos-Assisted-Quantum-Key-Distribution-Approach-Using-Entanglement

@@ -1,0 +1,115 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Md Shawmoon Azad
+    - name: Email
+      value: your.email@domain.com
+    - name: Location
+      value: Cleveland, OH, USA
+    - name: Links
+      value: "<a href='https://github.com/shawmoonazad'>GitHub</a> | <a href='https://www.linkedin.com/in/shawmoonazad/'>LinkedIn</a> | <a href='https://scholar.google.com/citations?user=qiLaY-AAAAAJ'>Google Scholar</a>"
+
+- title: Research Summary
+  type: map
+  contents:
+    - name: Overview
+      value: PhD student in Computer Science working on quantum algorithms, hybrid quantum-classical frameworks, quantum machine learning, QKD, and post-quantum cryptography. Published 5+ peer-reviewed papers and builds quantum research systems for practical secure-cloud and NISQ-era deployment.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Computer Science
+      institution: Cleveland State University, Cleveland, OH
+      year: Aug 2025 - Present
+      description:
+        - "Research Focus: Quantum Algorithms, Post-Quantum Cryptography, Quantum Machine Learning"
+    - title: B.Sc. in Computer Science
+      institution: North South University, Dhaka, Bangladesh
+      year: Jan 2019 - Jun 2023
+      description:
+        - "GPA: 3.74/4.0, Magna Cum Laude"
+        - "Thesis: Secure Image Transmission Using Chaotic System and Quantum Entanglement"
+        - "Relevant Coursework: Quantum Computing, Algorithm Analysis, Machine Learning, Neural Networks"
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Graduate Research Assistant
+      institution: Cleveland State University - ISCAR Lab, Cleveland, OH
+      year: Aug 2025 - Present
+      description:
+        - "Working on an NSF-funded research project over $800K on hybrid quantum-classical algorithms for secure cloud communication systems."
+        - "Designing reinforcement learning agents to optimize quantum protocol selection in real time based on security requirements and hardware constraints."
+        - "Designing and optimizing hybrid quantum-classical algorithms and parameterized quantum circuits for efficient NISQ-era deployment."
+        - "Managing the research lifecycle from problem formulation to Qiskit implementation, performance analysis, and publication."
+    - title: Quantum Research Assistant
+      institution: North South University - Optics-Quantum & AI Lab, Dhaka, Bangladesh
+      year: Oct 2023 - Jul 2025
+      description:
+        - "Delivered 3 funded projects focused on quantum cryptography protocols and quantum-enhanced security systems."
+        - "Implemented QKD protocols including BB84, B92, and E91 in IBM Qiskit."
+        - "Built hybrid quantum-classical algorithms integrating QKD, AES, and CNN steganography."
+        - "Developed quantum entanglement-based systems with CHSH inequality testing for eavesdropping detection."
+        - "Mentored 4 undergraduate quantum researchers with 100% project completion."
+    - title: AI Research Assistant
+      institution: North South University - Department of Electrical and Computer Engineering, Dhaka, Bangladesh
+      year: Jan 2024 - Jan 2025
+      description:
+        - "Led a $5,000 funded project applying machine learning to healthcare."
+        - "Worked with ensemble ML models, large language models, and explainable AI."
+        - "Published 2 first-author papers in Q1 journals on applied machine learning."
+    - title: Teaching Assistant
+      institution: North South University - Department of Electrical and Computer Engineering, Dhaka, Bangladesh
+      year: Jun 2022 - Jun 2024
+      description:
+        - "Taught programming and operating systems courses to 200+ students across 25 lab sections."
+        - "Developed instructional materials and coding exercises that improved student exam scores by 10-15%."
+        - "Provided one-on-one mentoring on programming, algorithms, and software development best practices."
+
+- title: Selected Projects
+  type: time_table
+  contents:
+    - title: Efficient Quantum Neural Networks via Knowledge Distillation
+      year: Sep 2025 - Dec 2025
+      description:
+        - "Developed teacher-student quantum algorithm achieving 16x parameter reduction with 86.10% accuracy."
+        - "Tech stack: IBM Qiskit, PyTorch, parameterized quantum circuits, custom gradient-based optimization."
+    - title: Quantum-Secure Communication Systems with Entanglement
+      year: Oct 2023 - Sep 2024
+      description:
+        - "Built end-to-end E91 QKD system with Bell pairs, CHSH eavesdropping detection, and secure key extraction."
+        - "Published in IET Quantum Communication."
+    - title: Hybrid Quantum-Classical Security Framework
+      year: Jan 2024 - Jul 2024
+      description:
+        - "Built multilayered secure communication framework combining E91 QKD, AES-256, SHA hashing, and CNN steganography."
+        - "Published in Alexandria Engineering Journal."
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Quantum Programming
+      items:
+        - IBM Qiskit, TensorFlow Quantum, Cirq basics, NumPy, SciPy
+    - title: Quantum Algorithms
+      items:
+        - VQE, QAOA, quantum circuit optimization, parameterized quantum circuits
+    - title: Quantum ML
+      items:
+        - Quantum neural networks, knowledge distillation, hybrid quantum-classical systems
+    - title: Quantum and Post-Quantum Security
+      items:
+        - BB84, B92, E91, CHSH testing, ML-KEM/Kyber, ML-DSA/Dilithium, hybrid key exchange
+    - title: Classical ML and Programming
+      items:
+        - PyTorch, TensorFlow, Scikit-learn, Python, C/C++, Bash, Git, Jupyter, Linux, LaTeX
+
+- title: Achievements
+  type: list
+  contents:
+    - "Fully funded PhD at Cleveland State University through NSF grant support."
+    - "Magna Cum Laude, top 5% of graduating class at North South University."
+    - "Top 10 Quantum Innovator, ranked 10/104 teams in a university-wide quantum computing project competition."
+    - "50% merit scholarship for 3 consecutive years."
+    - "5+ peer-reviewed publications and 100+ citations."
