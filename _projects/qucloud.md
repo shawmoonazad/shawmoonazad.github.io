@@ -2,7 +2,7 @@
 layout: page
 title: QuCloud
 description: Cloud storage security with QKD, post-quantum cryptography, and proxy re-encryption.
-img: /assets/img/qc4.png
+img: /assets/img/qc4_1.png
 importance: 4
 category: research
 related_publications: true

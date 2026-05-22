@@ -15,9 +15,6 @@ description: Curriculum Vitae
     <a href="{{ '/assets/pdf/CV_Md_Shawmoon_Azad.pdf' | relative_url }}" download class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: transparent; color: var(--global-theme-color); border: 2px solid var(--global-theme-color); border-radius: 0.5rem; text-decoration: none; font-weight: 500;">
       <i class="fa-solid fa-download"></i> Download PDF
     </a>
-    <a href="{{ '/assets/pdf/NewQC.tex' | relative_url }}" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: transparent; color: var(--global-theme-color); border: 2px solid var(--global-theme-color); border-radius: 0.5rem; text-decoration: none; font-weight: 500;">
-      <i class="fa-solid fa-code"></i> TeX Source
-    </a>
   </div>
 
   <div class="cv-preview" style="border: 1px solid var(--global-divider-color); border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
