@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my PhD in Computer Science and Graduate Research Assistantship at Cleveland State University's ISCAR Lab.
+Started my PhD in Computer Science at Cleveland State University.

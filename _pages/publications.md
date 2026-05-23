@@ -46,26 +46,19 @@ nav_order: 2
 }
 </style>
 
+<section class="section-intro publications-intro">
+  <p class="eyebrow">Peer-reviewed output</p>
+  <h2>Published work across quantum-safe communication, QKD, applied AI, and behavioral analytics.</h2>
+  <p>Publication previews are zoomable; select an image to inspect the system diagram or experimental workflow.</p>
+</section>
+
 <div class="pub-section-header">
-<i class="fas fa-check-circle"></i>Published Papers
-<span class="pub-count">6 papers</span>
+  <i class="fas fa-check-circle"></i>Published Papers
+  <span class="pub-count">6 papers</span>
 </div>
 
 <div class="publications">
 
-{% bibliography --query @*[abbr!=Under Review, abbr!=In Revision, abbr!=Conditional Accept, abbr!=With Editor] %}
-
-</div>
-
-<hr class="pub-divider">
-
-<div class="pub-section-header">
-<i class="fas fa-hourglass-half"></i>Under Review / In Revision
-<span class="pub-count">1 manuscript</span>
-</div>
-
-<div class="publications">
-
-{% bibliography --query @*[abbr=Under Review] | @*[abbr=In Revision] | @*[abbr=Conditional Accept] | @*[abbr=With Editor] %}
+{% bibliography --query @* %}
 
 </div>
