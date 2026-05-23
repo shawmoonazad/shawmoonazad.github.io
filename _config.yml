@@ -164,6 +164,23 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  # Checked-in generated output is kept for the static main-branch host,
+  # but it must not be treated as Jekyll source during GitHub Actions builds.
+  - 404.html
+  - index.html
+  - achievements/
+  - cv/
+  - feed.xml
+  - news/
+  - people/
+  - projects/
+  - publications/
+  - service/
+  - sitemap.xml
+  - teaching/
+  - assets/css/main.css
+  - assets/css/main.css.map
+  - assets/js/search-data.js
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
