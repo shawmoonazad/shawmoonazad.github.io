@@ -44,18 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "nav-service",
-          title: "service",
-          description: "Research service, grants, mentorship, and professional development.",
+        },{id: "nav-achievements",
+          title: "achievements",
+          description: "Selected research, academic, and publication achievements.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/service/";
+            window.location.href = "/achievements/";
           },
         },{id: "news-our-multilayered-qkd-integrated-steganographic-security-framework-appeared-in-alexandria-engineering-journal",
           title: 'Our multilayered QKD-integrated steganographic security framework appeared in Alexandria Engineering Journal.',
           description: "",
-          section: "News",},{id: "news-started-my-phd-in-computer-science-and-graduate-research-assistantship-at-cleveland-state-university-s-iscar-lab",
-          title: 'Started my PhD in Computer Science and Graduate Research Assistantship at Cleveland State...',
+          section: "News",},{id: "news-started-my-phd-in-computer-science-at-cleveland-state-university",
+          title: 'Started my PhD in Computer Science at Cleveland State University.',
           description: "",
           section: "News",},{id: "news-our-quantum-assisted-secure-audio-communication-paper-was-published-in-engineering-science-and-technology",
           title: 'Our quantum-assisted secure audio communication paper was published in Engineering Science and Technology....',
@@ -65,6 +65,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-qucloud-was-published-in-journal-of-information-security-and-applications-combining-qkd-post-quantum-cryptography-and-custom-proxy-re-encryption-for-cloud-storage-security",
           title: 'QuCloud was published in Journal of Information Security and Applications, combining QKD, post-quantum...',
+          description: "",
+          section: "News",},{id: "news-reached-100-google-scholar-citations-across-my-quantum-security-applied-ai-and-machine-learning-research",
+          title: 'Reached 100+ Google Scholar citations across my quantum security, applied AI, and machine...',
           description: "",
           section: "News",},{id: "projects-quantum-secure-image-transmission",
           title: 'Quantum-Secure Image Transmission',
