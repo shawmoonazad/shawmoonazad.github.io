@@ -36,10 +36,10 @@
   type: time_table
   contents:
     - title: Graduate Research Assistant
-      institution: Cleveland State University - ISCAR Lab, Cleveland, OH
+      institution: Department of Computer Science, Cleveland State University, Cleveland, OH
       year: Aug 2025 - Present
       description:
-        - "Working on an NSF-funded research project over $800K on hybrid quantum-classical algorithms for secure cloud communication systems."
+        - "Working on hybrid quantum-classical algorithms for secure cloud communication systems."
         - "Designing reinforcement learning agents to optimize quantum protocol selection in real time based on security requirements and hardware constraints."
         - "Designing and optimizing hybrid quantum-classical algorithms and parameterized quantum circuits for efficient NISQ-era deployment."
         - "Managing the research lifecycle from problem formulation to Qiskit implementation, performance analysis, and publication."

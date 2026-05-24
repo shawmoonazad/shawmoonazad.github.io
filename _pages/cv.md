@@ -7,33 +7,15 @@ nav_order: 4
 description: Curriculum Vitae
 ---
 
-<div class="cv-container">
-  <div class="cv-actions">
-    <a href="{{ '/assets/pdf/CV_Md_Shawmoon_Azad.pdf' | relative_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-      <i class="fa-solid fa-eye"></i> View Full CV
-    </a>
-    <a href="{{ '/assets/pdf/CV_Md_Shawmoon_Azad.pdf' | relative_url }}" download class="btn btn-secondary">
-      <i class="fa-solid fa-download"></i> Download PDF
-    </a>
-  </div>
-
-  <div class="cv-preview">
-    <iframe
-      src="{{ '/assets/pdf/CV_Md_Shawmoon_Azad.pdf' | relative_url }}"
-      width="100%"
-      height="800px"
-      title="CV Preview">
-    </iframe>
-  </div>
-
-  <p class="cv-note">
-    <i class="fa-solid fa-info-circle"></i> If the preview does not load, please use the buttons above to view or download the CV.
-  </p>
-</div>
+<section class="section-intro cv-intro">
+  <p class="eyebrow">CV Snapshot</p>
+  <h2>Graduate Research Assistant focused on quantum-safe systems, QML, and applied AI.</h2>
+  <p>An updated PDF version will be added here after the current CV is refreshed. The web summary below is the clean, current version for the portfolio.</p>
+</section>
 
 ## Snapshot
 
-- **PhD in Computer Science**, Cleveland State University, Aug 2025 - Present
-- **Research focus:** quantum algorithms, post-quantum cryptography, quantum machine learning
+- **Graduate Research Assistant**, Department of Computer Science, Cleveland State University
+- **Research focus:** quantum-safe communication, post-quantum cryptography, quantum machine learning, applied AI
 - **Technical stack:** IBM Qiskit, PyTorch, TensorFlow, Scikit-learn, Python, C/C++, Bash, Linux, LaTeX
 - **Research output:** 5+ peer-reviewed papers, 100+ Google Scholar citations, H-index 4

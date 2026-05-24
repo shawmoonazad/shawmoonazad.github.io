@@ -8,14 +8,16 @@ nav_order: 5
 ---
 
 <div class="teaching-page">
-  <section class="section-intro teaching-intro">
-    <div class="logo-panel">
-      <img src="{{ '/assets/img/nsu_logo.png' | relative_url }}" alt="North South University logo" loading="lazy">
-      <div>
-        <p class="eyebrow">North South University</p>
-        <h2>Teaching technical foundations through working systems.</h2>
-        <p>My instruction connects operating systems, structured programming, debugging, and research practice so students can move from concepts to working prototypes with confidence.</p>
-      </div>
+  <section class="teaching-philosophy">
+    <p class="eyebrow">Teaching Philosophy</p>
+    <h2>Good teaching makes difficult systems feel buildable.</h2>
+    <p>
+      I teach by connecting theory with working examples, debugging habits, and small design decisions students can see and test. My goal is to help students become confident problem solvers who can explain, implement, and improve what they build.
+    </p>
+    <div class="philosophy-points">
+      <span><i class="fa-solid fa-code"></i> Learn by building</span>
+      <span><i class="fa-solid fa-bug-slash"></i> Debug with intent</span>
+      <span><i class="fa-solid fa-users"></i> Mentor with patience</span>
     </div>
   </section>
 
@@ -23,7 +25,7 @@ nav_order: 5
     <div class="metric-card"><strong>200+</strong><span>students taught</span></div>
     <div class="metric-card"><strong>25</strong><span>lab sections</span></div>
     <div class="metric-card"><strong>4</strong><span>quantum mentees</span></div>
-    <div class="metric-card"><strong>10-15%</strong><span>score improvement</span></div>
+    <div class="metric-card"><strong>2</strong><span>core courses</span></div>
   </section>
 
   <h2 class="section-heading">Undergraduate Teaching</h2>
@@ -34,9 +36,8 @@ nav_order: 5
       <h3>Operating System Design</h3>
       <p class="meta">Teaching Assistant, Department of Electrical and Computer Engineering</p>
       <ul>
-        <li>Taught process scheduling, synchronization, memory management, file systems, and device I/O.</li>
-        <li>Connected OS fundamentals with access control, virtualization, containers, and system security.</li>
-        <li>Mentored term projects focused on simulation, measurement, and evaluation of OS components.</li>
+        <li>Supported labs and discussions on scheduling, synchronization, memory, file systems, and I/O.</li>
+        <li>Helped students connect operating-system concepts with security, virtualization, and system measurement.</li>
       </ul>
     </article>
 
@@ -45,35 +46,27 @@ nav_order: 5
       <h3>Programming Language I</h3>
       <p class="meta">Teaching Assistant, Department of Electrical and Computer Engineering</p>
       <ul>
-        <li>Instructed structured programming in C: functions, arrays, pointers, memory, and modular design.</li>
-        <li>Designed exercises around algorithmic thinking, debugging, and software development habits.</li>
-        <li>Provided one-on-one support for students building early confidence in programming.</li>
+        <li>Guided students through C programming, functions, arrays, pointers, memory, and modular design.</li>
+        <li>Focused on readable code, debugging discipline, and confidence in early programming practice.</li>
       </ul>
     </article>
   </div>
 
-  <h2 class="section-heading">Research Mentorship & Instruction</h2>
+  <h2 class="section-heading">Research Mentorship</h2>
 
   <div class="timeline-list">
     <article class="timeline-row">
       <span class="timeline-marker"><i class="fa-solid fa-atom"></i></span>
       <div>
-        <h3>Quantum security mentorship</h3>
-        <p>Mentored undergraduate researchers through QKD protocol implementation, entanglement-based communication systems, and publication-oriented workflows.</p>
+        <h3>Quantum security projects</h3>
+        <p>Mentored undergraduate teams working on QKD, entanglement-based communication, steganography, and quantum-safe cloud security.</p>
       </div>
     </article>
     <article class="timeline-row">
-      <span class="timeline-marker"><i class="fa-solid fa-flask"></i></span>
+      <span class="timeline-marker"><i class="fa-solid fa-pen-nib"></i></span>
       <div>
-        <h3>From prototype to manuscript</h3>
-        <p>Guided student teams through literature review, problem formulation, implementation, evaluation, technical writing, and revision.</p>
-      </div>
-    </article>
-    <article class="timeline-row">
-      <span class="timeline-marker"><i class="fa-solid fa-lock"></i></span>
-      <div>
-        <h3>Deployable security thinking</h3>
-        <p>Helped students connect quantum computing concepts with applied security systems for image, audio, and cloud communication.</p>
+        <h3>Prototype to manuscript</h3>
+        <p>Guided students through literature review, implementation, experiments, technical writing, and revision habits.</p>
       </div>
     </article>
   </div>
