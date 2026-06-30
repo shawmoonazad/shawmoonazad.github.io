@@ -53,17 +53,17 @@ My published work appears in journals including **Journal of Information Securit
 <div class="feature-grid compact">
   <article class="feature-card">
     <span class="feature-icon"><i class="fa-solid fa-shield-halved"></i></span>
-    <h3>Quantum-Safe Security</h3>
-    <p>QKD, post-quantum cryptography, and secure cloud communication.</p>
+    <h3>Quantum Information Security</h3>
+    <p>Quantum Key Distribution, post-quantum cryptography, hybrid quantum-classical encryption, and secure cloud communication.</p>
   </article>
   <article class="feature-card">
     <span class="feature-icon"><i class="fa-solid fa-atom"></i></span>
-    <h3>Quantum Machine Learning</h3>
-    <p>Compact QNNs, parameterized circuits, and NISQ-aware optimization.</p>
+    <h3>Quantum Machine Learning & Algorithms</h3>
+    <p>Efficient quantum neural network design, parameterized circuits, and Variational Algorithm (VQE, QAOA) optimization.</p>
   </article>
   <article class="feature-card">
     <span class="feature-icon"><i class="fa-solid fa-brain"></i></span>
     <h3>Applied AI</h3>
-    <p>Explainable models, healthcare analytics, and trustworthy decision support.</p>
+    <p>Reinforcement learning for quantum circuit design optimization.</p>
   </article>
 </div>
