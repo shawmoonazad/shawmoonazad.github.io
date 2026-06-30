@@ -36,7 +36,9 @@ latest_posts:
 
 I am a **Graduate Research Assistant in the Department of Computer Science at Cleveland State University**. My current work focuses on quantum-safe protocol design, hybrid quantum-classical algorithms, and applied machine learning for secure communication systems.
 
-Previously, I worked as a Quantum Research Assistant at the **Optics-Quantum & AI Lab** at North South University, where I built QKD and hybrid security systems for image, audio, and cloud communication. I also worked on applied machine learning, explainable AI, and healthcare analytics.
+Previously, I worked as a Quantum Research Assistant at the **Optics-Quantum & AI Lab** and the **NSU Center of
+
+ Quantum Computing (NCQC)** at North South University, where I built QKD and hybrid security systems for image, audio, and cloud communication. I also worked on applied machine learning, explainable AI, and healthcare analytics.
 
 My published work appears in journals including **Journal of Information Security and Applications**, **IET Quantum Communication**, **Alexandria Engineering Journal**, **Engineering Science and Technology**, **Array**, and **PLOS ONE**.
 
