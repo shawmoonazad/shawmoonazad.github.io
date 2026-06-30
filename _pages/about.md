@@ -28,9 +28,9 @@ latest_posts:
 
 <section class="portfolio-hero about-hero compact-about">
   <p class="eyebrow">Quantum-safe systems and applied AI</p>
-  <h2>I work on secure quantum-classical systems for communication, cloud security, and machine learning.</h2>
+  <h2>I work on quantum information security, hybrid quantum-classical algorithms, and applied AI to design and evaluate quantum-safe systems.</h2>
   <p>
-    My research connects quantum key distribution, post-quantum cryptography, quantum machine learning, and applied AI with an emphasis on systems that can be implemented, tested, and improved.
+    My research connects quantum key distribution, post-quantum cryptography, efficient quantum machine learning, and trustworthy applied AI with an emphasis on designing quantum-secure communication systems.
   </p>
 </section>
 
