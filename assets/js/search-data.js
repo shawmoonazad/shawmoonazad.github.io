@@ -104,7 +104,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75%72.%65%6D%61%69%6C@%64%6F%6D%61%69%6E.%63%6F%6D", "_blank");
+          window.open("mailto:%73%68%61%77%6D%6F%6F%6E%39%38@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-github',
@@ -139,7 +139,7 @@ ninja.data = [{
         title: 'ResearchGate',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.researchgate.net/profile//", "_blank");
+          window.open("https://www.researchgate.net/profile/Md-Shawmoon-Azad/", "_blank");
         },
       },{
       id: 'light-theme',
