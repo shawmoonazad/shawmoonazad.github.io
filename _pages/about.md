@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student & Graduate Research Assistant | Cleveland State University
+subtitle: Researcher | Quantum Information Security | Quantum Algorithms | Quantum Secure Systems  | Quantum & AI
 
 profile:
   align: right
