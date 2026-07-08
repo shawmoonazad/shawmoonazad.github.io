@@ -51,13 +51,13 @@ nav_order: 7
   <h2 class="section-heading">Academic Distinction</h2>
 
   <div class="timeline-list">
-    <article class="timeline-row">
+    <!-- <article class="timeline-row">
       <span class="timeline-marker"><i class="fa-solid fa-graduation-cap"></i></span>
       <div>
         <h3>Fully funded PhD pathway</h3>
         <p>Awarded full PhD funding in Computer Science at Cleveland State University.</p>
       </div>
-    </article>
+    </article> -->
     <article class="timeline-row">
       <span class="timeline-marker"><i class="fa-solid fa-medal"></i></span>
       <div>
