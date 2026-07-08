@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my PhD in Computer Science at Cleveland State University.
+Started my Graduate degree in Computer Science at Cleveland State University.
