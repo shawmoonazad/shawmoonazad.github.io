@@ -8,14 +8,32 @@ description: Curriculum Vitae
 ---
 
 <section class="section-intro cv-intro">
-  <p class="eyebrow">CV Snapshot</p>
-  <h2>Graduate Research Assistant focused on quantum-safe systems, QML, and applied AI.</h2>
-  <p>An updated PDF version will be added here after the current CV is refreshed. The web summary below is the clean, current version for the portfolio.</p>
+  <p class="eyebrow">Curriculum Vitae</p>
 </section>
 
-## Snapshot
+## Academic Profile
 
-- **Graduate Research Assistant**, Department of Computer Science, Cleveland State University
-- **Research focus:** quantum-safe communication, post-quantum cryptography, quantum machine learning, applied AI
-- **Technical stack:** IBM Qiskit, PyTorch, TensorFlow, Scikit-learn, Python, C/C++, Bash, Linux, LaTeX
-- **Research output:** 5+ peer-reviewed papers, 100+ Google Scholar citations, H-index 4
+- **Current Position:** Graduate Research Assistant, Cleveland State University
+- **Research Interests:** Quantum Cybersecurity, Post-Quantum Cryptography, Quantum Communication, Hybrid Quantum-Classical Systems, Quantum Machine Learning, AI for Quantum Systems, Quantum Algorithms
+- **Research Experience:** Quantum security, cryptographic protocol optimization, quantum machine learning, and applied AI
+- **Technical Skills:** Qiskit, Cirq, TensorFlow Quantum, PyTorch, TensorFlow, scikit-learn, Python, C/C++, SQL, Bash, Linux, Git, LaTeX
+- **Research Output:** 7 peer-reviewed publications (6 published journal articles and 1 accepted conference paper)
+- **Google Scholar:** 140 citations | h-index: 5 | i10-index: 4
+- **Academic Service:** Peer Reviewer, Advanced Quantum Technologies and Quantum Engineering
+
+---
+
+## Education
+
+**PhD in Computer Science**  
+Cleveland State University, USA | 2025–Present
+
+**B.S. in Computer Science and Engineering**  
+North South University, Bangladesh | 2019–2023  
+Magna Cum Laude
+
+---
+
+## Download CV
+
+[Download my full CV (PDF)](/assets/cv/CV_Md_Shawmoon_Azad.pdf)
