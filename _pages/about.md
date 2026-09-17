@@ -26,15 +26,6 @@ latest_posts:
   enabled: false
 ---
 
-<section class="portfolio-hero about-hero compact-about">
-  <p class="eyebrow">Quantum Information Security · Quantum Computing · Artificial Intelligence</p>
-
-  <h2>Advancing quantum-safe communication through cryptography, hybrid quantum-classical systems, and intelligent optimization.</h2>
-
-  <p>
-    My research focuses on the design, optimization, and evaluation of secure communication systems, integrating quantum key distribution, post-quantum cryptography, quantum algorithms, and artificial intelligence.
-  </p>
-</section>
 
 I am a **Graduate Research Assistant** in the Department of Computer Science at **Cleveland State University**, where my research focuses on quantum information security, post-quantum cryptography, and hybrid quantum-classical systems.
 
@@ -50,26 +41,36 @@ In addition to my research, I contribute to the academic community as a peer rev
 
 ### Research Interests
 
+<section class="portfolio-hero about-hero compact-about">
+  <p class="eyebrow">Quantum Security · Quantum Computing · Artificial Intelligence</p>
+
+  <h2>Building secure and intelligent systems for the quantum era.</h2>
+
+  <p>
+    My research focuses on quantum-safe communication, quantum computing, and artificial intelligence.
+  </p>
+</section>
+
 <div class="feature-grid compact">
 
   <article class="feature-card">
-    <h3>Quantum Information Security</h3>
+    <h3>Quantum Security</h3>
     <p>
-      Quantum key distribution, post-quantum cryptography, hybrid cryptographic protocols, and quantum-safe communication systems.
+      Quantum key distribution, post-quantum cryptography, hybrid security systems, and secure communication.
     </p>
   </article>
 
   <article class="feature-card">
-    <h3>Quantum Algorithms & Computing</h3>
+    <h3>Quantum Computing</h3>
     <p>
-      Hybrid quantum-classical algorithms, variational quantum circuits, quantum machine learning, and resource-efficient quantum computation.
+      Quantum algorithms, quantum machine learning, variational quantum circuits, and efficient quantum computing.
     </p>
   </article>
 
   <article class="feature-card">
-    <h3>Artificial Intelligence for Quantum Systems</h3>
+    <h3>AI for Quantum Systems</h3>
     <p>
-      Reinforcement learning for quantum circuit optimization, intelligent cryptographic policy selection, and security-constrained decision-making.
+      Reinforcement learning for quantum circuit design, cryptographic policy selection, and system optimization.
     </p>
   </article>
 
