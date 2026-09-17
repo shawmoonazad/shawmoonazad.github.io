@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Portfolio of quantum algorithms, quantum-safe security, and applied AI research systems.",
+          description: "Research projects in quantum cybersecurity, post-quantum cryptography, quantum computing, and AI for quantum systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
