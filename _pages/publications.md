@@ -46,16 +46,16 @@ nav_order: 2
 }
 </style>
 
-<section class="section-intro publications-intro">
+<!-- <section class="section-intro publications-intro">
   <p class="eyebrow">Peer-reviewed output</p>
   <h2>Published work across quantum-safe communication, QKD, applied AI, and behavioral analytics.</h2>
   <p>Publication previews are zoomable; select an image to inspect the system diagram or experimental workflow.</p>
-</section>
+</section> -->
 
-<div class="pub-section-header">
+<!-- <div class="pub-section-header">
   <i class="fas fa-check-circle"></i>Published Papers
   <span class="pub-count">6 papers</span>
-</div>
+</div> -->
 
 <div class="publications">
 
