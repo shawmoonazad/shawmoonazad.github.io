@@ -7,9 +7,9 @@ nav_order: 4
 description: Curriculum Vitae
 ---
 
-<section class="section-intro cv-intro">
+<!-- <section class="section-intro cv-intro">
   <p class="eyebrow">Curriculum Vitae</p>
-</section>
+</section> -->
 
 ## Academic Profile
 
