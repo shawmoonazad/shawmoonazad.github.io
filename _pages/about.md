@@ -40,19 +40,8 @@ In addition to my research, I contribute to the academic community as a peer rev
 ---
 
 ### Research Interests
-<style>
-.intro {
-  border-left: 4px solid var(--global-theme-color);
-  padding: 1rem 1.25rem;
-  margin: 1.25rem 0 2rem;
-  background: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
-}
-<style>
-  
-<div class="intro">
-I am interested in building secure and intelligent systems for the quantum era by focusing on quantum-safe communication, quantum computing, and artificial intelligence.
-</div>
-  
+
+I am **interested in building secure and intelligent systems for the quantum era** by focusing on quantum-safe communication, quantum computing, and artificial intelligence.
 
 <div class="feature-grid compact">
 
