@@ -40,16 +40,19 @@ In addition to my research, I contribute to the academic community as a peer rev
 ---
 
 ### Research Interests
-
-<section class="portfolio-hero about-hero compact-about">
-  <p class="eyebrow">Quantum Security · Quantum Computing · Artificial Intelligence</p>
-
-  <h2>Building secure and intelligent systems for the quantum era.</h2>
-
-  <p>
-    My research focuses on quantum-safe communication, quantum computing, and artificial intelligence.
-  </p>
-</section>
+<style>
+.intro {
+  border-left: 4px solid var(--global-theme-color);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0 2rem;
+  background: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+}
+<style>
+  
+<div class="intro">
+I am interested in building secure and intelligent systems for the quantum era by focusing on quantum-safe communication, quantum computing, and artificial intelligence.
+</div>
+  
 
 <div class="feature-grid compact">
 
